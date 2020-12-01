@@ -1,0 +1,10 @@
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\bin\Debug\netstandard2.0\ConsoleApp1ML.Model.deps.json
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\bin\Debug\netstandard2.0\ConsoleApp1ML.Model.dll
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\bin\Debug\netstandard2.0\ConsoleApp1ML.Model.pdb
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\obj\Debug\netstandard2.0\ConsoleApp1ML.Model.csprojAssemblyReference.cache
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\obj\Debug\netstandard2.0\ConsoleApp1ML.Model.AssemblyInfoInputs.cache
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\obj\Debug\netstandard2.0\ConsoleApp1ML.Model.AssemblyInfo.cs
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\obj\Debug\netstandard2.0\ConsoleApp1ML.Model.csproj.CoreCompileInputs.cache
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\obj\Debug\netstandard2.0\ConsoleApp1ML.Model.dll
+C:\Users\Calin\Desktop\ConsoleApp1\ConsoleApp1ML.Model\obj\Debug\netstandard2.0\ConsoleApp1ML.Model.pdb
