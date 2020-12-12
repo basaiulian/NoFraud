@@ -10,14 +10,15 @@
 
 @if (ViewBag.Result != null)
 {
+    string result = "";
     string prediction = @ViewBag.Result.Prediction;
     if (prediction.Equals("1"))
     {
-        string result = "True";
+        result = "True";
     }
     else if (prediction.Equals("0"))
     {
-        string result = "False";
+        result = "False";
     }
 
     <div class="row">
