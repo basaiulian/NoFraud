@@ -42,7 +42,7 @@ namespace ConsoleApp1ML.Model
         public float Lat { get; set; }
 
 
-        [ColumnName("long"), LoadColumn(9)]
+        [ColumnName("longitude"), LoadColumn(9)]
         public float Long { get; set; }
 
 

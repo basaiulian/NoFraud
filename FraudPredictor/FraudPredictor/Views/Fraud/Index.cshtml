@@ -1,0 +1,121 @@
+﻿@model FraudPredictorML.Model.ModelInput
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Fraud Predictor</h1>
+
+<hr />
+
+@if (ViewBag.Result != null)
+{
+    string prediction = @ViewBag.Result.Prediction;
+    if (prediction.Equals("1"))
+    {
+        string result = "True";
+    }
+    else if (prediction.Equals("0"))
+    {
+        string result = "False";
+    }
+
+    <div class="row">
+        <div class="col-md-6">
+            <h4>Prediction:@result</h4>
+            <h4>Score:[@ViewBag.Result.Score[0],@ViewBag.Result.Score[1]]</h4>
+        </div>
+
+    </div>
+    <hr />
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label asp-for="Col0" class="custom-control-label"></label>
+                    <input asp-for="Col0" class="form-control" />
+                    <span asp-validation-for="Col0" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Trans_date_trans_time" class="custom-control-label"></label>
+                    <input asp-for="Trans_date_trans_time" class="form-control" />
+                    <span asp-validation-for="Trans_date_trans_time" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Cc_num" class="custom-control-label"></label>
+                    <input asp-for="Cc_num" class="form-control" />
+                    <span asp-validation-for="Cc_num" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Amt" class="custom-control-label"></label>
+                    <input asp-for="Amt" class="form-control" />
+                    <span asp-validation-for="Amt" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="First" class="custom-control-label"></label>
+                    <input asp-for="First" class="form-control" />
+                    <span asp-validation-for="First" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Last" class="custom-control-label"></label>
+                    <input asp-for="Last" class="form-control" />
+                    <span asp-validation-for="Last" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="City" class="custom-control-label"></label>
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="State" class="custom-control-label"></label>
+                    <input asp-for="State" class="form-control" />
+                    <span asp-validation-for="State" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Lat" class="custom-control-label"></label>
+                    <input asp-for="Lat" class="form-control" />
+                    <span asp-validation-for="Lat" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Long" class="custom-control-label"></label>
+                    <input asp-for="Long" class="form-control" />
+                    <span asp-validation-for="Long" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Merch_lat" class="custom-control-label"></label>
+                    <input asp-for="Merch_lat" class="form-control" />
+                    <span asp-validation-for="Merch_lat" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-4">
+                    <label asp-for="Merch_long" class="custom-control-label"></label>
+                    <input asp-for="Merch_long" class="form-control" />
+                    <span asp-validation-for="Merch_long" class="text-danger"></span>
+                </div>
+
+
+            </div>
+            <div class="form-group text-right">
+                <input type="submit" value="Predict" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

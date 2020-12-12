@@ -1,0 +1,10 @@
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\bin\Debug\netstandard2.0\MLModel.zip
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\bin\Debug\netstandard2.0\FraudPredictorML.Model.deps.json
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\bin\Debug\netstandard2.0\FraudPredictorML.Model.dll
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\bin\Debug\netstandard2.0\FraudPredictorML.Model.pdb
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\obj\Debug\netstandard2.0\FraudPredictorML.Model.csprojAssemblyReference.cache
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\obj\Debug\netstandard2.0\FraudPredictorML.Model.AssemblyInfoInputs.cache
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\obj\Debug\netstandard2.0\FraudPredictorML.Model.AssemblyInfo.cs
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\obj\Debug\netstandard2.0\FraudPredictorML.Model.csproj.CoreCompileInputs.cache
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\obj\Debug\netstandard2.0\FraudPredictorML.Model.dll
+C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictorML.Model\obj\Debug\netstandard2.0\FraudPredictorML.Model.pdb

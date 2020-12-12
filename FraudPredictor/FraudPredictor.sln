@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudPredictor", "FraudPredictor\FraudPredictor.csproj", "{938ADF46-FA95-437F-92B7-B591119B5BA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudPredictorML.Model", "FraudPredictorML.Model\FraudPredictorML.Model.csproj", "{837BA2B5-7248-4462-88D4-F65F49F68DE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FraudPredictorML.ConsoleApp", "FraudPredictorML.ConsoleApp\FraudPredictorML.ConsoleApp.csproj", "{6016E0C2-2EDA-4BE2-BEF8-0472E56CA94C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{938ADF46-FA95-437F-92B7-B591119B5BA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{938ADF46-FA95-437F-92B7-B591119B5BA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{938ADF46-FA95-437F-92B7-B591119B5BA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{938ADF46-FA95-437F-92B7-B591119B5BA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837BA2B5-7248-4462-88D4-F65F49F68DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837BA2B5-7248-4462-88D4-F65F49F68DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837BA2B5-7248-4462-88D4-F65F49F68DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837BA2B5-7248-4462-88D4-F65F49F68DE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6016E0C2-2EDA-4BE2-BEF8-0472E56CA94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6016E0C2-2EDA-4BE2-BEF8-0472E56CA94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6016E0C2-2EDA-4BE2-BEF8-0472E56CA94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6016E0C2-2EDA-4BE2-BEF8-0472E56CA94C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E9B947C-E9F2-4D19-9816-71B500C1D8D3}
+	EndGlobalSection
+EndGlobal
