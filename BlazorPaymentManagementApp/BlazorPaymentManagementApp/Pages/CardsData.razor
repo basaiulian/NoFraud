@@ -1,0 +1,59 @@
+﻿@page "/cardsdata"
+
+<h3>CardsData</h3>
+
+@if (cards == null)
+{
+    <p><em>Loading cards...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Expiration Date</th>
+                <th>Bank Name</th>
+                <th>Owner Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var card in cards)
+            {
+            <tr>
+                <td>@card.Id</td>
+                <td>@card.ExpirationDate</td>
+                <td>@card.BankName</td>
+                <td>@card.OwnerId</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code{
+    private List<Card> cards;
+
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/cards");
+    }
+
+    public class Card
+    {
+        public int Id { get; set; }
+
+        public DateTime ExpirationDate { get; set; }
+
+        public string BankName { get; set; }
+
+        public int OwnerId { get; set; }
+
+    }
+}

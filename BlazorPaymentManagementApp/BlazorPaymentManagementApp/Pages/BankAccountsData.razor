@@ -1,0 +1,60 @@
+﻿@page "/bankaccountsdata"
+
+<h3>BankAccountsData</h3>
+
+@if (bankAccounts == null)
+{
+    <p><em>Loading bank accounts...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Balance</th>
+                <th>Account Type</th>
+                <th>User Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var card in bankAccounts)
+            {
+            <tr>
+                <td>@card.Id</td>
+                <td>@card.Balance</td>
+                <td>@card.AccountType</td>
+                <td>@card.UserId</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code{
+    private List<BankAccount> bankAccounts;
+
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
+    }
+
+    public class BankAccount
+    {
+        public int Id { get; set; }
+
+        public string AccountType { get; set; }
+
+        public double Balance { get; set; }
+
+        public int UserId { get; set; }
+
+
+    }
+}
