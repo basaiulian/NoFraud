@@ -7556,19 +7556,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Teo\\.nuget\\packages\\": {}
+    "C:\\Users\\Iulian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\[Faculty]\\III1\\[.NET]\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+      "projectUniqueName": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
       "projectName": "PaymentManagement",
-      "projectPath": "D:\\[Faculty]\\III1\\[.NET]\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
-      "packagesPath": "C:\\Users\\Teo\\.nuget\\packages\\",
-      "outputPath": "D:\\[Faculty]\\III1\\[.NET]\\PaymentManager\\ContactApp\\obj\\",
+      "projectPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+      "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Teo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7645,7 +7645,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
       }
     }
   }

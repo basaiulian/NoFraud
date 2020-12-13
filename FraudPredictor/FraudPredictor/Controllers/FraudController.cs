@@ -15,7 +15,6 @@ namespace FraudPredictor.Controllers
         public ActionResult Index(ModelInput input)
         {
             var prediction = ConsumeModel.Predict(input);
-            ViewBag.Print = input.Amt;
             ViewBag.Result = prediction;
 
             return View();
