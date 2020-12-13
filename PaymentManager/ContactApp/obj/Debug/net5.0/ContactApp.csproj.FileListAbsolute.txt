@@ -1,0 +1,302 @@
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\appsettings.json
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.exe
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.deps.json
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.runtimeconfig.json
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.runtimeconfig.dev.json
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ref\ContactApp.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.pdb
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.csprojAssemblyReference.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.AssemblyInfoInputs.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.AssemblyInfo.cs
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.csproj.CoreCompileInputs.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\staticwebassets\ContactApp.StaticWebAssets.Manifest.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\staticwebassets\ContactApp.StaticWebAssets.xml
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\scopedcss\bundle\ContactApp.styles.css
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.RazorTargetAssemblyInfo.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ref\ContactApp.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.pdb
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.genruntimeconfig.cache
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Humanizer.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.csproj.CopyComplete
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.Convention.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.Hosting.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.Runtime.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win7-x86\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\folariu\Desktop\Facultate\Introducere in .NET 2020 2021\Curs 6\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\appsettings.Development.json
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\appsettings.json
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.exe
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.deps.json
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.runtimeconfig.json
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.runtimeconfig.dev.json
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ref\ContactApp.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ContactApp.pdb
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Elasticsearch.Net.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Humanizer.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Data.Sqlite.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Nest.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.core.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\SQLitePCLRaw.provider.dynamic_cdecl.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win7-x86\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.csprojAssemblyReference.cache
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.AssemblyInfoInputs.cache
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.AssemblyInfo.cs
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.csproj.CoreCompileInputs.cache
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.MvcApplicationPartsAssemblyInfo.cache
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\staticwebassets\ContactApp.StaticWebAssets.Manifest.cache
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\staticwebassets\ContactApp.StaticWebAssets.xml
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\scopedcss\bundle\ContactApp.styles.css
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.RazorTargetAssemblyInfo.cache
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.csproj.CopyComplete
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ref\ContactApp.dll
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.pdb
+D:\[Faculty]\III1\[.NET]\ContactApp\ContactApp\obj\Debug\net5.0\ContactApp.genruntimeconfig.cache
