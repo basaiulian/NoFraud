@@ -1,6 +1,10 @@
 ﻿@page "/usersdata"
 
 <h3>UsersData</h3>
+<form action="/user/@IdToFind">
+    <input @bind="@IdToFind" />
+    <input type="submit" value="Search" />
+</form>
 
 @if (users == null)
 {
@@ -8,34 +12,36 @@
 }
 else
 {
-<table class="table">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Username</th>
-            <th>Email</th>
-            <th>Phone Number</th>
-            <th>Address</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var user in users)
-        {
-        <tr>
-            <td>@user.Id</td>
-            <td>@user.Username</td>
-            <td>@user.Email</td>
-            <td>@user.PhoneNumber</td>
-            <td>@user.Address</td>
-        </tr>
-        }
-    </tbody>
-</table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@user.Address</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 
 
 @code{
     private List<User> users;
+
+    public int IdToFind { get; set; }
 
     HttpClient httpClient = new HttpClient()
     {
@@ -59,6 +65,7 @@ else
 
         public string PhoneNumber { get; set; }
 
-        public string Address {get; set; }
+        public string Address { get; set; }
     }
 }
+

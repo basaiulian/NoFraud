@@ -55,7 +55,7 @@ namespace PaymentManagement.Controllers
             List<Card> cards = _context.Card.ToList();
             foreach (var card in cards)
             {
-                if (id == card.BankAccountId)
+                if (id == Int32.Parse(card.BankAccountId))
                 {
                     if (!bankAccount.CardList.Contains(card))
                         bankAccount.CardList.Add(card);
@@ -68,7 +68,7 @@ namespace PaymentManagement.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBankAccount(int id, [FromBody] BankAccount bankAccount)
         {
-            if (id != bankAccount.Id)
+            if (id.ToString() != bankAccount.Id)
             {
                 return BadRequest();
             }
@@ -76,7 +76,7 @@ namespace PaymentManagement.Controllers
             _context.Entry(bankAccount).State = EntityState.Modified;
             foreach (var card in bankAccount.CardList)
             {
-                if (id == card.BankAccountId)
+                if (id == Int32.Parse(card.BankAccountId))
                 {
                     if (!_context.Card.Contains(card)) // Verificam daca cardul exista deja in DB
                         _context.Card.Add(card);
@@ -114,7 +114,7 @@ namespace PaymentManagement.Controllers
 
             foreach (Card card in _context.Card)
             {
-                if( card.BankAccountId == id)
+                if( Int32.Parse(card.BankAccountId) == id)
                 {
                     _context.Card.Remove(card);
 
@@ -141,7 +141,7 @@ namespace PaymentManagement.Controllers
 
         private bool BankAccountExists(int id)
         {
-            return _context.BankAccount.Any(e => e.Id == id);
+            return _context.BankAccount.Any(e => e.Id == id.ToString());
         }
 
     }

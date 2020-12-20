@@ -1,0 +1,61 @@
+﻿@page "/users/{id}"
+@using BlazorPaymentManagementApp.Model
+<h3>User Data</h3>
+
+
+@if (user == null)
+{
+    <p><em>Loading user...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>
+                    <ul>
+                        @foreach(BankAccount bankAccount in @user.BankAccounts)
+                        {
+                            <li>
+                                @bankAccount.Balance
+                            </li>
+
+                        }
+                        
+                    </ul>
+                </tr>
+        </tbody>
+    </table>
+}
+
+
+@code{
+    [Parameter]
+    public string Id { get; set; }
+
+    private User user = new User();
+
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await httpClient.GetFromJsonAsync<User>("/api/users/" + Id);
+    }
+
+}
+

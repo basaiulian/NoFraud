@@ -29,6 +29,7 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-aEDN6ufOzt4yskcT2LjZWqlrj2XcPYGNXIdKoeSh5VE=",
       "Microsoft.JSInterop.dll": "sha256-CKxgaYDrA0uorA41Tg8vOHJOolCc57YwpIUUPtS615Y=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-co54RLjVAHK2HntQfZykJrT9xAeVJSUp0TDu4aKONNQ=",
+      "Newtonsoft.Json.dll": "sha256-mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=",
       "System.IO.Pipelines.dll": "sha256-PgYFI7F+NQs9abrlcOtWBO+dScC0UITrX0CFB5tqUtI=",
       "Microsoft.CSharp.dll": "sha256-LB5scvWkR2ez6hRpuSDoTlOpbgC13Vmt9p8VqlL9lKg=",
       "Microsoft.VisualBasic.Core.dll": "sha256-YH1eC2UARMYVsSpzrfel1Ri1ZkeLV73tSq4m377tRy4=",
@@ -195,11 +196,11 @@
       "mscorlib.dll": "sha256-Mupm4ZEM1fGLZO5OHEpHCT57SJ6BiVRlf7vdgr2tNbc=",
       "netstandard.dll": "sha256-4lWDgs\/rQbnaGbm+BeyBI\/kV6R2pN+f8CKK+0H1fQGg=",
       "System.Private.CoreLib.dll": "sha256-Adef1YZ6wqoJsPua67RzEoHgixp5VaxcT598E6BHUwU=",
-      "BlazorPaymentManagementApp.dll": "sha256-akseQJyZhWgL8PI153XqW5rYO+JuBwnOPLskZBq+4xU="
+      "BlazorPaymentManagementApp.dll": "sha256-f9rh1+YCNcL75qTgoYnNkW7cUAA5eqOyhFHKt56J6Qg="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorPaymentManagementApp.pdb": "sha256-t25THSuD7mA0FadsWSAy0QO+MInf3+A7f17yDQA0\/vo="
+      "BlazorPaymentManagementApp.pdb": "sha256-1hXriaK9OwacLkuTd4VNVhYT1gzvM+CVpTl2BF4jRbs="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-eD1xx9KVSZ9Xc134LY9VKnKHGzf6M2yPGh+GxiRBQw0=",

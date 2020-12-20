@@ -13,76 +13,97 @@ namespace BlazorPaymentManagementApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/bankaccountsdata")]
+#nullable restore
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\BankAccountsData.razor"
+using BlazorPaymentManagementApp.Model;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\BankAccountsData.razor"
+using System.ComponentModel.DataAnnotations;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\BankAccountsData.razor"
+using System.Text.Json;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/bankaccounts")]
     public partial class BankAccountsData : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -91,36 +112,75 @@ using BlazorPaymentManagementApp.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\BankAccountsData.razor"
+#line 85 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\BankAccountsData.razor"
       
     private List<BankAccount> bankAccounts;
+
+    string message = "---";
+
+    private BankAccount bankAccount = new BankAccount();
+
+    private HashSet<string> accountTypes = new HashSet<string>();
+
+    [Required]
+    public string BalanceToSend { get; set; }
+
+    [Required]
+    public string UserIdToSend { get; set; }
+
+    private bool IsShown { get; set; } = true;
 
     HttpClient httpClient = new HttpClient()
     {
         BaseAddress = new Uri("http://localhost:5000")
     };
 
-    protected override async Task OnInitializedAsync()
+    private void ShowForm()
     {
+        IsShown = !IsShown;
+    }
+
+    protected async Task<string> GenerateId(int length)
+    {
+        string cypher = "123456789";
+
+        var random = new Random();
+
+        string generatedId = "";
+
+        for (int i = 0; i < length; i++)
+        {
+            generatedId += cypher[random.Next(cypher.Length)];
+        }
+
+        return generatedId;
+    }
+
+    protected async Task Create()
+    {
+        bankAccount.Balance = Double.Parse(BalanceToSend);
+        bankAccount.UserId = Int32.Parse(UserIdToSend);
+        bankAccount.Id = await GenerateId(16);
+        message = JsonSerializer.Serialize(bankAccount);
+
+        await httpClient.PostAsJsonAsync<BankAccount>("/api/bankaccounts", bankAccount);
         bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
     }
 
-    public class BankAccount
+    protected override async Task OnInitializedAsync()
     {
-        public int Id { get; set; }
-
-        public string AccountType { get; set; }
-
-        public double Balance { get; set; }
-
-        public int UserId { get; set; }
-
-
+        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
+        foreach(var bankAccount in bankAccounts)
+        {
+            accountTypes.Add(bankAccount.AccountType);
+        }
     }
+
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
     }
 }
 #pragma warning restore 1591

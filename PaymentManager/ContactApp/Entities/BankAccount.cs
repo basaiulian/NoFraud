@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PaymentManagement.Entities
 {
     public class BankAccount
     {
         [Column("id", TypeName = "int")]
-        public int Id { get; set; }
+        public string Id { get; set; }
 
         [Column("token_id", TypeName = "int")]
         public int TokenID { get; set; }

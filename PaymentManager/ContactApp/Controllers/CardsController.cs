@@ -19,7 +19,7 @@ namespace PaymentManagement.Controllers
             _context = context;
         }
 
-        // GET: api/Contacts
+        // GET: api/cards
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Card>>> GetCards()
         {

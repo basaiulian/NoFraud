@@ -25,6 +25,15 @@
           "lib/netstandard2.0/Humanizer.dll": {}
         }
       },
+      "MediatR/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2250,6 +2259,24 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MediatR/9.0.0": {
+      "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "type": "package",
+      "path": "mediatr/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/net461/MediatR.dll",
+        "lib/net461/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "lib/netstandard2.1/MediatR.dll",
+        "lib/netstandard2.1/MediatR.xml",
+        "mediatr.9.0.0.nupkg.sha512",
+        "mediatr.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Html.Abstractions/2.2.0": {
@@ -7546,6 +7573,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "MediatR >= 9.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0-rc.2.20475.6",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0-rc.2.20475.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0-rc.2.20475.6",
@@ -7561,11 +7589,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+      "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
       "projectName": "PaymentManagement",
-      "projectPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+      "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
       "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\obj\\",
+      "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7594,6 +7622,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "MediatR": {
+            "target": "Package",
+            "version": "[9.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[5.0.0-rc.2.20475.6, )"

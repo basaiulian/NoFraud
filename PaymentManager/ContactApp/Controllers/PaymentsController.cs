@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PaymentManagement.Model;
-using PaymentManagement.Entities;
 
 namespace PaymentManagement.Controllers
 {
@@ -19,7 +18,7 @@ namespace PaymentManagement.Controllers
             _context = context;
         }
 
-        // GET: api/Contacts
+        // GET: api/payments
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
         {

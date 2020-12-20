@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace PaymentManagement.Entities
 {
@@ -21,16 +18,16 @@ namespace PaymentManagement.Entities
         public string PinCode { get; set; }
 
         [Column("cvvCode", TypeName = "string")]
-        public int CvvCode { get; set; }
+        public string CvvCode { get; set; }
 
-        [Column("owner_id", TypeName = "int")]
-        public int OwnerId { get; set; }
+        [Column("owner_id", TypeName = "string")]
+        public string OwnerId { get; set; }
 
         [Column("bank_name", TypeName = "string")]
         public string BankName { get; set; }
 
-        [Column("bank_account_id", TypeName = "int")]
-        public int BankAccountId { get; set; }
+        [Column("bank_account_id", TypeName = "string")]
+        public string BankAccountId { get; set; }
 
         public Card()
         {

@@ -1,6 +1,86 @@
 ﻿@page "/cardsdata"
+@using BlazorPaymentManagementApp.Model
+@using System.Text.Json
+
+@inject IJSRuntime JsRuntime
+
 
 <h3>CardsData</h3>
+
+@*<form action="/createcard">
+        <input type="submit" value="Create Card" />
+    </form>*@
+<button @onclick="@ShowForm">Create User</button>
+<p hidden="@IsShown">
+    <EditForm Model="@card" OnValidSubmit="Create">
+        <DataAnnotationsValidator />
+        <hr />
+        <div class="form-group row">
+            <label for="number" class="col-sm-2 col-form-label">
+                Number
+            </label>
+            <div class="col-sm-10">
+                <InputText id="number" class="form-control" placeholder="Number" @bind-Value="card.Number"/>
+                <ValidationMessage For="@(() => card.Number)" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="expirationDate" class="col-sm-2 col-form-label">
+                Expiration Date
+            </label>
+            <div class="col-sm-10">
+                <InputDate id="expirationDate" class="form-control" @bind-Value="card.ExpirationDate" />
+                <ValidationMessage For="@(() => card.ExpirationDate)" />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="pinCode" class="col-sm-2 col-form-label">
+                Pin Code
+            </label>
+            <div class="col-sm-10">
+                <InputText id="pinCode" class="form-control" placeholder="Pin Code" @bind-Value="card.PinCode" />
+                <ValidationMessage For="@(() => card.PinCode)" />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="cvvCode" class="col-sm-2 col-form-label">
+                Cvv Code
+            </label>
+            <div class="col-sm-10">
+                <InputText id="cvvCode" class="form-control" placeholder="Cvv Code" @bind-Value="card.CvvCode" />
+                <ValidationMessage For="@(() => card.CvvCode)" />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="cvvCode" class="col-sm-2 col-form-label">
+                Bank Name
+            </label>
+            <div class="col-sm-10">
+                <InputText id="bankName" class="form-control" placeholder="Bank Name" @bind-Value="card.BankName" />
+                <ValidationMessage For="@(() => card.BankName)" />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="bankAccountId" class="col-sm-2 col-form-label">
+                Bank Account Id
+            </label>
+            <div class="col-sm-10">
+                <InputText id="bankAccountId" class="form-control" placeholder="Bank Account Id" @bind-Value="card.BankAccountId" />
+                <ValidationMessage For="@(() => card.BankAccountId)" />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="ownerId" class="col-sm-2 col-form-label">
+                Owner Id
+            </label>
+            <div class="col-sm-10">
+                <InputText id="ownerId" class="form-control" placeholder="Owner Id" @bind-Value="card.OwnerId" />
+                <ValidationMessage For="@(() => card.OwnerId)" />
+            </div>
+        </div>
+        <input type="submit" value="Submit" />
+    </EditForm>
+</p>
 
 @if (cards == null)
 {
@@ -20,12 +100,12 @@ else
         <tbody>
             @foreach (var card in cards)
             {
-            <tr>
-                <td>@card.Id</td>
-                <td>@card.ExpirationDate</td>
-                <td>@card.BankName</td>
-                <td>@card.OwnerId</td>
-            </tr>
+                <tr>
+                    <td>@card.Id</td>
+                    <td>@card.ExpirationDate</td>
+                    <td>@card.BankName</td>
+                    <td>@card.OwnerId</td>
+                </tr>
             }
         </tbody>
     </table>
@@ -35,25 +115,29 @@ else
 @code{
     private List<Card> cards;
 
+    private Card card = new Card();
+
+    private bool IsShown { get; set; } = true;
+
     HttpClient httpClient = new HttpClient()
     {
         BaseAddress = new Uri("http://localhost:5000")
     };
+
+    private void ShowForm()
+    {
+        IsShown = !IsShown;
+    }
+
+    protected async Task Create()
+    {
+        await httpClient.PostAsJsonAsync<Card>("/api/cards", card);
+        cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/cards");
+    }
 
     protected override async Task OnInitializedAsync()
     {
         cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/cards");
     }
 
-    public class Card
-    {
-        public int Id { get; set; }
-
-        public DateTime ExpirationDate { get; set; }
-
-        public string BankName { get; set; }
-
-        public int OwnerId { get; set; }
-
-    }
 }

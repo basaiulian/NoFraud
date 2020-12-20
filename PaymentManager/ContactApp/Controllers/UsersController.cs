@@ -6,9 +6,19 @@ using Microsoft.EntityFrameworkCore;
 using PaymentManagement.Model;
 using PaymentManagement.Entities;
 using System;
+using Newtonsoft.Json;
+using System.Reflection;
+using Newtonsoft.Json.Linq;
 
 namespace PaymentManagement.Controllers
 {
+
+    public class LoginClass
+    {
+        public string Username { get; set; }
+        public string Password { get; set; }
+    }
+
     [Route("api/users")]
     [ApiController]
     public class UsersController : ControllerBase
@@ -19,7 +29,7 @@ namespace PaymentManagement.Controllers
         {
             _context = context;
         }
-        
+
         [HttpGet]
         public ActionResult<IEnumerable<User>> GetUsers()
         {
@@ -31,16 +41,16 @@ namespace PaymentManagement.Controllers
                     if (user.Id == bankAccount.UserId)
                     {
 
-                            List<Card> cards = _context.Card.ToList();
-                            foreach (var card in cards)
+                        List<Card> cards = _context.Card.ToList();
+                        foreach (var card in cards)
+                        {
+                            if (bankAccount.Id == card.BankAccountId)
                             {
-                                if (bankAccount.Id == card.BankAccountId)
-                                {
-                                    if (!bankAccount.CardList.Contains(card))
-                                        bankAccount.CardList.Add(card);
-                                }
+                                if (!bankAccount.CardList.Contains(card))
+                                    bankAccount.CardList.Add(card);
                             }
-                         
+                        }
+
                     }
                 }
             }
@@ -51,7 +61,29 @@ namespace PaymentManagement.Controllers
 
         }
 
+
+        [HttpPost("find")]
+        public int FindUser([FromBody] List<string> loginObject)
+        {
+
+            Console.WriteLine(loginObject[0]);
+            Console.WriteLine(loginObject[1]);
+
+            List<User> users = _context.User.ToList();
+
+            foreach(User user in users)
+            {
+                if(user.Username == loginObject[0] && user.Password == loginObject[1])
+                {
+                    return user.Id;
+                }
+            }
+            return -1;
+            
+        }
+
         [HttpGet("{id}", Name = "GetUserById")]
+        //[HttpGet("getid",Name = "GetUserById")]
         public async Task<ActionResult<User>> GetUserById(int id)
         {
             var user = await _context.User.FindAsync(id);
@@ -98,7 +130,7 @@ namespace PaymentManagement.Controllers
                     {
                         foreach (var card in bankAccount.CardList)
                         {
-                            if (id == card.BankAccountId)
+                            if (id == Int32.Parse(card.BankAccountId))
                             {
                                 if (!_context.Card.Contains(card)) // Verificam daca cardul exista deja in DB
                                     _context.Card.Add(card);
@@ -149,7 +181,7 @@ namespace PaymentManagement.Controllers
 
                     foreach (Card card in _context.Card)
                     {
-                        if (card.BankAccountId == bankAccount.Id)
+                        if ((card.BankAccountId == bankAccount.Id))
                         {
                             _context.Card.Remove(card);
 
@@ -177,6 +209,16 @@ namespace PaymentManagement.Controllers
 
             return CreatedAtAction("GetUserById", new { id = user.Id }, user);
         }
+
+        //[HttpPost]
+        //public async Task<ActionResult<User>> Login([FromBody] string username, string password)
+        //{
+        //    _context.User.Add(user);
+
+        //    await _context.SaveChangesAsync();
+
+        //    return CreatedAtAction("GetUserById", new { id = user.Id }, user);
+        //}
 
 
         private bool UserExists(int id)

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "s+BEss2Smp1byQfdLZElyS7T4VtxCJcu8fu10ZXrIWNXaCTVEPQG/5joqSEwcyJSinqVTUdtTKhNxhURju5qsw==",
+  "dgSpecHash": "C+bSTEvSDbyZYcJRhMpl4DsyE81pEqDruFo53ngAB7IHtMf1tx+Iz6G9SflJCWsrg4eBHhXBMoQEKGESdH+KFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\elasticsearch.net\\7.10.1\\elasticsearch.net.7.10.1.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0-rc.2.20475.17\\microsoft.aspnetcore.razor.language.5.0.0-rc.2.20475.17.nupkg.sha512",

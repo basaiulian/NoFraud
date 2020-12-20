@@ -1,0 +1,106 @@
+﻿@page "/login"
+@using BlazorPaymentManagementApp.Model
+@using System.Text.Json
+@using System.Text.Json.Serialization
+@using Newtonsoft.Json
+@inject NavigationManager NavManager
+
+@inject IJSRuntime JsRuntime
+
+<h3>Login</h3>
+@*<form action="/user/@IdToFind">
+        <input @bind="@IdToFind" />
+        <input type="submit" value="Search" />
+    </form>*@
+
+
+<EditForm Model="@user" OnValidSubmit="LoginUser">
+    <DataAnnotationsValidator />
+    <hr />
+
+    <div class="form-group row">
+        <label for="username" class="col-sm-2 col-form-label">
+            Username
+        </label>
+        <div class="col-sm-10">
+            <InputText id="balance" class="form-control" placeholder="Username" @bind-Value="user.Username" />
+            <ValidationMessage For="@(() => user.Username)" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label for="password" class="col-sm-2 col-form-label">
+            Password
+        </label>
+        <div class="col-sm-10">
+            <InputText id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
+            <ValidationMessage For="@(() => user.Password)" />
+        </div>
+    </div>
+    <hr />
+
+    <input type="submit" value="Submit" />
+</EditForm>
+
+<p>Response: @message.ToString()</p>
+
+@code{
+    private List<User> users;
+
+    string message = "---";
+
+    string response = "---";
+
+    private User user = new User();
+
+    private string username { get; set; }
+    private string password { get; set; }
+
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected async Task LoginUser()
+    {
+        //LoginClass loginObject = new LoginClass(username, password);
+
+        username = user.Username;
+        password = user.Password;
+
+        List<string> my_request = new List<string> { username, password };
+
+        response += my_request[0] + my_request[1];
+
+
+        //userToLogin = "{\"username\":\"" + username + "\", \"password\":\"" + password + "\"}";
+        //Newtonsoft.Json.Linq.JObject jsonUserToLogin = (Newtonsoft.Json.Linq.JObject)JsonConvert.DeserializeObject(userToLogin);
+        //Console.WriteLine(jsonUserToLogin.GetType());
+        var raspuns = await httpClient.PostAsJsonAsync<List<string>>("/api/users/find", my_request);
+        string returnValue = await raspuns.Content.ReadAsStringAsync();
+        if (returnValue != "-1")
+        {
+            NavManager.NavigateTo("/users/" + returnValue);
+        }
+
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await httpClient.GetFromJsonAsync<List<User>>("/api/users");
+    }
+
+    public class LoginClass
+    {
+        private string Username { get; set; }
+        private string Password { get; set; }
+
+        public LoginClass(string _username, string _password)
+        {
+            this.Username = _username;
+            this.Password = _password;
+        }
+    }
+}
+

@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="C:\Users\Iulian\source\repos\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\ONouaVersiune\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>

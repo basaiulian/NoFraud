@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Iulian\\source\\repos\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {}
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Iulian\\source\\repos\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iulian\\source\\repos\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
         "projectName": "BlazorPaymentManagementApp",
-        "projectPath": "C:\\Users\\Iulian\\source\\repos\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
         "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iulian\\source\\repos\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\obj\\",
+        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0-rc.2.20475.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
             },
             "System.Net.Http.Json": {
               "target": "Package",
