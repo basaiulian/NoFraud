@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.LocalStorage.dll": "sha256-7+FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-4HnqqqA5jERhLOcYF9uKojQG4IFNFmX50jV2gF0zcWw=",
       "Microsoft.AspNetCore.Components.dll": "sha256-jgVQaSh46OJyvg+MdncxLfIF696T+7yMqTGt6AJ2ovc=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-sRBtQN9wWsuBTnXpxgJTF5PwfXcqZkm1AVZVhB+SHpU=",
@@ -196,11 +197,11 @@
       "mscorlib.dll": "sha256-Mupm4ZEM1fGLZO5OHEpHCT57SJ6BiVRlf7vdgr2tNbc=",
       "netstandard.dll": "sha256-4lWDgs\/rQbnaGbm+BeyBI\/kV6R2pN+f8CKK+0H1fQGg=",
       "System.Private.CoreLib.dll": "sha256-Adef1YZ6wqoJsPua67RzEoHgixp5VaxcT598E6BHUwU=",
-      "BlazorPaymentManagementApp.dll": "sha256-f9rh1+YCNcL75qTgoYnNkW7cUAA5eqOyhFHKt56J6Qg="
+      "BlazorPaymentManagementApp.dll": "sha256-+KBJzwZJuukRZGkcLqVKk66JlF+7nvQvToY7Cukzuiw="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorPaymentManagementApp.pdb": "sha256-1hXriaK9OwacLkuTd4VNVhYT1gzvM+CVpTl2BF4jRbs="
+      "BlazorPaymentManagementApp.pdb": "sha256-FySXsP5wTTM1m\/cMHsH6tk1LjQJrzej0uS+gHjbH1p4="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-eD1xx9KVSZ9Xc134LY9VKnKHGzf6M2yPGh+GxiRBQw0=",

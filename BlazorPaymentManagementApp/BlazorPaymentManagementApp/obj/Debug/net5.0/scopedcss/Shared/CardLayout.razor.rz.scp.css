@@ -1,0 +1,45 @@
+body[b-ku3jajem7m] {
+
+    background-color:black;
+
+}
+
+.page[b-ku3jajem7m] {
+
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+h3[b-ku3jajem7m] {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    margin-left: 2.5em;
+    float: left;
+    font-size: 25px;
+    color: black;
+
+}
+
+.navigation[b-ku3jajem7m] {
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.navigation a[b-ku3jajem7m]{
+
+    font-style:normal;
+    margin-right: 25px;
+    text-decoration: none;
+    padding : 5px 20px;
+    border: 1px solid #0094ff;
+    color : darkolivegreen;
+}
+
+    .navigation a:hover[b-ku3jajem7m] {
+        background-color: mediumslateblue;
+        color: black;
+        transition: 0.5s ease;
+        font-weight: bold;
+    }

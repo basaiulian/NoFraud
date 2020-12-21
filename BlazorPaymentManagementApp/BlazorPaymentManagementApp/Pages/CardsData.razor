@@ -1,15 +1,13 @@
-﻿@page "/cardsdata"
+﻿
+@page "/cards"
 @using BlazorPaymentManagementApp.Model
 @using System.Text.Json
 
 @inject IJSRuntime JsRuntime
 
-
 <h3>CardsData</h3>
 
-@*<form action="/createcard">
-        <input type="submit" value="Create Card" />
-    </form>*@
+
 <button @onclick="@ShowForm">Create User</button>
 <p hidden="@IsShown">
     <EditForm Model="@card" OnValidSubmit="Create">

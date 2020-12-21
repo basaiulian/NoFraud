@@ -3,12 +3,13 @@
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @using Newtonsoft.Json
+@using System.Timers
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager NavManager
-
 @inject IJSRuntime JsRuntime
 
 <h3>Login</h3>
-@*<form action="/user/@IdToFind">
+@*<form action="/user/@IdToFind">Blazored.LocalStorage.ILocalStorageService localStorage
         <input @bind="@IdToFind" />
         <input type="submit" value="Search" />
     </form>*@
@@ -42,14 +43,13 @@
     <input type="submit" value="Submit" />
 </EditForm>
 
-<p>Response: @message.ToString()</p>
+
+
 
 @code{
     private List<User> users;
 
-    string message = "---";
-
-    string response = "---";
+    private static Timer aTimer;
 
     private User user = new User();
 
@@ -70,25 +70,40 @@
 
         List<string> my_request = new List<string> { username, password };
 
-        response += my_request[0] + my_request[1];
-
-
-        //userToLogin = "{\"username\":\"" + username + "\", \"password\":\"" + password + "\"}";
-        //Newtonsoft.Json.Linq.JObject jsonUserToLogin = (Newtonsoft.Json.Linq.JObject)JsonConvert.DeserializeObject(userToLogin);
-        //Console.WriteLine(jsonUserToLogin.GetType());
         var raspuns = await httpClient.PostAsJsonAsync<List<string>>("/api/users/find", my_request);
         string returnValue = await raspuns.Content.ReadAsStringAsync();
         if (returnValue != "-1")
         {
-            NavManager.NavigateTo("/users/" + returnValue);
+            await localStorage.SetItemAsync("autentificat", "1");
+            await localStorage.SetItemAsync("id", returnValue);
+
+            aTimer = new System.Timers.Timer();
+            aTimer.Interval = 1000;
+
+            // Hook up the Elapsed event for the timer. 
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("/users/" + returnValue, true);
+            };
+
+            // Have the timer fire repeated events (true is the default)
+            aTimer.AutoReset = true;
+
+            // Start the timer
+            aTimer.Enabled = true;
+
         }
 
 
     }
 
+
+
     protected override async Task OnInitializedAsync()
     {
+
         users = await httpClient.GetFromJsonAsync<List<User>>("/api/users");
+
     }
 
     public class LoginClass
@@ -103,4 +118,3 @@
         }
     }
 }
-

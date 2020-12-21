@@ -1,61 +1,86 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">No Fraud</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
+﻿@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject NavigationManager NavManager
+@using System.Threading
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
+    <div class="top-row pl-4 navbar navbar-dark">
+        <a class="navbar-brand" href="">No Fraud</a>
+        <button class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
 
+    <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+        <ul class="nav flex-column">
+
+            @if (IsLoggedIn == false)
+            {
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="login">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Login
             </NavLink>
         </li>
 
+                        <li class="nav-item px-3">
+                            <NavLink class="nav-link" href="register">
+                                <span class="oi oi-list-rich" aria-hidden="true"></span> Register
+                            </NavLink>
+                        </li>
+ }
+                    else if (IsLoggedIn == true)
+                    {
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="register">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Register
+            <NavLink class="nav-link" href="users" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> My Profile
             </NavLink>
         </li>
+                        <li class="nav-item px-3">
+                            <NavLink class="nav-link" href="createcard">
+                                <span class="oi oi-list-rich" aria-hidden="true"></span> Add Card
+                            </NavLink>
+                        </li>
+                                        <li class="nav-item px-3">
+                                            <NavLink class="nav-link" href="createbankaccount">
+                                                <span class="oi oi-list-rich" aria-hidden="true"></span> Add Bank Account
+                                            </NavLink>
+                                        </li>
+                                                        <li class="nav-item px-3">
+                                                            <NavLink class="nav-link" href="createpayment">
+                                                                <span class="oi oi-list-rich" aria-hidden="true"></span> Add Payment
+                                                            </NavLink>
+                                                        </li>
+                                                                        <li class="nav-item px-3">
+        
+                                                                                <NavLink @onclick="logout" class="nav-link" href="createpayment">
+                                                                                    <span class="oi oi-list-rich" aria-hidden="true"></span> Logout
+                                                                                </NavLink>
 
-        @*
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="usersdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch Users
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="userbyname">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Get User By Username
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="cardsdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch Cards
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="bankaccounts">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch Bank Accounts
-            </NavLink>
-        </li>*@
-    </ul>
-</div>
+                                                                        </li>}
+        </ul>
+    </div>
 
-@code {
-    private bool collapseNavMenu = true;
+    @code { private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+        private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
+        public bool IsLoggedIn { get; set; }
+        public bool Id { get; set; }
+
+        private void ToggleNavMenu()
+        {
+            collapseNavMenu = !collapseNavMenu;
+        }
+
+        protected async void logout()
+        {
+            await localStorage.RemoveItemAsync("autentificat");
+            await localStorage.RemoveItemAsync("id");
+
+            NavManager.NavigateTo("/");
+        }
+
+        protected override async Task OnInitializedAsync()
+        {
+            this.IsLoggedIn = await localStorage.ContainKeyAsync("autentificat");
+            this.Id = await localStorage.ContainKeyAsync("id");
+            Console.WriteLine("autentificat:" + this.IsLoggedIn);
+        } }

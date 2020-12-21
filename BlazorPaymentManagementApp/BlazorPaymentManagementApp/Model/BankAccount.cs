@@ -12,10 +12,11 @@ namespace BlazorPaymentManagementApp.Model
 
         public double Balance { get; set; }
 
-        [Required]
         public string AccountType { get; set; }
 
         public int UserId { get; set; }
+
+        public ICollection<Card> CardList { get; set; } = new List<Card>();
 
     }
 }

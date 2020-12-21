@@ -1,7 +1,24 @@
 ﻿@page "/"
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject NavigationManager NavManager
 
-<h1>Hello!</h1>
+@code{ protected bool IsLoggedIn { get; set; }
+    protected string Id { get; set; }
 
-Welcome to No Fraud app.
+    protected override async Task OnInitializedAsync()
+    {
+        this.IsLoggedIn = await localStorage.ContainKeyAsync("autentificat");
+        this.Id = await localStorage.GetItemAsStringAsync("id");
 
-@*<SurveyPrompt Title="How is Blazor working for you?" />*@
+        if (this.IsLoggedIn == false)
+        {
+            NavManager.NavigateTo("/login", true);
+        }
+        else
+        {
+            NavManager.NavigateTo("/users/" + Id, true);
+        }
+
+
+
+    } } 
