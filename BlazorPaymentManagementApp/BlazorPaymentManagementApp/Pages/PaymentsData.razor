@@ -1,0 +1,54 @@
+﻿@page "/payments"
+@using BlazorPaymentManagementApp.Model
+@using System.ComponentModel.DataAnnotations
+@using System.Text.Json
+
+@inject IJSRuntime JsRuntime
+
+
+<h3>Payments</h3>
+
+@if (payments == null)
+{
+<p><em>Loading payments...</em></p> }
+else
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>Amount</th>
+            <th>Currency</th>
+            <th>Source</th>
+            <th>Destination</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var payment in payments)
+        {
+        <tr>
+            <td>@payment.Amount</td>
+            <td>@payment.Currency</td>
+            <td>@payment.Source</td>
+            <td>@payment.Destination</td>
+        </tr>}
+    </tbody>
+</table>
+                <p>Message: @message</p>}
+
+
+@code{ private List<Payment> payments;
+
+    string message = "---";
+
+    private Payment payment = new Payment();
+
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        payments = await httpClient.GetFromJsonAsync<List<Payment>>("/api/payments");
+    }
+}
