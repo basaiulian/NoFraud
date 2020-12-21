@@ -8,7 +8,7 @@
 @inject NavigationManager NavManager
 @inject IJSRuntime JsRuntime
 
-<h3>Login</h3>
+
 @*<form action="/user/@IdToFind">Blazored.LocalStorage.ILocalStorageService localStorage
         <input @bind="@IdToFind" />
         <input type="submit" value="Search" />
@@ -17,31 +17,37 @@
 
 <EditForm Model="@user" OnValidSubmit="LoginUser">
     <DataAnnotationsValidator />
-    <hr />
 
-    <div class="form-group row">
-        <label for="username" class="col-sm-2 col-form-label">
-            Username
-        </label>
-        <div class="col-sm-10">
-            <InputText id="balance" class="form-control" placeholder="Username" @bind-Value="user.Username" />
-            <ValidationMessage For="@(() => user.Username)" />
+ 
+    <div class="total-form">
+        <h3>Login</h3>
+        <div class="form">
+
+            <div class="form-input">
+                <InputText type="text" id="Username" class="form-control" placeholder="Username" @bind-Value="user.Username" />
+                <ValidationMessage For="@(() => user.Username)" />
+            </div>
         </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="password" class="col-sm-2 col-form-label">
-            Password
-        </label>
-        <div class="col-sm-10">
-            <InputText id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
-            <ValidationMessage For="@(() => user.Password)" />
+        <div class="form">
+        
+            <div class="form-input">
+                <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
+                <ValidationMessage For="@(() => user.Password)" />
+            </div>
         </div>
-    </div>
-    <hr />
+        
 
-    <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
+    </div>
 </EditForm>
+
+<div class="linii">
+    <hr id="linie" />
+    <hr id="linie" />
+    <hr id="linie" />
+</div>
+
 
 
 

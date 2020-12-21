@@ -6,67 +6,60 @@
 
 @inject IJSRuntime JsRuntime
 
-<h3>Add payment</h3>
+
 <EditForm Model="@payment" OnValidSubmit="Create">
     <DataAnnotationsValidator />
-    <hr />
+    <div class="total-form">
+        <h3>Add payment</h3>
+        <div class="form">
 
-    <div class="form-group row">
-        <label for="amount" class="col-sm-2 col-form-label">
-            Amount
-        </label>
-        <div class="col-sm-10">
-            <InputText id="amount" class="form-control" placeholder="Amount" @bind-Value="AmountToSend" />
-            <ValidationMessage For="@(() => payment.Amount)" />
+            <div class="form-input">
+                <InputText id="amount" class="form-control" placeholder="Amount" @bind-Value="AmountToSend" />
+                <ValidationMessage For="@(() => payment.Amount)" />
+            </div>
         </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="currency" class="col-sm-2 col-form-label">
-            Currency
-        </label>
-        <div class="col-sm-10">
-            <InputSelect id="currency" class="form-control" @bind-Value="payment.Currency">
-                <option>RON(Default)</option>
-                @foreach (var currency in currencyList)
-                {
-<option>@currency</option>}
-            </InputSelect>
-            <ValidationMessage For="@(() => payment.Currency)" />
+        <div class="form">
+
+            <div class="form-input">
+                <InputSelect id="currency" class="form-control" @bind-Value="payment.Currency">
+                    <option>RON(Default)</option>
+                    @foreach (var currency in currencyList)
+                    {
+    <option>@currency</option>}
+                </InputSelect>
+                <ValidationMessage For="@(() => payment.Currency)" />
+            </div>
         </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="source" class="col-sm-2 col-form-label">
-            Source
-        </label>
-        <div class="col-sm-10">
-            <InputText id="source" class="form-control" placeholder="Source" @bind-Value="payment.Source" />
-            <ValidationMessage For="@(() => payment.Source)" />
+        <div class="form">
+
+            <div class="form-input">
+                <InputText id="source" class="form-control" placeholder="Source" @bind-Value="payment.Source" />
+                <ValidationMessage For="@(() => payment.Source)" />
+            </div>
         </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="destination" class="col-sm-2 col-form-label">
-            Destination
-        </label>
-        <div class="col-sm-10">
-            <InputText id="destination" class="form-control" placeholder="Destination" @bind-Value="payment.Destination" />
-            <ValidationMessage For="@(() => payment.Destination)" />
+        <div class="form">
+
+            <div class="form-input">
+                <InputText id="destination" class="form-control" placeholder="Destination" @bind-Value="payment.Destination" />
+                <ValidationMessage For="@(() => payment.Destination)" />
+            </div>
         </div>
-    </div>
 
-    <div class="form-group row">
-        <label for="status" class="col-sm-2 col-form-label">
-            Status
-        </label>
-        <div class="col-sm-10">
-            <InputText id="status" class="form-control" placeholder="Status" @bind-Value="payment.Status" />
-            <ValidationMessage For="@(() => payment.Status)" />
+        <div class="form">
+  
+
+            <div class="form-input">
+                <InputText id="status" class="form-control" placeholder="Status" @bind-Value="payment.Status" />
+                <ValidationMessage For="@(() => payment.Status)" />
+            </div>
         </div>
-    </div>
 
-    <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
+
+    </div>
 </EditForm>
 
 @code{ public string AmountToSend { get; set; }
