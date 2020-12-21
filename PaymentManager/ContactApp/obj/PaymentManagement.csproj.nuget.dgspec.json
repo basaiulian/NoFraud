@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj": {}
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.33-20.12.2020\\PaymentManager\\ContactApp\\PaymentManagement.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj": {
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.33-20.12.2020\\PaymentManager\\ContactApp\\PaymentManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.33-20.12.2020\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
         "projectName": "PaymentManagement",
-        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.33-20.12.2020\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
         "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\ONouaVersiune\\PaymentManager\\ContactApp\\obj\\",
+        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.33-20.12.2020\\PaymentManager\\ContactApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",

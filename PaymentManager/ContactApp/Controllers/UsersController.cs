@@ -66,9 +66,6 @@ namespace PaymentManagement.Controllers
         public int FindUser([FromBody] List<string> loginObject)
         {
 
-            Console.WriteLine(loginObject[0]);
-            Console.WriteLine(loginObject[1]);
-
             List<User> users = _context.User.ToList();
 
             foreach(User user in users)
