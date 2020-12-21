@@ -11,94 +11,95 @@ else
 {
 
 
-    <div>
-        @if (user == null)
-        {
-            <p>Loading...</p>
-        }
-        else
+<div>
+    @if (user == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <h3>My Profile</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>@user.PhoneNumber</td>
+                    <td>@user.Address</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3>Your bank accounts</h3>
+
+        @foreach (BankAccount bankAccount in user.BankAccounts)
         {
             <table class="table">
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Phone Number</th>
-                        <th>Address</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>@user.Id</td>
-                        <td>@user.Username</td>
-                        <td>@user.Email</td>
-                        <td>@user.PhoneNumber</td>
-                        <td>@user.Address</td>
-                    </tr>
-                </tbody>
-            </table>
-
-
-            <h3>@user.Username's bank accounts</h3>
-            <table class="table">
-                <thead>
-                    <tr>
                         <th>Account Type</th>
                         <th>Balance</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (BankAccount bankAccount in user.BankAccounts)
-                    {
-                        <tr>
-                            <td>@bankAccount.AccountType</td>
-                            <td>@bankAccount.Balance</td>
-                        </tr>
-
-
-                    }
-                </tbody>
-            </table>
-
-
-            <h3>@user.Username's cards</h3>
-            <table class="table">
-                <thead>
                     <tr>
-                        <th>Bank Name</th>
-                        <th>CvvCode</th>
-                        <th>PinCode</th>
-                        <th>ExpirationDate</th>
+                        <td>@bankAccount.Id</td>
+                        <td>@bankAccount.AccountType</td>
+                        <td>@bankAccount.Balance</td>
                     </tr>
-                </thead>
-                <tbody>
-                    @foreach (BankAccount bankAccount in user.BankAccounts)
-                    {
-                        foreach (Card card in bankAccount.CardList)
-                        {
+                    <table class="table">
+                        <thead>
                             <tr>
-                                <td>@card.BankName</td>
-                                <td>@card.CvvCode</td>
-                                <td>@card.PinCode</td>
-                                <td>@card.ExpirationDate</td>
+                                <th>Bank Name</th>
+                                <th>CvvCode</th>
+                                <th>PinCode</th>
+                                <th>ExpirationDate</th>
                             </tr>
-                        }
+                        </thead>
+                        <tbody>
 
-                    }
-                    
+                            @foreach (Card card in bankAccount.CardList)
+                            {
+                                <tr>
+                                    <td>@card.BankName</td>
+                                    <td>@card.CvvCode</td>
+                                    <td>@card.PinCode</td>
+                                    <td>@card.ExpirationDate</td>
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
                 </tbody>
             </table>
-            <br />
-            <br />
-            <br />
         }
-    </div>
+
+
+
+
+        <br />
+        <br />
+        <br />
+    }
+</div>
 }
 @code{
 
-    [Parameter]
-    public string Id { get; set; }
+        [Parameter]
+        public string Id { get; set; }
 
     public string localId { get; set; }
 
@@ -106,6 +107,7 @@ else
 
     private BankAccount bankAccount = new BankAccount();
 
+    private bool IsHidden { get; set; }
 
     HttpClient httpClient = new HttpClient()
     {

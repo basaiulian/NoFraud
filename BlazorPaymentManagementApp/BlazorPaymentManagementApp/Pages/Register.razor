@@ -23,7 +23,7 @@
         <div class="form">
 
             <div class="form-input">
-                <InputText id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
+                <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
                 <ValidationMessage For="@(() => user.Password)" />
             </div>
         </div>

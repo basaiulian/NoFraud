@@ -1,18 +1,23 @@
 
 
-h3[b-mrxb3qfwvc] {
+h3[b-t4gj8982ag] {
     text-align: center;
 }
 
-.form[b-mrxb3qfwvc] {
+.page[b-t4gj8982ag] {
+    background-color: black;
+}
+
+.form[b-t4gj8982ag] {
     margin-left: 31%;
     width: 40%;
 }
 
-.total-form[b-mrxb3qfwvc] {
-    margin-top: 5%;
+.total-form[b-t4gj8982ag] {
+    margin-top: 10%;
 }
-input[type=submit][b-mrxb3qfwvc] {
+
+input[type=submit][b-t4gj8982ag] {
     margin-top: 5px;
     margin-left: 45.5%;
     border: none;
@@ -33,18 +38,18 @@ input[type=submit][b-mrxb3qfwvc] {
     text-shadow: 0px 1px 0px #7cacde;
 }
 
-*:focus[b-mrxb3qfwvc] {
+*:focus[b-t4gj8982ag] {
     outline: none;
 }
 
-.form .form-input[b-mrxb3qfwvc] {
+.form .form-input[b-t4gj8982ag] {
     margin: 1.2em;
 }
 
-.form-control[type=text][b-mrxb3qfwvc] {
+.form-control[type=text][b-t4gj8982ag] {
     background-color: black;
 }
 
-input[type=text][b-mrxb3qfwvc] {
+input[type=text][b-t4gj8982ag] {
     background-color: black;
 }
