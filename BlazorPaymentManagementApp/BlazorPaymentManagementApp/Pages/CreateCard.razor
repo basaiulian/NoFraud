@@ -1,0 +1,96 @@
+﻿
+@page "/createcard"
+@using BlazorPaymentManagementApp.Model
+@inject NavigationManager NavManager
+@inject IJSRuntime JsRuntime
+
+
+
+<EditForm Model="@card" OnValidSubmit="Create">
+    <DataAnnotationsValidator />
+    <hr />
+
+
+    <div class="total-form">
+        <h4>Add new card</h4>
+        <div class="form">
+            <label for="number" class="text">
+                Number
+            </label>
+            <div class="form-input">
+                <InputText id="number" class="form-control" placeholder="Number" @bind-Value="card.Number" />
+                <ValidationMessage For="@(() => card.Number)" />
+            </div>
+        </div>
+        <div class="form">
+            <label for="expirationDate" class="text">
+                Expiration Date
+            </label>
+            <div class="form-input">
+                <InputDate id="expirationDate" class="form-control" @bind-Value="card.ExpirationDate" />
+                <ValidationMessage For="@(() => card.ExpirationDate)" />
+            </div>
+        </div>
+        <div class="form">
+            <label for="pinCode" class="text">
+                Pin Code
+            </label>
+            <div class="form-input">
+                <InputText id="pinCode" class="form-control" placeholder="..." @bind-Value="card.PinCode" />
+                <ValidationMessage For="@(() => card.PinCode)" />
+            </div>
+        </div>
+        <div class="form">
+            <label for="cvvCode" class="text">
+                Cvv Code
+            </label>
+            <div class="form-input">
+                <InputText id="cvvCode" class="form-control" placeholder="..." @bind-Value="card.CvvCode" />
+                <ValidationMessage For="@(() => card.CvvCode)" />
+            </div>
+        </div>
+        <div class="form">
+            <label for="cvvCode" class="text">
+                Bank Name
+            </label>
+            <div class="form-input">
+                <InputText id="bankName" class="form-control" placeholder="Bank Name" @bind-Value="card.BankName" />
+                <ValidationMessage For="@(() => card.BankName)" />
+            </div>
+        </div>
+        <div class="form">
+            <label for="bankAccountId" class="text">
+                Bank Account Id
+            </label>
+            <div class="form-input">
+                <InputText id="bankAccountId" class="form-control" placeholder="Bank Account Id" @bind-Value="card.BankAccountId" />
+                <ValidationMessage For="@(() => card.BankAccountId)" />
+            </div>
+        </div>
+        <div class="form">
+            <label for="ownerId" class="text">
+                Owner Id
+            </label>
+            <div class="form-input">
+                <InputText id="ownerId" class="form-control" placeholder="Owner Id" @bind-Value="card.OwnerId" />
+                <ValidationMessage For="@(() => card.OwnerId)" />
+            </div>
+        </div>
+        <input type="submit" value="Submit" />
+
+    </div>
+</EditForm>
+
+@code{ private Card card = new Card();
+
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected async Task Create()
+    {
+        await httpClient.PostAsJsonAsync<Card>("/api/cards", card);
+        NavManager.NavigateTo("users/" + card.OwnerId);
+
+} }
