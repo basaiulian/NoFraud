@@ -5,290 +5,459 @@ h3[b-xav4jpzvug]{
     color:red;
 }
 /* /Pages/CreateBankAccount.razor.rz.scp.css */
-
-
-h3[b-t4gj8982ag] {
-    text-align: center;
-}
-
-.page[b-t4gj8982ag] {
-    background-color: black;
-}
-
-.form[b-t4gj8982ag] {
-    margin-left: 31%;
-    width: 40%;
-}
-
-.total-form[b-t4gj8982ag] {
+.register-photo[b-t4gj8982ag] {
+    background: #99b3ff;
+    padding-bottom: 334px;
     margin-top: 10%;
+    margin-left: 7%;
 }
 
-input[type=submit][b-t4gj8982ag] {
-    margin-top: 5px;
-    margin-left: 45.5%;
-    border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-*:focus[b-t4gj8982ag] {
-    outline: none;
-}
-
-.form .form-input[b-t4gj8982ag] {
-    margin: 1.2em;
-}
-
-.form-control[type=text][b-t4gj8982ag] {
-    background-color: black;
-}
-
-input[type=text][b-t4gj8982ag] {
-    background-color: black;
-}
-/* /Pages/CreateCard.razor.rz.scp.css */
-
-
-h3[b-mrxb3qfwvc] {
-    text-align: center;
-}
-
-.form[b-mrxb3qfwvc] {
-    margin-left: 31%;
-    width: 40%;
-}
-
-.total-form[b-mrxb3qfwvc] {
-    margin-top: 5%;
-}
-input[type=submit][b-mrxb3qfwvc] {
-    margin-top: 5px;
-    margin-left: 45.5%;
-    border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-*:focus[b-mrxb3qfwvc] {
-    outline: none;
-}
-
-.form .form-input[b-mrxb3qfwvc] {
-    margin: 1.2em;
-}
-
-.form-control[type=text][b-mrxb3qfwvc] {
-    background-color: black;
-}
-
-input[type=text][b-mrxb3qfwvc] {
-    background-color: black;
-}
-/* /Pages/CreatePayment.razor.rz.scp.css */
-
-
-h3[b-1qhdc9h047] {
-    text-align: center;
-}
-
-.form[b-1qhdc9h047] {
-    margin-left: 31%;
-    width: 40%;
-}
-
-.total-form[b-1qhdc9h047] {
-    margin-top: 5%;
-}
-
-input[type=submit][b-1qhdc9h047] {
-    margin-top: 5px;
-    margin-left: 45.5%;
-    border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-*:focus[b-1qhdc9h047] {
-    outline: none;
-}
-
-.form .form-input[b-1qhdc9h047] {
-    margin: 1.2em;
-}
-
-.form-control[type=text][b-1qhdc9h047] {
-    background-color: black;
-}
-
-input[type=text][b-1qhdc9h047] {
-    background-color: black;
-}
-/* /Pages/Login.razor.rz.scp.css */
-
-
-h3[b-kkxyimxcrz] {
-    text-align: center;
-    font-size:2em;
-    border-bottom: 3px;
-}
-
-.form[b-kkxyimxcrz] {
-    
-    margin-left: 31%;
-    width: 40%;
-}
-
-.total-form[b-kkxyimxcrz] {
-    margin-top: 10%;
-   
-
-}
-
-
-
-.linii[b-kkxyimxcrz] {
-
-    margin-top:15%;
-}
-
-input[type=submit][b-kkxyimxcrz] {
-    margin-top: 5px;
-    margin-left: 45.5%;
-    border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-    input[type=submit]:hover[b-kkxyimxcrz] {
-        background-color: #5cbf2a;
-        color: white;
+    .register-photo .image-holder[b-t4gj8982ag] {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/OiO7CWz.jpg);
+        background-size: cover;
+        width: 1200px;
     }
 
-*:focus[b-kkxyimxcrz] {
+    .register-photo .form-container[b-t4gj8982ag] {
+        display: table;
+        max-width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form[b-t4gj8982ag] {
+        display: table-cell;
+        width: 700px;
+        background-color: #ffffff;
+        margin-right: 200px;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-t4gj8982ag] {
+        padding: 60px;
+    }
+}
+
+.register-photo form h2[b-t4gj8982ag] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control[b-t4gj8982ag] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
     outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
 }
 
-.form .form-input[b-kkxyimxcrz] {
-    margin: 1.2em;
+.register-photo form .form-check[b-t4gj8982ag] {
+    font-size: 13px;
+    line-height: 20px
 }
 
-.form .form-input[type=text][b-kkxyimxcrz]{
-
-    background-color:black;
-    font-size:20px;
+.register-photo form .btn-primary[b-t4gj8982ag] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
 }
 
-.form .form-input .form-control valid[b-kkxyimxcrz]{
- 
-    background-color:black;
+    .register-photo form .btn-primary:hover[b-t4gj8982ag],
+    .register-photo form .btn-primary:active[b-t4gj8982ag] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-t4gj8982ag] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-t4gj8982ag] {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
 }
-input[type=text][b-kkxyimxcrz] {
-    background-color: black;
+/* /Pages/CreateCard.razor.rz.scp.css */
+.register-photo[b-mrxb3qfwvc] {
+    background: #99b3ff;
+    padding-bottom: 334px;
+    margin-top: 10%;
+    margin-left: 7%;
+}
+
+    .register-photo .image-holder[b-mrxb3qfwvc] {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/mwA4GEw.jpg);
+        background-size: cover;
+        width: 1200px;
+    }
+
+    .register-photo .form-container[b-mrxb3qfwvc] {
+        display: table;
+        max-width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form[b-mrxb3qfwvc] {
+        display: table-cell;
+        width: 700px;
+        background-color: #ffffff;
+        margin-right: 200px;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-mrxb3qfwvc] {
+        padding: 60px;
+    }
+}
+
+.register-photo form h2[b-mrxb3qfwvc] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control[b-mrxb3qfwvc] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check[b-mrxb3qfwvc] {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary[b-mrxb3qfwvc] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+    .register-photo form .btn-primary:hover[b-mrxb3qfwvc],
+    .register-photo form .btn-primary:active[b-mrxb3qfwvc] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-mrxb3qfwvc] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-mrxb3qfwvc] {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
+}
+/* /Pages/CreatePayment.razor.rz.scp.css */
+.register-photo[b-1qhdc9h047] {
+    background: #99b3ff;
+    padding-bottom: 334px;
+    margin-top: 10%;
+    margin-left:7%;
+}
+
+    .register-photo .image-holder[b-1qhdc9h047] {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/7sCYskG.jpg);
+        background-size: cover;
+        width: 1200px;
+    }
+
+    .register-photo .form-container[b-1qhdc9h047] {
+        display: table;
+        max-width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form[b-1qhdc9h047] {
+        display: table-cell;
+        width: 700px;
+        background-color: #ffffff;
+        margin-right: 200px;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-1qhdc9h047] {
+        padding: 60px;
+    }
+}
+
+.register-photo form h2[b-1qhdc9h047] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control[b-1qhdc9h047] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check[b-1qhdc9h047] {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary[b-1qhdc9h047] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+    .register-photo form .btn-primary:hover[b-1qhdc9h047],
+    .register-photo form .btn-primary:active[b-1qhdc9h047] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-1qhdc9h047] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-1qhdc9h047] {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
+}
+/* /Pages/Login.razor.rz.scp.css */
+.register-photo[b-kkxyimxcrz] {
+    background: #99b3ff;
+    padding: 334px;
+    margin-top: -5%;
+    width: 100%;
+}
+
+    .register-photo .image-holder[b-kkxyimxcrz] {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/ucBlWgi.jpg);
+        background-size: cover
+    }
+
+    .register-photo .form-container[b-kkxyimxcrz] {
+        display: table;
+        max-width: 900px;
+        width: 100%;
+        height:100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form[b-kkxyimxcrz] {
+        display: table-cell;
+        width: 500px;
+        background-color: #ffffff;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-kkxyimxcrz] {
+        padding: 60px;
+    }
+}
+
+.register-photo form h2[b-kkxyimxcrz] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control[b-kkxyimxcrz] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check[b-kkxyimxcrz] {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary[b-kkxyimxcrz] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+    .register-photo form .btn-primary:hover[b-kkxyimxcrz],
+    .register-photo form .btn-primary:active[b-kkxyimxcrz] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-kkxyimxcrz] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-kkxyimxcrz] {
+    margin-top:21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
 }
 /* /Pages/Register.razor.rz.scp.css */
+.register-photo[b-fob5x4kfew] {
+    background: #99b3ff;
+    padding-bottom: 334px;
+    padding-top:300px;
+    margin-top:-10%;
 
-
-h3[b-fob5x4kfew] {
-    text-align: center;
 }
 
-.form[b-fob5x4kfew] {
-    margin-left: 31%;
-    width: 40%;
+    .register-photo .image-holder[b-fob5x4kfew] {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/rXPItTm.jpg);
+        background-size: cover;
+        width: 1200px;
+    }
+
+    .register-photo .form-container[b-fob5x4kfew] {
+        display: table;
+        max-width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form[b-fob5x4kfew] {
+        display: table-cell;
+        width: 700px;
+        background-color: #ffffff;
+        margin-right:200px;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-fob5x4kfew] {
+        padding: 60px;
+    }
 }
 
-.total-form[b-fob5x4kfew] {
-    margin-top: 10%;
+.register-photo form h2[b-fob5x4kfew] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
 }
 
-input[type=submit][b-fob5x4kfew] {
-    margin-top: 5px;
-    margin-left: 45.5%;
+.register-photo form .form-control[b-fob5x4kfew] {
+    background: transparent;
     border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-*:focus[b-fob5x4kfew] {
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
     outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
 }
 
-.form .form-input[b-fob5x4kfew] {
-    margin: 1.2em;
+.register-photo form .form-check[b-fob5x4kfew] {
+    font-size: 13px;
+    line-height: 20px
 }
 
-.form-control[type=text][b-fob5x4kfew] {
-    background-color: black;
+.register-photo form .btn-primary[b-fob5x4kfew] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
 }
 
-input[type=text][b-fob5x4kfew] {
-    background-color: black;
+    .register-photo form .btn-primary:hover[b-fob5x4kfew],
+    .register-photo form .btn-primary:active[b-fob5x4kfew] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-fob5x4kfew] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-fob5x4kfew] {
+    margin-top:21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
 }
 /* /Pages/UserById.razor.rz.scp.css */
 body[b-2ydhb5wup3] {
@@ -350,9 +519,8 @@ body[b-ku3jajem7m] {
 }
 
 .page[b-ku3jajem7m] {
+    background-color: #99b3ff;
 
-    background-size:cover;
-    background-repeat: no-repeat;
 }
 
 h3[b-ku3jajem7m] {
@@ -393,11 +561,12 @@ h3[b-ku3jajem7m] {
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #f5f5f0;
+
 }
 
 .main[b-39h3o3gs01] {
     flex: 1;
+    background-color: #99b3ff;
 }
 
 .sidebar[b-39h3o3gs01] {

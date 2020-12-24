@@ -1,5 +1,6 @@
 ﻿
 @page "/createpayment"
+@layout CardLayout
 @using System.ComponentModel.DataAnnotations
 @using BlazorPaymentManagementApp.Model
 @inject NavigationManager NavManager
@@ -7,65 +8,61 @@
 @inject IJSRuntime JsRuntime
 
 
-<EditForm Model="@payment" OnValidSubmit="Create">
-    <DataAnnotationsValidator />
-    <div class="total-form">
-        <h3>Add payment</h3>
-        <div class="form">
 
-            <div class="form-input">
-                <InputText id="amount" class="form-control" placeholder="Amount" @bind-Value="AmountToSend" />
-                <ValidationMessage For="@(() => payment.Amount)" />
-            </div>
-        </div>
 
-        <div class="form">
+<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <form method="post">
+            <EditForm Model="@payment" OnValidSubmit="Create">
+                <DataAnnotationsValidator />
 
-            <div class="form-input">
-                <InputSelect id="currency" class="form-control" @bind-Value="payment.Currency">
-                    <option>RON(Default)</option>
-                    @foreach (var currency in currencyList)
-                    {
-    <option>@currency</option>}
-                </InputSelect>
-                <ValidationMessage For="@(() => payment.Currency)" />
-            </div>
-        </div>
+                <h2 class="text-center"><strong>Payment </strong> </h2>
 
-        <div class="form">
 
-            <div class="form-input">
-                <InputText id="source" class="form-control" placeholder="Source" @bind-Value="payment.Source" />
-                <ValidationMessage For="@(() => payment.Source)" />
-            </div>
-        </div>
+                <div class="form-group">
+                    <InputText id="amount" class="form-control" placeholder="Amount" @bind-Value="AmountToSend" />
+                    <ValidationMessage For="@(() => payment.Amount)" />
+                </div>
+                <div class="form-group">
+                    <InputSelect id="currency" class="form-control" @bind-Value="payment.Currency">
+                        <option>RON(Default)</option>
+                        @foreach (var currency in currencyList)
+                        {
+                            <option>@currency</option>}
+                    </InputSelect>
+                    <ValidationMessage For="@(() => payment.Currency)" />
+                </div>
+                <div class="form-group">
+                    <InputText id="source" class="form-control" placeholder="Source" @bind-Value="payment.Source" />
+                    <ValidationMessage For="@(() => payment.Source)" />
+                </div>
+                <div class="form-group">
+                    <InputText id="destination" class="form-control" placeholder="Destination" @bind-Value="payment.Destination" />
+                    <ValidationMessage For="@(() => payment.Destination)" />
+                </div>
+                <div class="form-group">
+                    <InputText id="status" class="form-control" placeholder="Status" @bind-Value="payment.Status" />
+                    <ValidationMessage For="@(() => payment.Status)" />
+                </div>
 
-        <div class="form">
+                <div class="form-group">
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
 
-            <div class="form-input">
-                <InputText id="destination" class="form-control" placeholder="Destination" @bind-Value="payment.Destination" />
-                <ValidationMessage For="@(() => payment.Destination)" />
-            </div>
-        </div>
+                </div>
 
-        <div class="form">
-  
 
-            <div class="form-input">
-                <InputText id="status" class="form-control" placeholder="Status" @bind-Value="payment.Status" />
-                <ValidationMessage For="@(() => payment.Status)" />
-            </div>
-        </div>
-
-        <input type="submit" value="Submit" />
-
+            </EditForm>
+        </form>
     </div>
-</EditForm>
+</div>
+
+
 
 @code{ public string AmountToSend { get; set; }
 
     private List<string> currencyList = new List<string>()
-                {
+            {
             "RON",
             "EUR",
             "GBP",

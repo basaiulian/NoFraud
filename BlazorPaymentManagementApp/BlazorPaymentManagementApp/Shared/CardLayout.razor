@@ -1,9 +1,15 @@
-﻿@inherits LayoutComponentBase
+﻿@inject Blazored.LocalStorage.ILocalStorageService localStorage
+@inject NavigationManager NavManager
+@inherits LayoutComponentBase
+
 <div class="page">
 
     <h3>NoFraud</h3>
     <div class="navigation">
-        <a href="/users/1" target="_blank" class="ml-md-auto">My Profile</a>
+        <a @onclick="logout" target="_blank" class="ml-md-auto">Logout</a>
+    </div>
+    <div class="navigation">
+        <a @onclick="GoToProfile" target="_blank" class="ml-md-auto">My Profile</a>
     </div>
     <div class="navigation">
         <a href="/createcard" target="_blank" class="ml-md-auto">Add Card</a>
@@ -12,9 +18,45 @@
         <a href="/createbankaccount" target="_blank" class="ml-md-auto">Add Bank Account</a>
     </div>
     <div class="navigation">
-        <a href="/createpayment" target="_blank" class="ml-md-auto">Make Payment</a>
+        <a href="/createpayment" target="_blank" class="ml-md-auto">Add Payment</a>
     </div>
-    <div class="contain">
+
+    <div class="content px-4">
         @Body
     </div>
 </div>
+
+@code { private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    public bool IsLoggedIn { get; set; }
+    public bool Id { get; set; }
+    public string IdValue { get; set; }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    protected async void logout()
+    {
+        await localStorage.RemoveItemAsync("autentificat");
+        await localStorage.RemoveItemAsync("id");
+
+        NavManager.NavigateTo("/");
+    }
+
+    protected async void GoToProfile()
+    {
+        NavManager.NavigateTo("users/" + this.IdValue);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        this.IdValue = await localStorage.GetItemAsStringAsync("id");
+        this.IsLoggedIn = await localStorage.ContainKeyAsync("autentificat");
+        this.Id = await localStorage.ContainKeyAsync("id");
+        Console.WriteLine("autentificat:" + this.IsLoggedIn);
+
+    } }

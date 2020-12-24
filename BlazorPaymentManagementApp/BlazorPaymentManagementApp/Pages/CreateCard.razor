@@ -6,63 +6,63 @@
 
 
 
-<EditForm Model="@card" OnValidSubmit="Create">
-    <DataAnnotationsValidator />
+<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <form method="post">
+            <EditForm Model="@card" OnValidSubmit="Create">
+                <DataAnnotationsValidator />
 
-    <div class="total-form">
-        <h3>Add new card</h3>
-        <div class="form">
-         
-            <div class="form-input">
-                <InputText id="number" class="form-control" placeholder="Number" @bind-Value="card.Number" />
-                <ValidationMessage For="@(() => card.Number)" />
-            </div>
-        </div>
-        <div class="form">
-            <div class="form-input">
-                <InputDate id="expirationDate" class="form-control" @bind-Value="card.ExpirationDate" />
-                <ValidationMessage For="@(() => card.ExpirationDate)" />
-            </div>
-        </div>
-        <div class="form">
-     
-            <div class="form-input">
-                <InputText id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
-                <ValidationMessage For="@(() => card.PinCode)" />
-            </div>
-        </div>
-        <div class="form">
-           
-            <div class="form-input">
-                <InputText id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
-                <ValidationMessage For="@(() => card.CvvCode)" />
-            </div>
-        </div>
-        <div class="form">
-         
-            <div class="form-input">
-                <InputText id="bankName" class="form-control" placeholder="Bank Name" @bind-Value="card.BankName" />
-                <ValidationMessage For="@(() => card.BankName)" />
-            </div>
-        </div>
-        <div class="form">
-           
-            <div class="form-input">
-                <InputText id="bankAccountId" class="form-control" placeholder="Bank Account Id" @bind-Value="card.BankAccountId" />
-                <ValidationMessage For="@(() => card.BankAccountId)" />
-            </div>
-        </div>
-        <div class="form">
-            
-            <div class="form-input">
-                <InputText id="ownerId" class="form-control" placeholder="Owner Id" @bind-Value="card.OwnerId" />
-                <ValidationMessage For="@(() => card.OwnerId)" />
-            </div>
-        </div>
-        <input type="submit" value="Submit" />
+                <h2 class="text-center"><strong>Create Card </strong> </h2>
 
+
+                <div class="form-group">
+                    <InputText id="number" class="form-control" placeholder="Number" @bind-Value="card.Number" />
+                    <ValidationMessage For="@(() => card.Number)" />
+                </div>
+
+                <div class="form-group">
+                    <InputDate id="expirationDate" class="form-control" @bind-Value="card.ExpirationDate" />
+                    <ValidationMessage For="@(() => card.ExpirationDate)" />
+                </div>
+
+                <div class="form-group">
+                    <InputText id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
+                    <ValidationMessage For="@(() => card.PinCode)" />
+                </div>
+
+
+                <div class="form-group">
+                    <InputText id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
+                    <ValidationMessage For="@(() => card.CvvCode)" />
+                </div>
+
+
+                <div class="form-group">
+                    <InputText id="bankName" class="form-control" placeholder="Bank Name" @bind-Value="card.BankName" />
+                    <ValidationMessage For="@(() => card.BankName)" />>
+                </div>
+
+                <div class="form-group">
+                    <InputText id="bankAccountId" class="form-control" placeholder="Bank Account Id" @bind-Value="card.BankAccountId" />
+                    <ValidationMessage For="@(() => card.BankAccountId)" />
+                </div>
+                <div class="form-group">
+                    <InputText id="ownerId" class="form-control" placeholder="Owner Id" @bind-Value="card.OwnerId" />
+                    <ValidationMessage For="@(() => card.OwnerId)" />
+                </div>
+
+                <div class="form-group">
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
+
+                </div>
+
+
+            </EditForm>
+        </form>
     </div>
-</EditForm>
+</div>
+
 
 @code{ private Card card = new Card();
 
@@ -76,4 +76,4 @@
         await httpClient.PostAsJsonAsync<Card>("/api/cards", card);
         NavManager.NavigateTo("users/" + card.OwnerId);
 
-} }
+    } }

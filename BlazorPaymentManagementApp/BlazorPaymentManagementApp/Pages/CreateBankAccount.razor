@@ -1,5 +1,6 @@
 ﻿
 @page "/createbankaccount"
+@layout CardLayout
 @using System.ComponentModel.DataAnnotations
 @using BlazorPaymentManagementApp.Model
 @inject NavigationManager NavManager
@@ -8,106 +9,110 @@
 
 
 
-<EditForm Model="@bankAccount" OnValidSubmit="Create">
-    <DataAnnotationsValidator />
 
-    <div class="total-form">
-        <h3>Add new bank account</h3>
-        <div class="form">
-            <div class="form-input">
-                <InputText id="balance" class="form-control" placeholder="Balance" @bind-Value="BalanceToSend" />
-                <ValidationMessage For="@(() => BalanceToSend)" />
-            </div>
-        </div>
+<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <form method="post">
+            <EditForm Model="@bankAccount" OnValidSubmit="Create">
+                <DataAnnotationsValidator />
 
-        <div class="form">
+                <h2 class="text-center"><strong>Bank Account </strong> </h2>
 
-            <div class="form-input">
-                <InputSelect id="accountType" class="form-control" @bind-Value="AccountTypeToSend">
-                    <option>STUDENT(Default)</option>
-                    @foreach (var accountType in accountTypes)
-                    {
-    <option>@accountType</option>}
-                </InputSelect>
-                <ValidationMessage For="@(() => AccountTypeToSend)" />
-            </div>
-        </div>
 
-        <div class="form">
-            <div class="form-input">
-                <InputText id="userId" class="form-control" placeholder="User Id" @bind-Value="UserIdToSend" />
-                <ValidationMessage For="@(() => UserIdToSend)" />
-            </div>
-        </div>
+                <div class="form-group">
+                    <InputText id="balance" class="form-control" placeholder="Balance" @bind-Value="BalanceToSend" />
+                    <ValidationMessage For="@(() => BalanceToSend)" />
+                </div>
+                <div class="form-group">
+                    <InputSelect id="accountType" class="form-control" @bind-Value="AccountTypeToSend">
+                        <option>STUDENT(Default)</option>
+                        @foreach (var accountType in accountTypes)
+                        {
+                            <option>@accountType</option>}
+                    </InputSelect>
+                    <ValidationMessage For="@(() => AccountTypeToSend)" />
+                </div>
+                <div class="form-group">
+                    <InputText id="userId" class="form-control" placeholder="User Id" @bind-Value="UserIdToSend" />
+                    <ValidationMessage For="@(() => UserIdToSend)" />
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
 
-        <input type="submit" value="Submit" />
+                </div>
 
+
+            </EditForm>
+        </form>
     </div>
-</EditForm>
+</div>
+
+
 
 @code{ private BankAccount bankAccount = new BankAccount();
 
-            private List<BankAccount> bankAccounts = new List<BankAccount>();
+    private List<BankAccount> bankAccounts = new List<BankAccount>();
 
-            private List<string> accountTypes = new List<string>();
+    private List<string> accountTypes = new List<string>();
 
-            [Required]
-            [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
-            public string BalanceToSend { get; set; }
+    [Required]
+    [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
+    public string BalanceToSend { get; set; }
 
-            [RegularExpression(@"^[0-9]{1,4}$", ErrorMessage = "User Id must be 1 to 4 digits long.")]
-            [Required]
-            public string UserIdToSend { get; set; }
+    [RegularExpression(@"^[0-9]{1,4}$", ErrorMessage = "User Id must be 1 to 4 digits long.")]
+    [Required]
+    public string UserIdToSend { get; set; }
 
-            public string AccountTypeToSend { get; set; }
-            HttpClient httpClient = new HttpClient()
+    public string AccountTypeToSend { get; set; }
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected async Task<string> GenerateId(int length)
+    {
+        string cypher = "123456789";
+
+        var random = new Random();
+
+        string generatedId = "";
+
+        for (int i = 0; i < length; i++)
+        {
+            generatedId += cypher[random.Next(cypher.Length)];
+        }
+
+        return generatedId;
+    }
+
+    protected async Task Create()
+    {
+        bankAccount.Balance = Double.Parse(BalanceToSend);
+        bankAccount.UserId = Int32.Parse(UserIdToSend);
+        bankAccount.Id = await GenerateId(16);
+
+        if (AccountTypeToSend == null)
+        {
+            bankAccount.AccountType = "STUDENT";
+        }
+        else
+        {
+            bankAccount.AccountType = AccountTypeToSend;
+        }
+
+        await httpClient.PostAsJsonAsync<BankAccount>("/api/bankaccounts", bankAccount);
+        NavManager.NavigateTo("users/" + bankAccount.UserId);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
+        foreach (var bankAccount in bankAccounts)
+        {
+            if (!accountTypes.Contains(bankAccount.AccountType))
             {
-                BaseAddress = new Uri("http://localhost:5000")
-            };
-
-            protected async Task<string> GenerateId(int length)
-            {
-                string cypher = "123456789";
-
-                var random = new Random();
-
-                string generatedId = "";
-
-                for (int i = 0; i < length; i++)
-                {
-                    generatedId += cypher[random.Next(cypher.Length)];
-                }
-
-                return generatedId;
+                accountTypes.Add(bankAccount.AccountType);
             }
-
-            protected async Task Create()
-            {
-                bankAccount.Balance = Double.Parse(BalanceToSend);
-                bankAccount.UserId = Int32.Parse(UserIdToSend);
-                bankAccount.Id = await GenerateId(16);
-
-                if (AccountTypeToSend == null)
-                {
-                    bankAccount.AccountType = "STUDENT";
-                }
-                else
-                {
-                    bankAccount.AccountType = AccountTypeToSend;
-                }
-
-                await httpClient.PostAsJsonAsync<BankAccount>("/api/bankaccounts", bankAccount);
-                NavManager.NavigateTo("users/" + bankAccount.UserId);
-            }
-
-            protected override async Task OnInitializedAsync()
-            {
-                bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
-                foreach (var bankAccount in bankAccounts)
-                {
-                    if (!accountTypes.Contains(bankAccount.AccountType))
-                    {
-                        accountTypes.Add(bankAccount.AccountType);
-                    }
-                }
-            } }
+        }
+    } }
