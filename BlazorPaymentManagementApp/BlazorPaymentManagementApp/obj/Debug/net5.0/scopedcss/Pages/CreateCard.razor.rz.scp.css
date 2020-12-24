@@ -1,50 +1,90 @@
-
-
-h3[b-mrxb3qfwvc] {
-    text-align: center;
+.register-photo[b-mrxb3qfwvc] {
+    background: #99b3ff;
+    padding-bottom: 334px;
+    margin-top: 10%;
+    margin-left: 7%;
 }
 
-.form[b-mrxb3qfwvc] {
-    margin-left: 31%;
-    width: 40%;
+    .register-photo .image-holder[b-mrxb3qfwvc] {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/mwA4GEw.jpg);
+        background-size: cover;
+        width: 1200px;
+    }
+
+    .register-photo .form-container[b-mrxb3qfwvc] {
+        display: table;
+        max-width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form[b-mrxb3qfwvc] {
+        display: table-cell;
+        width: 700px;
+        background-color: #ffffff;
+        margin-right: 200px;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-mrxb3qfwvc] {
+        padding: 60px;
+    }
 }
 
-.total-form[b-mrxb3qfwvc] {
-    margin-top: 5%;
+.register-photo form h2[b-mrxb3qfwvc] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
 }
-input[type=submit][b-mrxb3qfwvc] {
-    margin-top: 5px;
-    margin-left: 45.5%;
+
+.register-photo form .form-control[b-mrxb3qfwvc] {
+    background: transparent;
     border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-*:focus[b-mrxb3qfwvc] {
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
     outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
 }
 
-.form .form-input[b-mrxb3qfwvc] {
-    margin: 1.2em;
+.register-photo form .form-check[b-mrxb3qfwvc] {
+    font-size: 13px;
+    line-height: 20px
 }
 
-.form-control[type=text][b-mrxb3qfwvc] {
-    background-color: black;
+.register-photo form .btn-primary[b-mrxb3qfwvc] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
 }
 
-input[type=text][b-mrxb3qfwvc] {
-    background-color: black;
+    .register-photo form .btn-primary:hover[b-mrxb3qfwvc],
+    .register-photo form .btn-primary:active[b-mrxb3qfwvc] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-mrxb3qfwvc] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-mrxb3qfwvc] {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
 }

@@ -1,74 +1,89 @@
-﻿
-
-h3 {
-    text-align: center;
-    font-size:2em;
-    border-bottom: 3px;
+﻿.register-photo {
+    background: #99b3ff;
+    padding: 334px;
+    margin-top: -5%;
+    width: 100%;
 }
 
-.form {
-    
-    margin-left: 31%;
-    width: 40%;
-}
-
-.total-form {
-    margin-top: 10%;
-   
-
-}
-
-
-
-.linii {
-
-    margin-top:15%;
-}
-
-input[type=submit] {
-    margin-top: 5px;
-    margin-left: 45.5%;
-    border: none;
-    width: 10%;
-    background-color: #44c767;
-    box-shadow: inset 0px 1px 0px 0px #bee2f9;
-    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-    border-radius: 6px;
-    border: 1px solid #3866a3;
-    display: inline-block;
-    cursor: pointer;
-    color: #14396a;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 6px 24px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #7cacde;
-}
-
-    input[type=submit]:hover {
-        background-color: #5cbf2a;
-        color: white;
+    .register-photo .image-holder {
+        display: table-cell;
+        width: auto;
+        background: url(https://i.imgur.com/ucBlWgi.jpg);
+        background-size: cover
     }
 
-*:focus {
+    .register-photo .form-container {
+        display: table;
+        max-width: 900px;
+        width: 100%;
+        height:100%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+    }
+
+    .register-photo form {
+        display: table-cell;
+        width: 500px;
+        background-color: #ffffff;
+        padding: 60px 60px;
+        color: #505e6c
+    }
+
+@media (max-width:991px) {
+    .register-photo form {
+        padding: 60px;
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
     outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
 }
 
-.form .form-input {
-    margin: 1.2em;
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
 }
 
-.form .form-input[type=text]{
-
-    background-color:black;
-    font-size:20px;
+.register-photo form .btn-primary {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
 }
 
-.form .form-input .form-control valid{
- 
-    background-color:black;
-}
-input[type=text] {
-    background-color: black;
+    .register-photo form .btn-primary:hover,
+    .register-photo form .btn-primary:active {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already {
+    margin-top:21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
 }

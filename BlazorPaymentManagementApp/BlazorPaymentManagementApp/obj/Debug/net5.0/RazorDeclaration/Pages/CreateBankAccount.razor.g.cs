@@ -13,96 +13,97 @@ namespace BlazorPaymentManagementApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 11 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 4 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
 using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 5 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
 using BlazorPaymentManagementApp.Model;
 
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(CardLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/createbankaccount")]
     public partial class CreateBankAccount : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -112,73 +113,73 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 48 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.04-22.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 53 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
        private BankAccount bankAccount = new BankAccount();
 
-            private List<BankAccount> bankAccounts = new List<BankAccount>();
+    private List<BankAccount> bankAccounts = new List<BankAccount>();
 
-            private List<string> accountTypes = new List<string>();
+    private List<string> accountTypes = new List<string>();
 
-            [Required]
-            [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
-            public string BalanceToSend { get; set; }
+    [Required]
+    [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
+    public string BalanceToSend { get; set; }
 
-            [RegularExpression(@"^[0-9]{1,4}$", ErrorMessage = "User Id must be 1 to 4 digits long.")]
-            [Required]
-            public string UserIdToSend { get; set; }
+    [RegularExpression(@"^[0-9]{1,4}$", ErrorMessage = "User Id must be 1 to 4 digits long.")]
+    [Required]
+    public string UserIdToSend { get; set; }
 
-            public string AccountTypeToSend { get; set; }
-            HttpClient httpClient = new HttpClient()
+    public string AccountTypeToSend { get; set; }
+    HttpClient httpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    protected async Task<string> GenerateId(int length)
+    {
+        string cypher = "123456789";
+
+        var random = new Random();
+
+        string generatedId = "";
+
+        for (int i = 0; i < length; i++)
+        {
+            generatedId += cypher[random.Next(cypher.Length)];
+        }
+
+        return generatedId;
+    }
+
+    protected async Task Create()
+    {
+        bankAccount.Balance = Double.Parse(BalanceToSend);
+        bankAccount.UserId = Int32.Parse(UserIdToSend);
+        bankAccount.Id = await GenerateId(16);
+
+        if (AccountTypeToSend == null)
+        {
+            bankAccount.AccountType = "STUDENT";
+        }
+        else
+        {
+            bankAccount.AccountType = AccountTypeToSend;
+        }
+
+        await httpClient.PostAsJsonAsync<BankAccount>("/api/bankaccounts", bankAccount);
+        NavManager.NavigateTo("users/" + bankAccount.UserId);
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
+        foreach (var bankAccount in bankAccounts)
+        {
+            if (!accountTypes.Contains(bankAccount.AccountType))
             {
-                BaseAddress = new Uri("http://localhost:5000")
-            };
-
-            protected async Task<string> GenerateId(int length)
-            {
-                string cypher = "123456789";
-
-                var random = new Random();
-
-                string generatedId = "";
-
-                for (int i = 0; i < length; i++)
-                {
-                    generatedId += cypher[random.Next(cypher.Length)];
-                }
-
-                return generatedId;
+                accountTypes.Add(bankAccount.AccountType);
             }
-
-            protected async Task Create()
-            {
-                bankAccount.Balance = Double.Parse(BalanceToSend);
-                bankAccount.UserId = Int32.Parse(UserIdToSend);
-                bankAccount.Id = await GenerateId(16);
-
-                if (AccountTypeToSend == null)
-                {
-                    bankAccount.AccountType = "STUDENT";
-                }
-                else
-                {
-                    bankAccount.AccountType = AccountTypeToSend;
-                }
-
-                await httpClient.PostAsJsonAsync<BankAccount>("/api/bankaccounts", bankAccount);
-                NavManager.NavigateTo("users/" + bankAccount.UserId);
-            }
-
-            protected override async Task OnInitializedAsync()
-            {
-                bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
-                foreach (var bankAccount in bankAccounts)
-                {
-                    if (!accountTypes.Contains(bankAccount.AccountType))
-                    {
-                        accountTypes.Add(bankAccount.AccountType);
-                    }
-                }
-            } 
+        }
+    } 
 
 #line default
 #line hidden

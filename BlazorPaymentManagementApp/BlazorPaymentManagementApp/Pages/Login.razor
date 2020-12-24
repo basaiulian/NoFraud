@@ -14,39 +14,34 @@
         <input type="submit" value="Search" />
     </form>*@
 
+<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <form method="post">
+            <EditForm Model="@user" OnValidSubmit="LoginUser">
+                <DataAnnotationsValidator />
 
-<EditForm Model="@user" OnValidSubmit="LoginUser">
-    <DataAnnotationsValidator />
+                <h2 class="text-center"><strong>Welcome back</strong></h2>
+                <div class="form-group">
+                    <InputText type="text" id="Username" class="form-control" placeholder="Username" @bind-Value="user.Username" />
+                    <ValidationMessage For="@(() => user.Username)" />
+                </div>
+                <div class="form-group">
+                    <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
+                    <ValidationMessage For="@(() => user.Password)" />
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a>
+                </div>
 
- 
-    <div class="total-form">
-        <h3>Login</h3>
-        <div class="form">
 
-            <div class="form-input">
-                <InputText type="text" id="Username" class="form-control" placeholder="Username" @bind-Value="user.Username" />
-                <ValidationMessage For="@(() => user.Username)" />
-            </div>
-        </div>
-
-        <div class="form">
-        
-            <div class="form-input">
-                <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
-                <ValidationMessage For="@(() => user.Password)" />
-            </div>
-        </div>
-        
-
-        <input type="submit" value="Submit" />
+            </EditForm>
+        </form>
     </div>
-</EditForm>
-
-<div class="linii">
-    <hr id="linie" />
-    <hr id="linie" />
-    <hr id="linie" />
 </div>
+
+
+
 
 
 
