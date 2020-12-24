@@ -8,6 +8,9 @@ namespace PaymentManagement.Entities
         [Column("id", TypeName = "int")]
         public string Id { get; set; }
 
+        [Column("bank_name", TypeName = "string")]
+        public string BankName { get; set; }
+
         [Column("token_id", TypeName = "int")]
         public int TokenID { get; set; }
 

@@ -12,14 +12,7 @@ using Newtonsoft.Json.Linq;
 
 namespace PaymentManagement.Controllers
 {
-
-    public class LoginClass
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
-    }
-
-    [Route("api/users")]
+    [Route("api/v1/users")]
     [ApiController]
     public class UsersController : ControllerBase
     {
@@ -35,6 +28,7 @@ namespace PaymentManagement.Controllers
         {
             foreach (var user in _context.User)
             {
+                // INCLUDE pt cards
                 List<BankAccount> bankAccounts = _context.BankAccount.ToList();
                 foreach (var bankAccount in bankAccounts)
                 {

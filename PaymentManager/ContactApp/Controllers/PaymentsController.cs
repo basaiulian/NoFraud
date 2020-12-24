@@ -7,7 +7,7 @@ using PaymentManagement.Model;
 
 namespace PaymentManagement.Controllers
 {
-    [Route("api/payments")]
+    [Route("api/v1/payments")]
     [ApiController]
     public class PaymentsController : ControllerBase
     {

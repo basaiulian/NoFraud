@@ -8,7 +8,7 @@ using PaymentManagement.Entities;
 
 namespace PaymentManagement.Controllers
 {
-    [Route("api/cards")]
+    [Route("api/v1/cards")]
     [ApiController]
     public class CardsController : ControllerBase
     {

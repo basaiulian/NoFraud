@@ -9,7 +9,7 @@ using System;
 
 namespace PaymentManagement.Controllers
 {
-    [Route("api/bankaccounts")]
+    [Route("api/v1/bankaccounts")]
     [ApiController]
     public class BankAccountsController : ControllerBase
     {
