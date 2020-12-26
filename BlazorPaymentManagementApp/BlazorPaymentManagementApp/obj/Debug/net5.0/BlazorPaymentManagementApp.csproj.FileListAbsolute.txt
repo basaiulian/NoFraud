@@ -3271,3 +3271,4 @@ C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPayment
 C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\BlazorPaymentManagementApp.dll
 C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\ref\BlazorPaymentManagementApp.dll
 C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\BlazorPaymentManagementApp.pdb
+C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\scopedcss\Pages\Index.razor.rz.scp.css

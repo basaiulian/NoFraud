@@ -105,7 +105,6 @@ using Blazored.LocalStorage;
     public bool IsLoggedIn { get; set; }
     public bool Id { get; set; }
     public string IdValue { get; set; }
-
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
@@ -123,6 +122,22 @@ using Blazored.LocalStorage;
     {
         NavManager.NavigateTo("users/" + this.IdValue);
     }
+
+    protected async void GoToCreateCard()
+    {
+        NavManager.NavigateTo("/createcard");
+    }
+
+    protected async void GoToBankAccount()
+    {
+        NavManager.NavigateTo("/createbankaccount");
+    }
+
+    protected async void GoToPayment()
+    {
+        NavManager.NavigateTo("/createpayment");
+    }
+
 
     protected override async Task OnInitializedAsync()
     {

@@ -18,28 +18,21 @@ else
         <p>Loading...</p>
     }
     else
-    {
-        <h3>My Profile</h3>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Username</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Address</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>@user.Id</td>
-                    <td>@user.Username</td>
-                    <td>@user.Email</td>
-                    <td>@user.PhoneNumber</td>
-                    <td>@user.Address</td>
-                </tr>
-            </tbody>
-        </table>
+    {<div class="register-photo">
+            <div class="form-container">
+                <div class="image-holder"></div>
+                <form method="post">
+
+                    <h2 class="text-center"><strong>My Profile </strong> </h2>
+                    <h3>Username: @user.Username</h3>
+                    <h3>Email: @user.Email</h3>
+                    <h3>PhoneNumber: @user.PhoneNumber</h3>
+                    <h3>Address: @user.Address</h3>
+
+                </form>
+            </div>
+        </div>
+
 
 
         <h3>Your bank accounts</h3>

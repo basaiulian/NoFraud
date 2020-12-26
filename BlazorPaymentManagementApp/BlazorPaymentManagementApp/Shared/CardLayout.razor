@@ -12,13 +12,13 @@
         <a @onclick="GoToProfile" target="_blank" class="ml-md-auto">My Profile</a>
     </div>
     <div class="navigation">
-        <a href="/createcard" target="_blank" class="ml-md-auto">Add Card</a>
+        <a @onclick="GoToCreateCard" target="_blank" class="ml-md-auto">Add Card</a>
     </div>
     <div class="navigation">
-        <a href="/createbankaccount" target="_blank" class="ml-md-auto">Add Bank Account</a>
+        <a @onclick="GoToBankAccount" target="_blank" class="ml-md-auto">Add Bank Account</a>
     </div>
     <div class="navigation">
-        <a href="/createpayment" target="_blank" class="ml-md-auto">Add Payment</a>
+        <a @onclick="GoToPayment" target="_blank" class="ml-md-auto">Add Payment</a>
     </div>
 
     <div class="content px-4">
@@ -33,7 +33,6 @@
     public bool IsLoggedIn { get; set; }
     public bool Id { get; set; }
     public string IdValue { get; set; }
-
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
@@ -51,6 +50,22 @@
     {
         NavManager.NavigateTo("users/" + this.IdValue);
     }
+
+    protected async void GoToCreateCard()
+    {
+        NavManager.NavigateTo("/createcard");
+    }
+
+    protected async void GoToBankAccount()
+    {
+        NavManager.NavigateTo("/createbankaccount");
+    }
+
+    protected async void GoToPayment()
+    {
+        NavManager.NavigateTo("/createpayment");
+    }
+
 
     protected override async Task OnInitializedAsync()
     {

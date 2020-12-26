@@ -7,8 +7,14 @@
 
 .main[b-39h3o3gs01] {
     flex: 1;
-    background-color: #99b3ff;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://i.imgur.com/5E7Whck.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
+
+
+
 
 .sidebar[b-39h3o3gs01] {
     background: linear-gradient(to top right, #3399ff 0%, #0033cc 100%);

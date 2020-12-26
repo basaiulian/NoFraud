@@ -197,11 +197,11 @@
       "mscorlib.dll": "sha256-FWPx51huC\/WJLkKCgoTEa5pzm8+4Aucxg0YuOiuOwkQ=",
       "netstandard.dll": "sha256-2ba2qAAtNUX9Qh5PFXhTMtcD\/Nra\/wyG197\/wrnxElI=",
       "System.Private.CoreLib.dll": "sha256-4wsl1v32v74UB0CTQ6+AdUTdM+9C1VraomgeCjb4Wug=",
-      "BlazorPaymentManagementApp.dll": "sha256-MA1idgGXt2fUsskK7WVM1FPq5lxEgXorM6S1pLQl\/fs="
+      "BlazorPaymentManagementApp.dll": "sha256-\/porAtPD8aA3ikHeYgGM9\/UpfYnefZDqNslUfrM7g60="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorPaymentManagementApp.pdb": "sha256-JIv8OUEnTea+YUKuLK+rItY45lVCqiQ5kuWZXijsyzg="
+      "BlazorPaymentManagementApp.pdb": "sha256-\/58h26Gi1FrVS0\/YAoG1AsnMxO+3fgpBHvtwCYIjzE8="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-nXByiCO4+RYyh+A88TSSZDwAJMF7M7Up\/h6dfAA19C8=",
