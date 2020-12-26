@@ -8,7 +8,7 @@ namespace BlazorPaymentManagementApp.Model
 {
     public class Card
     {
-        
+
         public int Id { get; set; }
 
         [Required]
@@ -33,18 +33,20 @@ namespace BlazorPaymentManagementApp.Model
         [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
         public string CvvCode { get; set; }
 
-        [Required]
-        [MinLength(2)]
-        [MaxLength(20)]
-        [RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "You can only use letters.")]
+        //[Required]
+        //[MinLength(2)]
+        //[MaxLength(20)]
+        //[RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "You can only use letters.")]
         public string BankName { get; set; }
 
-        [Required]
-        [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
         public string OwnerId { get; set; }
 
-        [Required]
-        [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
         public string BankAccountId { get; set; }
+
+        [RegularExpression(@"^(?!(BankName)$).*$", ErrorMessage = "Please select a bank name.")]
+        public string bankNameToSend { get; set; }
+
+        [RegularExpression(@"^(?!(BankAccountId)$).*$", ErrorMessage = "Please select a bank account id.")]
+        public string bankIdToSend { get; set; }
     }
 }

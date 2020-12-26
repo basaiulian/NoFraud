@@ -106,24 +106,105 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 68 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
+#line 76 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
        private Card card = new Card();
+
+    private User user = new User();
+
+    private List<string> bankNames = new List<string>();
+
+    private List<string> bankIds = new List<string>();
+
+    private string message = "--";
+
+    private bool showInput { get; set; } = true;
 
     HttpClient httpClient = new HttpClient()
     {
         BaseAddress = new Uri("http://localhost:5000")
     };
 
+    protected void getBankId()
+    {
+        // ??? Nu iti gasesti banca in lista? ADAUGA O NOUA BANCA!
+
+        bankIds.Clear();
+        foreach (BankAccount bankAccount in user.BankAccounts)
+        {
+            if (bankAccount.BankName == card.bankNameToSend && !bankIds.Contains(bankAccount.Id))
+            {
+                bankIds.Add(bankAccount.Id);
+            }
+        }
+    }
+
     protected async Task Create()
     {
+        Console.WriteLine("bankname: " + card.bankNameToSend);
+        Console.WriteLine("bankid: " + card.bankIdToSend);
+
+        //if (card.bankNameToSend == "BankName(Default: first account)")
+        //{
+        //    if (bankNames.Count != 0)
+        //    {
+        //        card.bankNameToSend = bankNames[0];
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("No bank accounts!");
+        //    }
+
+        //}
+
+        //if (card.bankIdToSend == "BankAccountId(Default: first account)")
+        //{
+        //    if (bankIds.Count != 0)
+        //    {
+        //        card.bankIdToSend = bankIds[0];
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("No bank ids!");
+        //    }
+        //}
+
+
+
+
+        //if (bankNameToSend != "Bank Name" && bankIdToSend != "Bank Account Id")
+        //{
+        card.BankName = card.bankNameToSend;
+        card.BankAccountId = card.bankIdToSend;
         await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
         NavManager.NavigateTo("users/" + card.OwnerId);
+        //}
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var id = await localStorage.GetItemAsync<string>("id");
+        user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + id);
+
+
+
+        foreach (BankAccount bankAccount in user.BankAccounts)
+        {
+            if (!bankNames.Contains(bankAccount.BankName))
+            {
+                bankNames.Add(bankAccount.BankName);
+            }
+        }
+
+
+
+        card.OwnerId = id;
 
     } 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
     }

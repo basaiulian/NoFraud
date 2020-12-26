@@ -113,7 +113,7 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 53 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 54 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
        private BankAccount bankAccount = new BankAccount();
 
     private List<BankAccount> bankAccounts = new List<BankAccount>();
@@ -153,7 +153,8 @@ using BlazorPaymentManagementApp.Model;
     protected async Task Create()
     {
         bankAccount.Balance = Double.Parse(BalanceToSend);
-        bankAccount.UserId = Int32.Parse(UserIdToSend);
+        var id = await localStorage.GetItemAsync<string>("id");
+        bankAccount.UserId = Int32.Parse(id);
         bankAccount.Id = await GenerateId(16);
 
         if (AccountTypeToSend == null)
@@ -185,6 +186,7 @@ using BlazorPaymentManagementApp.Model;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService localStorage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
     }
 }

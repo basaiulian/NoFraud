@@ -4,11 +4,9 @@
 @using System.ComponentModel.DataAnnotations
 @using BlazorPaymentManagementApp.Model
 @inject NavigationManager NavManager
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 @inject IJSRuntime JsRuntime
-
-
-
 
 <div class="register-photo">
     <div class="form-container">
@@ -25,17 +23,21 @@
                     <ValidationMessage For="@(() => BalanceToSend)" />
                 </div>
                 <div class="form-group">
-                    <InputSelect id="accountType" class="form-control" @bind-Value="AccountTypeToSend">
-                        <option>STUDENT(Default)</option>
-                        @foreach (var accountType in accountTypes)
-                        {
-                            <option>@accountType</option>}
-                    </InputSelect>
-                    <ValidationMessage For="@(() => AccountTypeToSend)" />
+                    <InputText id="name" class="form-control" placeholder="Name" @bind-Value="bankAccount.BankName" />
+                    <ValidationMessage For="@(() => bankAccount.BankName)" />
                 </div>
                 <div class="form-group">
-                    <InputText id="userId" class="form-control" placeholder="User Id" @bind-Value="UserIdToSend" />
-                    <ValidationMessage For="@(() => UserIdToSend)" />
+                    <InputSelect id="accountType" class="form-control" @bind-Value="AccountTypeToSend">
+                        <option>Student(Default)</option>
+                        @foreach (var accountType in accountTypes)
+                        {
+                            @if (accountType != "Student")
+                            {
+                            <option>@accountType</option>
+                            }
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="@(() => AccountTypeToSend)" />
                 </div>
                 <div class="form-group">
                     <input class="btn btn-success btn-block" type="submit" value="Submit" />
@@ -47,7 +49,6 @@
         </form>
     </div>
 </div>
-
 
 
 @code{ private BankAccount bankAccount = new BankAccount();
@@ -89,7 +90,8 @@
     protected async Task Create()
     {
         bankAccount.Balance = Double.Parse(BalanceToSend);
-        bankAccount.UserId = Int32.Parse(UserIdToSend);
+        var id = await localStorage.GetItemAsync<string>("id");
+        bankAccount.UserId = Int32.Parse(id);
         bankAccount.Id = await GenerateId(16);
 
         if (AccountTypeToSend == null)

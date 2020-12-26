@@ -4,6 +4,8 @@
 @using BlazorPaymentManagementApp.Model
 @inject NavigationManager NavManager
 @inject IJSRuntime JsRuntime
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
+
 
 
 
@@ -28,29 +30,35 @@
                 </div>
 
                 <div class="form-group">
-                    <InputText id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
+                    <InputText type="password" id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
                     <ValidationMessage For="@(() => card.PinCode)" />
                 </div>
 
 
                 <div class="form-group">
-                    <InputText id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
+                    <InputText type="password" id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
                     <ValidationMessage For="@(() => card.CvvCode)" />
                 </div>
 
 
                 <div class="form-group">
-                    <InputText id="bankName" class="form-control" placeholder="Bank Name" @bind-Value="card.BankName" />
-                    <ValidationMessage For="@(() => card.BankName)" />>
+                    <InputSelect @onclick="getBankId" id="bankName" class="form-control" DisplayName="Bank Name" @bind-Value="card.bankNameToSend">
+                        <option>BankName</option>
+                        @foreach (var bankName in bankNames)
+                        {
+    <option>@bankName</option>}
+                    </InputSelect>
+                    <ValidationMessage For="@(() => card.bankNameToSend)" />
                 </div>
 
                 <div class="form-group">
-                    <InputText id="bankAccountId" class="form-control" placeholder="Bank Account Id" @bind-Value="card.BankAccountId" />
-                    <ValidationMessage For="@(() => card.BankAccountId)" />
-                </div>
-                <div class="form-group">
-                    <InputText id="ownerId" class="form-control" placeholder="Owner Id" @bind-Value="card.OwnerId" />
-                    <ValidationMessage For="@(() => card.OwnerId)" />
+                    <InputSelect id="bankId" class="form-control" DisplayName="Bank Id" @bind-Value="card.bankIdToSend">
+                        <option>BankAccountId</option>
+                        @foreach (var bankId in bankIds)
+                        {
+    <option>@bankId</option>}
+                    </InputSelect>
+                    <ValidationMessage For="@(() => card.bankIdToSend)" />
                 </div>
 
                 <div class="form-group">
@@ -67,14 +75,94 @@
 
 @code{ private Card card = new Card();
 
+    private User user = new User();
+
+    private List<string> bankNames = new List<string>();
+
+    private List<string> bankIds = new List<string>();
+
+    private string message = "--";
+
+    private bool showInput { get; set; } = true;
+
     HttpClient httpClient = new HttpClient()
     {
         BaseAddress = new Uri("http://localhost:5000")
     };
 
+    protected void getBankId()
+    {
+        // ??? Nu iti gasesti banca in lista? ADAUGA O NOUA BANCA!
+
+        bankIds.Clear();
+        foreach (BankAccount bankAccount in user.BankAccounts)
+        {
+            if (bankAccount.BankName == card.bankNameToSend && !bankIds.Contains(bankAccount.Id))
+            {
+                bankIds.Add(bankAccount.Id);
+            }
+        }
+    }
+
     protected async Task Create()
     {
+        Console.WriteLine("bankname: " + card.bankNameToSend);
+        Console.WriteLine("bankid: " + card.bankIdToSend);
+
+        //if (card.bankNameToSend == "BankName(Default: first account)")
+        //{
+        //    if (bankNames.Count != 0)
+        //    {
+        //        card.bankNameToSend = bankNames[0];
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("No bank accounts!");
+        //    }
+
+        //}
+
+        //if (card.bankIdToSend == "BankAccountId(Default: first account)")
+        //{
+        //    if (bankIds.Count != 0)
+        //    {
+        //        card.bankIdToSend = bankIds[0];
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("No bank ids!");
+        //    }
+        //}
+
+
+
+
+        //if (bankNameToSend != "Bank Name" && bankIdToSend != "Bank Account Id")
+        //{
+        card.BankName = card.bankNameToSend;
+        card.BankAccountId = card.bankIdToSend;
         await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
         NavManager.NavigateTo("users/" + card.OwnerId);
+        //}
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var id = await localStorage.GetItemAsync<string>("id");
+        user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + id);
+
+
+
+        foreach (BankAccount bankAccount in user.BankAccounts)
+        {
+            if (!bankNames.Contains(bankAccount.BankName))
+            {
+                bankNames.Add(bankAccount.BankName);
+            }
+        }
+
+
+
+        card.OwnerId = id;
 
     } }

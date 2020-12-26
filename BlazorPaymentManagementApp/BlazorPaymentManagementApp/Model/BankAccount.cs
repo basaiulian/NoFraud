@@ -10,6 +10,8 @@ namespace BlazorPaymentManagementApp.Model
     {
         public string Id { get; set; }
 
+        public string BankName { get; set; }
+
         public double Balance { get; set; }
 
         public string AccountType { get; set; }
