@@ -129,13 +129,13 @@ else
 
     protected async Task Create()
     {
-        await httpClient.PostAsJsonAsync<Card>("/api/cards", card);
-        cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/cards");
+        await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
+        cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/v1/cards");
     }
 
     protected override async Task OnInitializedAsync()
     {
-        cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/cards");
+        cards = await httpClient.GetFromJsonAsync<List<Card>>("/api/v1/cards");
     }
 
 }

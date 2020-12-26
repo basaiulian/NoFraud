@@ -143,13 +143,13 @@ else
 
         message = JsonSerializer.Serialize(bankAccount);
 
-        await httpClient.PostAsJsonAsync<BankAccount>("/api/bankaccounts", bankAccount);
-        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
+        await httpClient.PostAsJsonAsync<BankAccount>("/api/v1/bankaccounts", bankAccount);
+        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/v1/bankaccounts");
     }
 
     protected override async Task OnInitializedAsync()
     {
-        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/bankaccounts");
+        bankAccounts = await httpClient.GetFromJsonAsync<List<BankAccount>>("/api/v1/bankaccounts");
         foreach (var bankAccount in bankAccounts)
         {
             if (!accountTypes.Contains(bankAccount.AccountType))

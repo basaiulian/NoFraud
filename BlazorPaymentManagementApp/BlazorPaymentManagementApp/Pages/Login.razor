@@ -71,7 +71,7 @@
 
         List<string> my_request = new List<string> { username, password };
 
-        var raspuns = await httpClient.PostAsJsonAsync<List<string>>("/api/users/find", my_request);
+        var raspuns = await httpClient.PostAsJsonAsync<List<string>>("/api/v1/users/find", my_request);
         string returnValue = await raspuns.Content.ReadAsStringAsync();
         if (returnValue != "-1")
         {
@@ -103,7 +103,7 @@
     protected override async Task OnInitializedAsync()
     {
 
-        users = await httpClient.GetFromJsonAsync<List<User>>("/api/users");
+        users = await httpClient.GetFromJsonAsync<List<User>>("/api/v1/users");
 
     }
 

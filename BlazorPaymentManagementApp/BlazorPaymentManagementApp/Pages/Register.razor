@@ -66,7 +66,7 @@
     protected async Task RegisterUser()
     {
 
-        HttpResponseMessage response = await httpClient.PostAsJsonAsync<User>("/api/users", user);
+        HttpResponseMessage response = await httpClient.PostAsJsonAsync<User>("/api/v1/users", user);
 
         if (response.StatusCode.ToString() == "Created")
         {

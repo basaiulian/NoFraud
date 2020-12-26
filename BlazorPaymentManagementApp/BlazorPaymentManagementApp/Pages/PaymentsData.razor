@@ -49,6 +49,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        payments = await httpClient.GetFromJsonAsync<List<Payment>>("/api/payments");
+        payments = await httpClient.GetFromJsonAsync<List<Payment>>("/api/v1/payments");
     }
 }

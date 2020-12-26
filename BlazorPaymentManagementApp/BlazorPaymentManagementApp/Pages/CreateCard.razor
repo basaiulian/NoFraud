@@ -74,7 +74,7 @@
 
     protected async Task Create()
     {
-        await httpClient.PostAsJsonAsync<Card>("/api/cards", card);
+        await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
         NavManager.NavigateTo("users/" + card.OwnerId);
 
     } }

@@ -97,6 +97,6 @@
         payment.Amount = float.Parse(AmountToSend);
         payment.Id = Int32.Parse(await GenerateId(4));
 
-        await httpClient.PostAsJsonAsync<Payment>("/api/payments", payment);
+        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
         NavManager.NavigateTo("payments");
     } }
