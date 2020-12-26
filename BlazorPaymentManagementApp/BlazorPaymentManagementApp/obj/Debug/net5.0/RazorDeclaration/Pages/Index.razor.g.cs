@@ -89,6 +89,7 @@ using Blazored.LocalStorage;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(MainLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,7 +99,7 @@ using Blazored.LocalStorage;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\Index.razor"
+#line 13 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\Index.razor"
        protected bool IsLoggedIn { get; set; }
     protected string Id { get; set; }
 
@@ -107,18 +108,25 @@ using Blazored.LocalStorage;
         this.IsLoggedIn = await localStorage.ContainKeyAsync("autentificat");
         this.Id = await localStorage.GetItemAsStringAsync("id");
 
-        if (this.IsLoggedIn == false)
-        {
-            NavManager.NavigateTo("/login", true);
-        }
-        else
+        if (this.IsLoggedIn == true)
         {
             NavManager.NavigateTo("/users/" + Id, true);
         }
 
 
 
-    } 
+    }
+    protected async void GoToLogin()
+    {
+        NavManager.NavigateTo("/login");
+    }
+
+    protected async void GoToRegister()
+    {
+        NavManager.NavigateTo("/register");
+    }
+
+    
 
 #line default
 #line hidden

@@ -90,12 +90,13 @@ using Blazored.LocalStorage;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
+#line 4 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
 using BlazorPaymentManagementApp.Model;
 
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(CardLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/createcard")]
     public partial class CreateCard : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -105,7 +106,7 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 67 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
+#line 68 "C:\Users\gabby\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
        private Card card = new Card();
 
     HttpClient httpClient = new HttpClient()
