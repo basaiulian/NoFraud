@@ -12,82 +12,83 @@ else
 {
 
 
-<div>
-    @if (user == null)
-    {
-        <p>Loading...</p>
-    }
-    else
-    {<div class="register-photo">
-    <div class="form-container">
-        <div class="image-holder"></div>
-        <form method="post">
-
-            <h2 class="text-center"><strong>My Profile </strong> </h2>
-            <h3>Username: @user.Username</h3>
-            <h3>Email: @user.Email</h3>
-            <h3>PhoneNumber: @user.PhoneNumber</h3>
-            <h3>Address: @user.Address</h3>
-
-        </form>
-
-    </div>
-    <div class="banks">
-        <h2 class="title"><strong>Bank accounts and credit cards</strong> </h2>
-
-        @foreach (BankAccount bankAccount in user.BankAccounts)
+    <div>
+        @if (user == null)
         {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Account Type</th>
-                <th>Balance</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>@bankAccount.BankName</td>
-                <td>@bankAccount.AccountType</td>
-                <td>@bankAccount.Balance</td>
-            </tr>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Bank Name</th>
-                        <th>CvvCode</th>
-                        <th>PinCode</th>
-                        <th>ExpirationDate</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <p>Loading...</p>
+        }
+        else
+        {<div class="register-photo">
+                <div class="form-container">
+                    <div class="image-holder"></div>
+                    <form method="post">
 
-                    @foreach (Card card in bankAccount.CardList)
+                        <h2 class="text-center"><strong>My Profile </strong> </h2>
+                        <h3>Username: @user.Username</h3>
+                        <h3>Email: @user.Email</h3>
+                        <h3>PhoneNumber: @user.PhoneNumber</h3>
+                        <h3>Address: @user.Address</h3>
+
+                    </form>
+
+                </div>
+                <div class="banks">
+                    <h2 class="title"><strong>Bank accounts and credit cards</strong> </h2>
+
+                    @foreach (BankAccount bankAccount in user.BankAccounts)
                     {
-    <tr>
-        <td>@card.BankName</td>
-        <td>@card.CvvCode</td>
-        <td>@card.PinCode</td>
-        <td>@card.ExpirationDate</td>
-    </tr>}
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Account Type</th>
+                                    <th>Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>@bankAccount.BankName</td>
+                                    <td>@bankAccount.AccountType</td>
+                                    <td>@bankAccount.Balance</td>
+                                </tr>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Bank Name</th>
+                                            <th>CvvCode</th>
+                                            <th>PinCode</th>
+                                            <th>ExpirationDate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @foreach (Card card in bankAccount.CardList)
+                                        {
+                                            <tr>
+                                                <td>@card.BankName</td>
+                                                <td>@card.CvvCode</td>
+                                                <td>@card.PinCode</td>
+                                                <td>@card.ExpirationDate</td>
+                                            </tr>
+}
 
 
-                </tbody>
-            </table>
-        </tbody>
-    </table>}
+                                    </tbody>
+                                </table>
+                            </tbody>
+                        </table>}
 
+                </div>
+            </div>
+
+
+        }
     </div>
-</div>
-       
-
-    }
-</div>
 }
 @code{
 
-        [Parameter]
-        public string Id { get; set; }
+    [Parameter]
+    public string Id { get; set; }
 
     public string localId { get; set; }
 

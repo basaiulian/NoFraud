@@ -3,6 +3,9 @@
 @layout CardLayout
 @using System.ComponentModel.DataAnnotations
 @using BlazorPaymentManagementApp.Model
+@using Newtonsoft.Json.Linq
+
+@inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager NavManager
 
 @inject IJSRuntime JsRuntime
@@ -22,7 +25,7 @@
 
                 <div class="form-group">
                     <InputText id="amount" class="form-control" placeholder="Amount" @bind-Value="AmountToSend" />
-                    <ValidationMessage For="@(() => payment.Amount)" />
+                    <ValidationMessage For="@(() => AmountToSend)" />
                 </div>
                 <div class="form-group">
                     <InputSelect id="currency" class="form-control" @bind-Value="payment.Currency">
@@ -38,6 +41,15 @@
                     <ValidationMessage For="@(() => payment.Source)" />
                 </div>
                 <div class="form-group">
+                    <InputSelect id="cc_num" class="form-control" placeholder="Credit Card Number" @bind-Value="cc_num">
+                        <option>Credit Card Number</option>
+                        @foreach (string creditCardNumber in creditCardNumbers)
+                        {
+                            <option>@creditCardNumber</option>}
+                    </InputSelect>
+                    <ValidationMessage For="@(() => cc_num)" />
+                </div>
+                <div class="form-group">
                     <InputText id="destination" class="form-control" placeholder="Destination" @bind-Value="payment.Destination" />
                     <ValidationMessage For="@(() => payment.Destination)" />
                 </div>
@@ -47,9 +59,10 @@
                 </div>
 
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
-
+                    <input class="btn btn-success btn-block" type="submit" value="Submit"><h5>@message2</h5>
                 </div>
+
+
 
 
             </EditForm>
@@ -59,15 +72,34 @@
 
 
 
-@code{ public string AmountToSend { get; set; }
+@code{ [Required]
+    [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Amount must be like \"40\" or \"40.5\".")]
+    public string AmountToSend { get; set; }
+
+
+
+    [Required]
+    public string cc_num { get; set; }
+
+    private string message2 = "";
 
     private List<string> currencyList = new List<string>()
-        {
+            {
             "RON",
             "EUR",
             "GBP",
             "USD"
         };
+
+    private User user = new User();
+
+    private string userState;
+
+    private string userCity;
+
+    public string localId { get; set; }
+
+    private List<string> creditCardNumbers = new List<string>();
 
     private Payment payment = new Payment();
 
@@ -99,37 +131,75 @@
 
     protected async Task Create()
     {
-        //payment.Amount = float.Parse(AmountToSend);
-        //payment.Id = Int32.Parse(await GenerateId(4));
-
-        ModelInput modelToSend = new ModelInput
+        if(cc_num != "Credit Card Number")
         {
-            Col0 = 5,
-            Trans_date_trans_time = DateTime.Now.ToShortDateString(),
-            Cc_num = 5819219885842813f,
-            Amt = 5.5f,
-            First = "Gion",
-            Last = "John",
-            City = "Galati",
-            State = "Romania",
-            Lat = 43.5f,
-            Long = 88.2f,
-            Merch_lat = 90.04f,
-            Merch_long = 33.9f
-        };
 
-        var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
-        string returnValue = await predict_response.Content.ReadAsStringAsync();
-        Console.WriteLine(returnValue);
+            userState = user.Address.Substring(0, user.Address.IndexOf(',')).Trim();
+            userCity = user.Address.Substring(user.Address.LastIndexOf(',') + 1).Trim();
 
-        //await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+            //Console.WriteLine(userState);
+            //Console.WriteLine(userCity);
+
+            ModelInput modelToSend = new ModelInput
+            {
+                Col0 = 5,
+                Trans_date_trans_time = DateTime.Now.ToShortDateString(),
+                Cc_num = float.Parse(cc_num),
+                Amt = float.Parse(AmountToSend),
+                City = userCity,
+                State = userState,
+                Lat = 43.5f,
+                Long = 88.2f,
+                Merch_lat = 90.04f,
+                Merch_long = 33.9f
+            };
+
+            //Console.WriteLine(float.Parse(AmountToSend));
+            //Console.WriteLine(float.Parse(cc_num));
+
+            var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
+            string returnValue = await predict_response.Content.ReadAsStringAsync();
+
+            JObject jObject = JObject.Parse(returnValue);
+            string prediction = jObject["prediction"].ToString();
+
+            if(prediction == "0")
+            {
+                message2 = "The payment is safe.";
+            } else if(prediction == "1")
+            {
+                message2 = "The payment is not safe.";
+            }
+
+        }
+        payment.Amount = float.Parse(AmountToSend);
+        payment.Id = Int32.Parse(await GenerateId(4));
+
+
+        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
         //NavManager.NavigateTo("payments");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        localId = await localStorage.GetItemAsStringAsync("id");
+        user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + localId);
+        foreach (BankAccount bankAccount in user.BankAccounts)
+        {
+            foreach (Card card in bankAccount.CardList)
+            {
+                if (!creditCardNumbers.Contains(card.Number))
+                {
+                    creditCardNumbers.Add(card.Number);
+                }
+            }
+        }
     }
 
     public class ModelInput
     {
         public float Col0 { get; set; }
-
 
         public string Trans_date_trans_time { get; set; }
 

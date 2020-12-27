@@ -1,8 +1,6 @@
 ﻿.register-photo {
-    background: #99b3ff;
-    padding-bottom: 334px;
-    padding-top: 300px;
-    margin-top: -16%;
+    padding-bottom: 400px;
+    width: 100%;
 }
 
     .register-photo .image-holder {

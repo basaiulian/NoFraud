@@ -37,7 +37,7 @@
                             }
                         }
                     </InputSelect>
-                    <ValidationMessage For="@(() => AccountTypeToSend)" />
+                    <ValidationMessage For="@(() => bankAccount.AccountType)" />
                 </div>
                 <div class="form-group">
                     <input class="btn btn-success btn-block" type="submit" value="Submit" /> <h5>@message2</h5><h4>@message</h4>
@@ -56,14 +56,14 @@
     private List<BankAccount> bankAccounts = new List<BankAccount>();
 
     private List<string> accountTypes = new List<string>();
+
     private string message = "";
     private string message2 = "";
-    [Required]
+
+    [Required(AllowEmptyStrings = false, ErrorMessage = "The Balance field is required.")]
     [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
     public string BalanceToSend { get; set; }
 
-    [RegularExpression(@"^[0-9]{1,4}$", ErrorMessage = "User Id must be 1 to 4 digits long.")]
-    [Required]
     public string UserIdToSend { get; set; }
 
     public string AccountTypeToSend { get; set; }
@@ -90,19 +90,14 @@
 
     protected async Task Create()
     {
-        if (BalanceToSend != null)
-        {
-            bankAccount.Balance = Double.Parse(BalanceToSend);
-
-        }
-
+        bankAccount.Balance = Double.Parse(BalanceToSend);
         var id = await localStorage.GetItemAsync<string>("id");
         bankAccount.UserId = Int32.Parse(id);
         bankAccount.Id = await GenerateId(16);
 
         if (AccountTypeToSend == null)
         {
-            bankAccount.AccountType = "STUDENT";
+            bankAccount.AccountType = "Student";
         }
         else
         {
@@ -124,6 +119,9 @@
             message += "Something is wrong,try again ! ";
         }
 
+        // TIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        NavManager.NavigateTo("users/" + bankAccount.UserId);
     }
 
     protected override async Task OnInitializedAsync()

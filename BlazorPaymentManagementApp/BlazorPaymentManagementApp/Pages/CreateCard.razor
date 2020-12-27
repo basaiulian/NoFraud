@@ -76,6 +76,7 @@
 @code{ private Card card = new Card();
 
     private User user = new User();
+
     private string message = "";
     private string message2 = "";
 
@@ -134,7 +135,7 @@
         //    }
         //}
 
-        // 1111111111111111
+
 
 
         //if (bankNameToSend != "Bank Name" && bankIdToSend != "Bank Account Id")
@@ -142,7 +143,6 @@
         card.BankName = card.bankNameToSend;
         card.BankAccountId = card.bankIdToSend;
         HttpResponseMessage response = await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
-       // NavManager.NavigateTo("users/" + card.OwnerId);
 
         if (response.StatusCode.ToString() == "Created")
         {
@@ -156,6 +156,10 @@
             message = "";
             message += "Something is wrong,try again ! ";
         }
+
+        //TIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        NavManager.NavigateTo("users/" + card.OwnerId);
         //}
     }
 

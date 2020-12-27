@@ -1,0 +1,13 @@
+﻿.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    height: 100vh;
+    background-color: #99b3ff;
+    background-size: cover;
+    background-position: center;
+}

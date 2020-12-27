@@ -13,92 +13,99 @@ namespace BlazorPaymentManagementApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using BlazorPaymentManagementApp.Model;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+using Newtonsoft.Json.Linq;
 
 #line default
 #line hidden
@@ -113,16 +120,35 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 62 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune8.13-27.12.2020Gabi\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
-       public string AmountToSend { get; set; }
+#line 75 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+       [Required]
+    [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Amount must be like \"40\" or \"40.5\".")]
+    public string AmountToSend { get; set; }
+
+
+
+    [Required]
+    public string cc_num { get; set; }
+
+    private string message2 = "";
 
     private List<string> currencyList = new List<string>()
-        {
+            {
             "RON",
             "EUR",
             "GBP",
             "USD"
         };
+
+    private User user = new User();
+
+    private string userState;
+
+    private string userCity;
+
+    public string localId { get; set; }
+
+    private List<string> creditCardNumbers = new List<string>();
 
     private Payment payment = new Payment();
 
@@ -154,37 +180,75 @@ using BlazorPaymentManagementApp.Model;
 
     protected async Task Create()
     {
-        //payment.Amount = float.Parse(AmountToSend);
-        //payment.Id = Int32.Parse(await GenerateId(4));
-
-        ModelInput modelToSend = new ModelInput
+        if(cc_num != "Credit Card Number")
         {
-            Col0 = 5,
-            Trans_date_trans_time = DateTime.Now.ToShortDateString(),
-            Cc_num = 5819219885842813f,
-            Amt = 5.5f,
-            First = "Gion",
-            Last = "John",
-            City = "Galati",
-            State = "Romania",
-            Lat = 43.5f,
-            Long = 88.2f,
-            Merch_lat = 90.04f,
-            Merch_long = 33.9f
-        };
 
-        var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
-        string returnValue = await predict_response.Content.ReadAsStringAsync();
-        Console.WriteLine(returnValue);
+            userState = user.Address.Substring(0, user.Address.IndexOf(',')).Trim();
+            userCity = user.Address.Substring(user.Address.LastIndexOf(',') + 1).Trim();
 
-        //await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+            //Console.WriteLine(userState);
+            //Console.WriteLine(userCity);
+
+            ModelInput modelToSend = new ModelInput
+            {
+                Col0 = 5,
+                Trans_date_trans_time = DateTime.Now.ToShortDateString(),
+                Cc_num = float.Parse(cc_num),
+                Amt = float.Parse(AmountToSend),
+                City = userCity,
+                State = userState,
+                Lat = 43.5f,
+                Long = 88.2f,
+                Merch_lat = 90.04f,
+                Merch_long = 33.9f
+            };
+
+            //Console.WriteLine(float.Parse(AmountToSend));
+            //Console.WriteLine(float.Parse(cc_num));
+
+            var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
+            string returnValue = await predict_response.Content.ReadAsStringAsync();
+
+            JObject jObject = JObject.Parse(returnValue);
+            string prediction = jObject["prediction"].ToString();
+
+            if(prediction == "0")
+            {
+                message2 = "The payment is safe.";
+            } else if(prediction == "1")
+            {
+                message2 = "The payment is not safe.";
+            }
+
+        }
+        payment.Amount = float.Parse(AmountToSend);
+        payment.Id = Int32.Parse(await GenerateId(4));
+
+
+        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
         //NavManager.NavigateTo("payments");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        localId = await localStorage.GetItemAsStringAsync("id");
+        user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + localId);
+        foreach (BankAccount bankAccount in user.BankAccounts)
+        {
+            foreach (Card card in bankAccount.CardList)
+            {
+                if (!creditCardNumbers.Contains(card.Number))
+                {
+                    creditCardNumbers.Add(card.Number);
+                }
+            }
+        }
     }
 
     public class ModelInput
     {
         public float Col0 { get; set; }
-
 
         public string Trans_date_trans_time { get; set; }
 
@@ -216,6 +280,7 @@ using BlazorPaymentManagementApp.Model;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime JsRuntime { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private Blazored.LocalStorage.ILocalStorageService localStorage { get; set; }
     }
 }
 #pragma warning restore 1591

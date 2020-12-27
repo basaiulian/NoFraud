@@ -1,4 +1,5 @@
 ﻿@page "/register"
+@layout LoginLayout 
 @using BlazorPaymentManagementApp.Model
 @using System.Timers
 @inject NavigationManager NavManager
@@ -80,6 +81,21 @@
             message = "";
             message += " Contul exista deja ! ";
         }
+
+        aTimer = new System.Timers.Timer();
+        aTimer.Interval = 3000;
+
+        // Hook up the Elapsed event for the timer.
+        aTimer.Elapsed += (sender, args) =>
+        {
+            NavManager.NavigateTo("/Login");
+        };
+
+        // Have the timer fire repeated events (true is the default)
+        aTimer.AutoReset = true;
+
+        // Start the timer
+        aTimer.Enabled = true;
 
     }
 

@@ -12,7 +12,7 @@ namespace BlazorPaymentManagementApp.Model
         public int Id { get; set; }
 
         [Required]
-        [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
+        [RegularExpression(@"^[0-9]{16,16}$", ErrorMessage = "Card number must contain exactly 16 digits.")]
         public string Number { get; set; }
 
         [Required]
@@ -20,15 +20,11 @@ namespace BlazorPaymentManagementApp.Model
         public DateTime ExpirationDate { get; set; } = DateTime.Now;
 
         [Required]
-        //[MinLength(4)]
-        //[MaxLength(4)]
-        [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
+        [RegularExpression(@"^[0-9]{4,4}$", ErrorMessage = "Pin code must contain exactly 4 digits.")]
         public string PinCode { get; set; }
 
         [Required]
-        //[MinLength(3)]
-        //[MaxLength(3)]
-        [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
+        [RegularExpression(@"^[0-9]{3,3}$", ErrorMessage = "Cvv code must contain exactly 3 digits.")]
         public string CvvCode { get; set; }
 
         //[Required]
@@ -41,6 +37,7 @@ namespace BlazorPaymentManagementApp.Model
 
         public string BankAccountId { get; set; }
 
+        [Required(AllowEmptyStrings = false, ErrorMessage = " The BankName field is required.")]
         [RegularExpression(@"^(?!(BankName)$).*$", ErrorMessage = "Please select a bank name.")]
         public string bankNameToSend { get; set; }
 

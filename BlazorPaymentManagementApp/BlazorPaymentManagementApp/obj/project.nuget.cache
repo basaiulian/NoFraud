@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ik5ZTSJSMshwTVPi1MX1+/8o1XunZooQ4b0zsxBFnPMyeXS2ZuHt05F5Jzyi8B4Vuj0qllaqs6eEeuiGxanMtg==",
+  "dgSpecHash": "/oxhw0C8rR2FubnaHFdVjQiS2GE8rNVLGyyTvYihnOYHdsLvg+XH+t3bDcQV7Fk33Smf2miA8q9+/AncGTSzuw==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.0-rc.2.20475.17\\microsoft.aspnetcore.authorization.5.0.0-rc.2.20475.17.nupkg.sha512",

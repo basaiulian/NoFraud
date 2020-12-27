@@ -6,8 +6,8 @@ h3[b-xav4jpzvug]{
 .register-photo[b-t4gj8982ag] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 7%;
-    margin-left: 6%;
+    margin-top: 9%;
+    margin-left: 5%;
 }
 
     .register-photo .image-holder[b-t4gj8982ag] {
@@ -112,7 +112,7 @@ h3[b-xav4jpzvug]{
 .register-photo[b-mrxb3qfwvc] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 5%;
+    margin-top: 7%;
     background-size:cover;
     margin-left: 2%;
 }
@@ -315,7 +315,7 @@ body[b-jvtcrqogn1] {
 .title[b-jvtcrqogn1] {
     position:absolute;
     top:30%;
-    left:41%;;
+    left:36%;
     font-size:13vh;
     transform: translate(-35%,-50%);
     color:white;
@@ -366,35 +366,34 @@ body[b-jvtcrqogn1] {
 }
 /* /Pages/Login.razor.rz.scp.css */
 .register-photo[b-kkxyimxcrz] {
-    background: #99b3ff;
-    padding: 334px;
-    margin-top: -13%;
+    padding-bottom: 390px;
     width: 100%;
 }
 
-    .register-photo .image-holder[b-kkxyimxcrz] {
-        display: table-cell;
-        width: 500px;
-        background: url(https://i.imgur.com/ucBlWgi.jpg);
-        background-size: cover
-    }
+.register-photo .image-holder[b-kkxyimxcrz] {
+    display: table-cell;
+    width: 500px;
+    background: url(https://i.imgur.com/ucBlWgi.jpg);
+    background-size: cover
+}
 
-    .register-photo .form-container[b-kkxyimxcrz] {
-        display: table;
-        max-width: 900px;
-        width: 1000px;
-        height: 440px;
-        margin: 0 auto;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
-    }
+.register-photo .form-container[b-kkxyimxcrz] {
+    display: table;
+    max-width: 900px;
+    width: 1000px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
 
-    .register-photo form[b-kkxyimxcrz] {
-        display: table-cell;
-        width: 500px;
-        background-color: #ffffff;
-        padding: 60px 60px;
-        color: #505e6c
-    }
+.register-photo form[b-kkxyimxcrz] {
+    display: table-cell;
+    width: 500px;
+    background-color: #ffffff;
+    padding: 60px 60px;
+    color: #505e6c
+}
 
 @media (max-width:991px) {
     .register-photo form[b-kkxyimxcrz] {
@@ -405,7 +404,7 @@ body[b-jvtcrqogn1] {
 .register-photo form h4[b-kkxyimxcrz] {
     font-size: 18px;
     text-align: center;
-    margin-top:10px;
+    margin-top: 10px;
     color: red;
     line-height: 1.5;
 }
@@ -462,7 +461,7 @@ body[b-jvtcrqogn1] {
     }
 
 .register-photo form .already[b-kkxyimxcrz] {
-    margin-top:21px;
+    margin-top: 21px;
     display: block;
     text-align: center;
     font-size: 12px;
@@ -472,10 +471,8 @@ body[b-jvtcrqogn1] {
 }
 /* /Pages/Register.razor.rz.scp.css */
 .register-photo[b-fob5x4kfew] {
-    background: #99b3ff;
-    padding-bottom: 334px;
-    padding-top: 300px;
-    margin-top: -16%;
+    padding-bottom: 400px;
+    width: 100%;
 }
 
     .register-photo .image-holder[b-fob5x4kfew] {
@@ -781,6 +778,20 @@ h3[b-ku3jajem7m] {
         cursor: pointer;
         transition: 0.5s ease;
     }
+/* /Shared/LoginLayout.razor.rz.scp.css */
+.page[b-kfsq51arjr] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main[b-kfsq51arjr] {
+    flex: 1;
+    height: 100vh;
+    background-color: #99b3ff;
+    background-size: cover;
+    background-position: center;
+}
 /* /Shared/MainLayout.razor.rz.scp.css */
 .page[b-39h3o3gs01] {
     position: relative;

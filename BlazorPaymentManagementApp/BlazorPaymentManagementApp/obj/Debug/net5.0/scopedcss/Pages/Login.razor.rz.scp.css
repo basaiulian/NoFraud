@@ -1,33 +1,32 @@
 .register-photo[b-kkxyimxcrz] {
-    background: #99b3ff;
-    padding: 334px;
-    margin-top: -13%;
+    padding-bottom: 390px;
     width: 100%;
 }
 
-    .register-photo .image-holder[b-kkxyimxcrz] {
-        display: table-cell;
-        width: 500px;
-        background: url(https://i.imgur.com/ucBlWgi.jpg);
-        background-size: cover
-    }
+.register-photo .image-holder[b-kkxyimxcrz] {
+    display: table-cell;
+    width: 500px;
+    background: url(https://i.imgur.com/ucBlWgi.jpg);
+    background-size: cover
+}
 
-    .register-photo .form-container[b-kkxyimxcrz] {
-        display: table;
-        max-width: 900px;
-        width: 1000px;
-        height: 440px;
-        margin: 0 auto;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
-    }
+.register-photo .form-container[b-kkxyimxcrz] {
+    display: table;
+    max-width: 900px;
+    width: 1000px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
 
-    .register-photo form[b-kkxyimxcrz] {
-        display: table-cell;
-        width: 500px;
-        background-color: #ffffff;
-        padding: 60px 60px;
-        color: #505e6c
-    }
+.register-photo form[b-kkxyimxcrz] {
+    display: table-cell;
+    width: 500px;
+    background-color: #ffffff;
+    padding: 60px 60px;
+    color: #505e6c
+}
 
 @media (max-width:991px) {
     .register-photo form[b-kkxyimxcrz] {
@@ -38,7 +37,7 @@
 .register-photo form h4[b-kkxyimxcrz] {
     font-size: 18px;
     text-align: center;
-    margin-top:10px;
+    margin-top: 10px;
     color: red;
     line-height: 1.5;
 }
@@ -95,7 +94,7 @@
     }
 
 .register-photo form .already[b-kkxyimxcrz] {
-    margin-top:21px;
+    margin-top: 21px;
     display: block;
     text-align: center;
     font-size: 12px;

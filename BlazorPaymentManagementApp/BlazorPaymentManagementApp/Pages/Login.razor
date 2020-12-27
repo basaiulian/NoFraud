@@ -1,5 +1,7 @@
 ﻿@page "/login"
+@layout LoginLayout
 @using BlazorPaymentManagementApp.Model
+@using System.ComponentModel.DataAnnotations
 @using System.Text.Json
 @using System.Text.Json.Serialization
 @using Newtonsoft.Json
@@ -8,38 +10,30 @@
 @inject NavigationManager NavManager
 @inject IJSRuntime JsRuntime
 
-
-@*<form action="/user/@IdToFind">Blazored.LocalStorage.ILocalStorageService localStorage
-        <input @bind="@IdToFind" />
-        <input type="submit" value="Search" />
-    </form>*@
-
 <div class="register-photo">
     <div class="form-container">
         <div class="image-holder"></div>
         <form method="post">
             <EditForm Model="@user" OnValidSubmit="LoginUser">
-                <DataAnnotationsValidator />
+                @*<DataAnnotationsValidator />*@
 
                 <h2 class="text-center"><strong>Welcome back</strong></h2>
                 <div class="form-group">
-                    <InputText type="text" id="Username" class="form-control" placeholder="Username" @bind-Value="user.Username" />
-                    <ValidationMessage For="@(() => user.Username)" />
+                    <InputText id="username" class="form-control" placeholder="Username" @bind-Value="username" />
+                    @*<ValidationMessage For="@(() => username)" />*@
                 </div>
                 <div class="form-group">
-                    <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="user.Password" />
-                    <ValidationMessage For="@(() => user.Password)" />
+                    <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="password" />
+                    @*<ValidationMessage For="@(() => password)" />*@
                 </div>
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a> <h5>@message2</h5><h4>@message</h4>                                                                    
+                    <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a> <h5>@message2</h5><h4>@message</h4>
                 </div>
 
 
             </EditForm>
         </form>
-
     </div>
-   
 </div>
 
 
@@ -53,10 +47,11 @@
     private List<User> users;
 
     private static Timer aTimer;
+
     private string message = "";
     private string message2 = "";
-    private User user = new User();
 
+    private User user = new User();
     private string username { get; set; }
     private string password { get; set; }
 
@@ -69,18 +64,19 @@
     {
         //LoginClass loginObject = new LoginClass(username, password);
 
-        username = user.Username;
-        password = user.Password;
+        //username = user.Username;
+        //password = user.Password;
 
         List<string> my_request = new List<string> { username, password };
 
         var raspuns = await httpClient.PostAsJsonAsync<List<string>>("/api/v1/users/find", my_request);
         string returnValue = await raspuns.Content.ReadAsStringAsync();
+        Console.WriteLine(returnValue);
         if (returnValue != "-1")
         {
             message2 = "";
             message = "";
-            message2 += "Loged successfully !";
+            message2 += "Logged in successfully !";
 
             await localStorage.SetItemAsync("autentificat", "1");
             await localStorage.SetItemAsync("id", returnValue);
@@ -100,12 +96,10 @@
             // Start the timer
             aTimer.Enabled = true;
 
-        }
-        else
+        } else
         {
             message = "";
-            message += "Invalid credentials,try again!";
-
+            message += "Invalid credentials, try again!";
         }
 
 
@@ -118,17 +112,5 @@
 
         users = await httpClient.GetFromJsonAsync<List<User>>("/api/v1/users");
 
-    }
-
-    public class LoginClass
-    {
-        private string Username { get; set; }
-        private string Password { get; set; }
-
-        public LoginClass(string _username, string _password)
-        {
-            this.Username = _username;
-            this.Password = _password;
-        }
     }
 }
