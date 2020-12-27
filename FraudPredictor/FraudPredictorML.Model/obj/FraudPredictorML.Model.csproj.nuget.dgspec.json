@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {}
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
+        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
         "projectName": "FraudPredictorML.Model",
-        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
+        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
         "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\obj\\",
+        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",

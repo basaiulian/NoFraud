@@ -27,7 +27,7 @@ namespace FraudPredictorML.Model
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = @"D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictorML.Model\MLModel.zip";
+            string modelPath = @"C:\Users\Iulian\AppData\Local\Temp\MLVSTools\FraudPredictorML\FraudPredictorML.Model\MLModel.zip";
             ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
 

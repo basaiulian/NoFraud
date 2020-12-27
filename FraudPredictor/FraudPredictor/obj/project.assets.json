@@ -6542,11 +6542,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
+      "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
       "projectName": "FraudPredictor",
-      "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
+      "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
       "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-      "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictor\\obj\\",
+      "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6563,8 +6563,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
-              "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj"
+            "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
+              "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj"
             }
           }
         }

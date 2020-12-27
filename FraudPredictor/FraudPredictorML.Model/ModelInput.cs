@@ -17,6 +17,7 @@ namespace FraudPredictorML.Model
         [ColumnName("cc_num"), LoadColumn(2)]
         public float Cc_num { get; set; }
 
+
         [ColumnName("amt"), LoadColumn(3)]
         public float Amt { get; set; }
 

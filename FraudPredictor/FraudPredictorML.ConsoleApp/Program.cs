@@ -12,12 +12,9 @@ namespace FraudPredictorML.ConsoleApp
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
-                Col0 = 0F,
                 Trans_date_trans_time = @"01-01-19 0:00",
                 Cc_num = 2.70319E+15F,
                 Amt = 4.97F,
-                First = @"Jennifer",
-                Last = @"Banks",
                 City = @"Moravian Falls",
                 State = @"NC",
                 Lat = 36.0788F,
@@ -30,12 +27,9 @@ namespace FraudPredictorML.ConsoleApp
             var predictionResult = ConsumeModel.Predict(sampleData);
 
             Console.WriteLine("Using model to make single prediction -- Comparing actual Is_fraud with predicted Is_fraud from sample data...\n\n");
-            Console.WriteLine($"Col0: {sampleData.Col0}");
             Console.WriteLine($"Trans_date_trans_time: {sampleData.Trans_date_trans_time}");
             Console.WriteLine($"Cc_num: {sampleData.Cc_num}");
             Console.WriteLine($"Amt: {sampleData.Amt}");
-            Console.WriteLine($"First: {sampleData.First}");
-            Console.WriteLine($"Last: {sampleData.Last}");
             Console.WriteLine($"City: {sampleData.City}");
             Console.WriteLine($"State: {sampleData.State}");
             Console.WriteLine($"Lat: {sampleData.Lat}");

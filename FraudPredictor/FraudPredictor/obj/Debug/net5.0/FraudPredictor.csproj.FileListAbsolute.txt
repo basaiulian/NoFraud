@@ -1,3 +1,10 @@
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfoInputs.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfo.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.MvcApplicationPartsAssemblyInfo.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cs
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\MLModel.zip
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\appsettings.Development.json
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\appsettings.json
@@ -111,13 +118,6 @@ D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.202
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictorML.Model.dll
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictorML.Model.pdb
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csprojAssemblyReference.cache
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.GeneratedMSBuildEditorConfig.editorconfig
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfoInputs.cache
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfo.cs
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csproj.CoreCompileInputs.cache
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.MvcApplicationPartsAssemblyInfo.cache
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cache
-D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cs
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\staticwebassets\FraudPredictor.StaticWebAssets.Manifest.cache
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\staticwebassets\FraudPredictor.StaticWebAssets.xml
 D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\scopedcss\bundle\FraudPredictor.styles.css

@@ -1241,19 +1241,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabby\\.nuget\\packages\\": {}
+    "C:\\Users\\Iulian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gabby\\Documents\\GitHub\\NoFraud\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+      "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
       "projectName": "BlazorPaymentManagementApp",
-      "projectPath": "C:\\Users\\gabby\\Documents\\GitHub\\NoFraud\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
-      "packagesPath": "C:\\Users\\gabby\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gabby\\Documents\\GitHub\\NoFraud\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\obj\\",
+      "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+      "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
+      "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1314,7 +1314,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
-            "version": "[5.0.1, 5.0.1]"
+            "version": "[5.0.0-rc.2.20475.5, 5.0.0-rc.2.20475.5]"
           }
         ],
         "frameworkReferences": {
@@ -1322,7 +1322,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
