@@ -12,8 +12,6 @@ namespace BlazorPaymentManagementApp.Model
         public int Id { get; set; }
 
         [Required]
-        [MinLength(16)]
-        [MaxLength(16)]
         [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
         public string Number { get; set; }
 
@@ -22,14 +20,14 @@ namespace BlazorPaymentManagementApp.Model
         public DateTime ExpirationDate { get; set; } = DateTime.Now;
 
         [Required]
-        [MinLength(4)]
-        [MaxLength(4)]
+        //[MinLength(4)]
+        //[MaxLength(4)]
         [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
         public string PinCode { get; set; }
 
         [Required]
-        [MinLength(3)]
-        [MaxLength(3)]
+        //[MinLength(3)]
+        //[MaxLength(3)]
         [RegularExpression(@"^[0-9]*$", ErrorMessage = "You can only use digits.")]
         public string CvvCode { get; set; }
 

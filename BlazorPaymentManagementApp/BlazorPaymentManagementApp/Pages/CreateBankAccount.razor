@@ -40,7 +40,7 @@
                     <ValidationMessage For="@(() => AccountTypeToSend)" />
                 </div>
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" /> <h5>@message2</h5><h4>@message</h4>
 
                 </div>
 
@@ -56,7 +56,8 @@
     private List<BankAccount> bankAccounts = new List<BankAccount>();
 
     private List<string> accountTypes = new List<string>();
-
+    private string message = "";
+    private string message2 = "";
     [Required]
     [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
     public string BalanceToSend { get; set; }
@@ -89,7 +90,12 @@
 
     protected async Task Create()
     {
-        bankAccount.Balance = Double.Parse(BalanceToSend);
+        if (BalanceToSend != null)
+        {
+            bankAccount.Balance = Double.Parse(BalanceToSend);
+
+        }
+
         var id = await localStorage.GetItemAsync<string>("id");
         bankAccount.UserId = Int32.Parse(id);
         bankAccount.Id = await GenerateId(16);
@@ -103,8 +109,21 @@
             bankAccount.AccountType = AccountTypeToSend;
         }
 
-        await httpClient.PostAsJsonAsync<BankAccount>("/api/v1/bankaccounts", bankAccount);
-        NavManager.NavigateTo("users/" + bankAccount.UserId);
+        HttpResponseMessage response = await httpClient.PostAsJsonAsync<BankAccount>("/api/v1/bankaccounts", bankAccount);
+
+        if (response.StatusCode.ToString() == "Created")
+        {
+            message = "";
+            message2 = "";
+            message2 += "Bank account added successfully!";
+
+        }
+        else
+        {
+            message = "";
+            message += "Something is wrong,try again ! ";
+        }
+
     }
 
     protected override async Task OnInitializedAsync()

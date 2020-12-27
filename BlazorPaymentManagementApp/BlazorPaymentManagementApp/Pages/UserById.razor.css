@@ -5,8 +5,14 @@
 .register-photo {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 10%;
-    margin-left: 7%;
+    display:table-cell;
+ 
+}
+
+
+.title{
+    margin-left:10px;
+    text-align:center;
 }
 
     .register-photo .image-holder {
@@ -14,26 +20,36 @@
         width: auto;
         background: url(https://i.imgur.com/vHk2iJc.jpg);
         background-size: cover;
-        width: 1200px;
+        width: 1300px;;
+        height:700px;
+    
     }
 
-    .register-photo .form-container {
-        display: table;
-   
-        max-width: 900px;
-        height: 100%;
-        margin: 0 auto;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
-    }
-
-    .register-photo form {
-        display: table-cell;
-        background-color: lightgrey;
-        width: 700px;
-        margin-right: 200px;
-        padding: 60px 60px;
-        color: #505e6c
-    }
+.register-photo .form-container {
+    display: table;
+    max-width: 1280px;
+    height: 100%;
+    margin-left: 7%;
+    margin-top: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+.register-photo form {
+    margin-top: 50px;
+    display: table-cell;
+    background-color: #ccffcc;
+    width: 850px;
+    margin-right: 200px;
+    padding: 60px 60px;
+    color: #505e6c
+}
+.register-photo .banks {
+    background-color: #f0f5f5;
+    width: 1280px;
+    margin-right: 200px;
+    padding: 60px 60px;
+    color: #505e6c;
+    margin-left: 7%;
+}
 
 @media (max-width:991px) {
     .register-photo form {
@@ -46,7 +62,6 @@
     line-height: 1.5;
     margin-bottom: 30px
 }
-
 .register-photo form .form-control {
     background: transparent;
     border: none;

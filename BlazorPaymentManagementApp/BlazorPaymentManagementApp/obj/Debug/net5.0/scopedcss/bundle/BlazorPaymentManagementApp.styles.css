@@ -6,29 +6,28 @@ h3[b-xav4jpzvug]{
 .register-photo[b-t4gj8982ag] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 10%;
-    margin-left: 7%;
+    margin-top: 7%;
+    margin-left: 6%;
 }
 
     .register-photo .image-holder[b-t4gj8982ag] {
         display: table-cell;
-        width: auto;
-        background: url(https://i.imgur.com/OiO7CWz.jpg);
-        background-size: cover;
-        width: 1200px;
+        width: 900px;
+        background: url(https://i.imgur.com/uUYpE5I.jpg);
+        background-size: cover
     }
 
     .register-photo .form-container[b-t4gj8982ag] {
         display: table;
-        max-width: 900px;
-        height: 100%;
+        max-width: 1100px;
+        height: 550px;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
     .register-photo form[b-t4gj8982ag] {
         display: table-cell;
-        width: 700px;
+        width: 500px;
         background-color: #ffffff;
         margin-right: 200px;
         padding: 60px 60px;
@@ -56,8 +55,24 @@ h3[b-xav4jpzvug]{
     outline: none;
     color: inherit;
     text-indent: 0px;
-    height: 40px
+    height: 40px;
 }
+.register-photo form h4[b-t4gj8982ag] {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 75px;
+    color: red;
+    line-height: 1.5;
+}
+
+.register-photo form h5[b-t4gj8982ag] {
+    font-size: 2vh;
+    margin-top: 60px;
+    text-align: center;
+    color: green;
+    line-height: 1.5;
+}
+
 
 .register-photo form .form-check[b-t4gj8982ag] {
     font-size: 13px;
@@ -97,34 +112,51 @@ h3[b-xav4jpzvug]{
 .register-photo[b-mrxb3qfwvc] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 10%;
-    margin-left: 7%;
+    margin-top: 5%;
+    background-size:cover;
+    margin-left: 2%;
 }
 
     .register-photo .image-holder[b-mrxb3qfwvc] {
         display: table-cell;
         width: auto;
-        background: url(https://i.imgur.com/mwA4GEw.jpg);
+        background: url(https://i.imgur.com/Sdox1Ue.jpg);
         background-size: cover;
-        width: 1200px;
+        width: 1400px;
     }
 
     .register-photo .form-container[b-mrxb3qfwvc] {
         display: table;
-        max-width: 900px;
-        height: 100%;
+        max-width: 1200px;
+        height:700px;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
     .register-photo form[b-mrxb3qfwvc] {
         display: table-cell;
-        width: 700px;
+        width: 750px;
         background-color: #ffffff;
         margin-right: 200px;
         padding: 60px 60px;
         color: #505e6c
     }
+
+        .register-photo form h4[b-mrxb3qfwvc] {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 75px;
+            color: red;
+            line-height: 1.5;
+        }
+
+        .register-photo form h5[b-mrxb3qfwvc] {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 60px;
+            color: green;
+            line-height: 1.5;
+        }
 
 @media (max-width:991px) {
     .register-photo form[b-mrxb3qfwvc] {
@@ -188,7 +220,7 @@ h3[b-xav4jpzvug]{
 .register-photo[b-1qhdc9h047] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left:7%;
 }
 
@@ -336,13 +368,13 @@ body[b-jvtcrqogn1] {
 .register-photo[b-kkxyimxcrz] {
     background: #99b3ff;
     padding: 334px;
-    margin-top: -5%;
+    margin-top: -13%;
     width: 100%;
 }
 
     .register-photo .image-holder[b-kkxyimxcrz] {
         display: table-cell;
-        width: auto;
+        width: 500px;
         background: url(https://i.imgur.com/ucBlWgi.jpg);
         background-size: cover
     }
@@ -350,8 +382,8 @@ body[b-jvtcrqogn1] {
     .register-photo .form-container[b-kkxyimxcrz] {
         display: table;
         max-width: 900px;
-        width: 100%;
-        height:100%;
+        width: 1000px;
+        height: 440px;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
@@ -368,6 +400,22 @@ body[b-jvtcrqogn1] {
     .register-photo form[b-kkxyimxcrz] {
         padding: 60px;
     }
+}
+
+.register-photo form h4[b-kkxyimxcrz] {
+    font-size: 18px;
+    text-align: center;
+    margin-top:10px;
+    color: red;
+    line-height: 1.5;
+}
+
+.register-photo form h5[b-kkxyimxcrz] {
+    font-size: 24px;
+    margin-top: 5px;
+    text-align: center;
+    color: green;
+    line-height: 1.5;
 }
 
 .register-photo form h2[b-kkxyimxcrz] {
@@ -426,35 +474,50 @@ body[b-jvtcrqogn1] {
 .register-photo[b-fob5x4kfew] {
     background: #99b3ff;
     padding-bottom: 334px;
-    padding-top:300px;
-    margin-top:-10%;
-
+    padding-top: 300px;
+    margin-top: -16%;
 }
 
     .register-photo .image-holder[b-fob5x4kfew] {
         display: table-cell;
         width: auto;
-        background: url(https://i.imgur.com/rXPItTm.jpg);
+        background: url(https://i.imgur.com/sdthwLx.jpg);
         background-size: cover;
-        width: 1200px;
+        width: 170vh;
     }
 
     .register-photo .form-container[b-fob5x4kfew] {
         display: table;
-        max-width: 900px;
-        height: 100%;
+        max-width: 185vh;
+        height:100vh;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
     .register-photo form[b-fob5x4kfew] {
         display: table-cell;
-        width: 700px;
+        width: 100vh;
         background-color: #ffffff;
-        margin-right:200px;
+        margin-right: 200px;
         padding: 60px 60px;
         color: #505e6c
     }
+
+        .register-photo form h4[b-fob5x4kfew] {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 75px;
+            color: red;
+            line-height: 1.5;
+        }
+
+        .register-photo form h5[b-fob5x4kfew] {
+            font-size: 2vh;
+            margin-top: 60px;
+            text-align: center;
+            color: green;
+            line-height: 1.5;
+        }
 
 @media (max-width:991px) {
     .register-photo form[b-fob5x4kfew] {
@@ -506,7 +569,7 @@ body[b-jvtcrqogn1] {
     }
 
 .register-photo form .already[b-fob5x4kfew] {
-    margin-top:21px;
+    margin-top: 21px;
     display: block;
     text-align: center;
     font-size: 12px;
@@ -522,8 +585,14 @@ body[b-2ydhb5wup3] {
 .register-photo[b-2ydhb5wup3] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 10%;
-    margin-left: 7%;
+    display:table-cell;
+ 
+}
+
+
+.title[b-2ydhb5wup3]{
+    margin-left:10px;
+    text-align:center;
 }
 
     .register-photo .image-holder[b-2ydhb5wup3] {
@@ -531,26 +600,36 @@ body[b-2ydhb5wup3] {
         width: auto;
         background: url(https://i.imgur.com/vHk2iJc.jpg);
         background-size: cover;
-        width: 1200px;
+        width: 1300px;;
+        height:700px;
+    
     }
 
-    .register-photo .form-container[b-2ydhb5wup3] {
-        display: table;
-   
-        max-width: 900px;
-        height: 100%;
-        margin: 0 auto;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
-    }
-
-    .register-photo form[b-2ydhb5wup3] {
-        display: table-cell;
-        background-color: lightgrey;
-        width: 700px;
-        margin-right: 200px;
-        padding: 60px 60px;
-        color: #505e6c
-    }
+.register-photo .form-container[b-2ydhb5wup3] {
+    display: table;
+    max-width: 1280px;
+    height: 100%;
+    margin-left: 7%;
+    margin-top: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+.register-photo form[b-2ydhb5wup3] {
+    margin-top: 50px;
+    display: table-cell;
+    background-color: #ccffcc;
+    width: 850px;
+    margin-right: 200px;
+    padding: 60px 60px;
+    color: #505e6c
+}
+.register-photo .banks[b-2ydhb5wup3] {
+    background-color: #f0f5f5;
+    width: 1280px;
+    margin-right: 200px;
+    padding: 60px 60px;
+    color: #505e6c;
+    margin-left: 7%;
+}
 
 @media (max-width:991px) {
     .register-photo form[b-2ydhb5wup3] {
@@ -563,7 +642,6 @@ body[b-2ydhb5wup3] {
     line-height: 1.5;
     margin-bottom: 30px
 }
-
 .register-photo form .form-control[b-2ydhb5wup3] {
     background: transparent;
     border: none;
@@ -713,7 +791,8 @@ h3[b-ku3jajem7m] {
 
 .main[b-39h3o3gs01] {
     flex: 1;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://i.imgur.com/6nGnVCs.jpeg%22); height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://i.imgur.com/6nGnVCs.jpeg");
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }

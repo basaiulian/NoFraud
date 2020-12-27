@@ -31,13 +31,15 @@
                     <ValidationMessage For="@(() => user.Password)" />
                 </div>
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a>
+                    <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a> <h5>@message2</h5><h4>@message</h4>                                                                    
                 </div>
 
 
             </EditForm>
         </form>
+
     </div>
+   
 </div>
 
 
@@ -51,7 +53,8 @@
     private List<User> users;
 
     private static Timer aTimer;
-
+    private string message = "";
+    private string message2 = "";
     private User user = new User();
 
     private string username { get; set; }
@@ -75,6 +78,10 @@
         string returnValue = await raspuns.Content.ReadAsStringAsync();
         if (returnValue != "-1")
         {
+            message2 = "";
+            message = "";
+            message2 += "Loged successfully !";
+
             await localStorage.SetItemAsync("autentificat", "1");
             await localStorage.SetItemAsync("id", returnValue);
 
@@ -92,6 +99,12 @@
 
             // Start the timer
             aTimer.Enabled = true;
+
+        }
+        else
+        {
+            message = "";
+            message += "Invalid credentials,try again!";
 
         }
 
