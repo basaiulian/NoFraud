@@ -13,91 +13,91 @@ namespace BlazorPaymentManagementApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using BlazorPaymentManagementApp.Model;
 
 #line default
@@ -113,11 +113,11 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 62 "C:\Users\Iulian\Documents\GitHub\NoFraud\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 62 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
        public string AmountToSend { get; set; }
 
     private List<string> currencyList = new List<string>()
-            {
+        {
             "RON",
             "EUR",
             "GBP",
@@ -129,6 +129,11 @@ using BlazorPaymentManagementApp.Model;
     HttpClient httpClient = new HttpClient()
     {
         BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    HttpClient predictorHttpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5020")
     };
 
     protected async Task<string> GenerateId(int length)
@@ -149,11 +154,61 @@ using BlazorPaymentManagementApp.Model;
 
     protected async Task Create()
     {
-        payment.Amount = float.Parse(AmountToSend);
-        payment.Id = Int32.Parse(await GenerateId(4));
+        //payment.Amount = float.Parse(AmountToSend);
+        //payment.Id = Int32.Parse(await GenerateId(4));
 
-        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
-        NavManager.NavigateTo("payments");
+        ModelInput modelToSend = new ModelInput
+        {
+            Col0 = 5,
+            Trans_date_trans_time = DateTime.Now.ToShortDateString(),
+            Cc_num = 5819219885842813f,
+            Amt = 5.5f,
+            First = "Gion",
+            Last = "John",
+            City = "Galati",
+            State = "Romania",
+            Lat = 43.5f,
+            Long = 88.2f,
+            Merch_lat = 90.04f,
+            Merch_long = 33.9f
+        };
+
+        var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
+        string returnValue = await predict_response.Content.ReadAsStringAsync();
+        Console.WriteLine(returnValue);
+
+        //await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+        //NavManager.NavigateTo("payments");
+    }
+
+    public class ModelInput
+    {
+        public float Col0 { get; set; }
+
+
+        public string Trans_date_trans_time { get; set; }
+
+        public float Cc_num { get; set; }
+
+        public float Amt { get; set; }
+
+        public string First { get; set; }
+
+        public string Last { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        public float Lat { get; set; }
+
+        public float Long { get; set; }
+
+        public float Merch_lat { get; set; }
+
+        public float Merch_long { get; set; }
+
+        public string Is_fraud { get; set; }
     } 
 
 #line default

@@ -8,6 +8,7 @@ namespace FraudPredictor
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -19,6 +20,14 @@ namespace FraudPredictor
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddCors(options =>
+                options.AddPolicy(MyAllowSpecificOrigins, builder =>
+                {
+                    builder.AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowAnyOrigin();
+                }
+            ));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,6 +42,8 @@ namespace FraudPredictor
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
+
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseRouting();
 

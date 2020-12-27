@@ -29,7 +29,7 @@
                         <option>RON(Default)</option>
                         @foreach (var currency in currencyList)
                         {
-                            <option>@currency</option>}
+    <option>@currency</option>}
                     </InputSelect>
                     <ValidationMessage For="@(() => payment.Currency)" />
                 </div>
@@ -62,7 +62,7 @@
 @code{ public string AmountToSend { get; set; }
 
     private List<string> currencyList = new List<string>()
-            {
+        {
             "RON",
             "EUR",
             "GBP",
@@ -74,6 +74,11 @@
     HttpClient httpClient = new HttpClient()
     {
         BaseAddress = new Uri("http://localhost:5000")
+    };
+
+    HttpClient predictorHttpClient = new HttpClient()
+    {
+        BaseAddress = new Uri("http://localhost:5020")
     };
 
     protected async Task<string> GenerateId(int length)
@@ -94,9 +99,59 @@
 
     protected async Task Create()
     {
-        payment.Amount = float.Parse(AmountToSend);
-        payment.Id = Int32.Parse(await GenerateId(4));
+        //payment.Amount = float.Parse(AmountToSend);
+        //payment.Id = Int32.Parse(await GenerateId(4));
 
-        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
-        NavManager.NavigateTo("payments");
+        ModelInput modelToSend = new ModelInput
+        {
+            Col0 = 5,
+            Trans_date_trans_time = DateTime.Now.ToShortDateString(),
+            Cc_num = 5819219885842813f,
+            Amt = 5.5f,
+            First = "Gion",
+            Last = "John",
+            City = "Galati",
+            State = "Romania",
+            Lat = 43.5f,
+            Long = 88.2f,
+            Merch_lat = 90.04f,
+            Merch_long = 33.9f
+        };
+
+        var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
+        string returnValue = await predict_response.Content.ReadAsStringAsync();
+        Console.WriteLine(returnValue);
+
+        //await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+        //NavManager.NavigateTo("payments");
+    }
+
+    public class ModelInput
+    {
+        public float Col0 { get; set; }
+
+
+        public string Trans_date_trans_time { get; set; }
+
+        public float Cc_num { get; set; }
+
+        public float Amt { get; set; }
+
+        public string First { get; set; }
+
+        public string Last { get; set; }
+
+        public string City { get; set; }
+
+        public string State { get; set; }
+
+        public float Lat { get; set; }
+
+        public float Long { get; set; }
+
+        public float Merch_lat { get; set; }
+
+        public float Merch_long { get; set; }
+
+        public string Is_fraud { get; set; }
     } }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OXmqJSqHXi0P3DyQ1AZutRt78yc+ZfJV3aeYmOw1jfRh1kxQH4JNRvEQggfZK+qW3YG7DPTikTU6czEtOcyyaw==",
+  "dgSpecHash": "QNm/WDrZterMrFI+0KcD1hbeMgPCLobCAG7b0ucqWDKM1zaXpWPKJXOoG8uOD2hsmPpenTutJLSQMWQrK3tBiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

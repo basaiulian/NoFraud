@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RogtiQy5Dh3p43bQzssuwRMSHTsnbq9GAEQWaKm4u7MTQlrnSUj9dOqexWDJOQuPBvvBOm5oYjUHst+qLZzS5w==",
+  "dgSpecHash": "pKo6xjO4rCh0Mz0bdJlDuG6TeU0TuMg1Z99ptHYUdag2z8chZZ2tMqsSbTy892BwAIqJed+OZVVog/fn2tpGwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml\\1.5.0-preview2\\microsoft.ml.1.5.0-preview2.nupkg.sha512",

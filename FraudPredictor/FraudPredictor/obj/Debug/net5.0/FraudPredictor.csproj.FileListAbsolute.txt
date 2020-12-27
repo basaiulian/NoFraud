@@ -1,142 +1,142 @@
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.Core.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.Data.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.KMeansClustering.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.PCA.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.StandardTrainers.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.Transforms.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.CpuMath.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.DataView.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.FastTree.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.CodeDom.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\linux-x64\native\libLdaNative.so
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\osx-x64\native\libLdaNative.dylib
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x64\native\LdaNative.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x86\native\LdaNative.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\linux-x64\native\libFastTreeNative.so
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\osx-x64\native\libFastTreeNative.dylib
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x64\native\FastTreeNative.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x86\native\FastTreeNative.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictorML.Model.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csprojAssemblyReference.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfoInputs.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfo.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\staticwebassets\FraudPredictor.StaticWebAssets.Manifest.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\staticwebassets\FraudPredictor.StaticWebAssets.xml
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\scopedcss\bundle\FraudPredictor.styles.css
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.TagHelpers.input.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.TagHelpers.output.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorCoreGenerate.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorTargetAssemblyInfo.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorTargetAssemblyInfo.cs
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\MLModel.zip
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\appsettings.json
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.exe
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.deps.json
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.runtimeconfig.json
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.runtimeconfig.dev.json
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ref\FraudPredictor.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.pdb
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.Views.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.Views.pdb
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Humanizer.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Collections.Immutable.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.Convention.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.Hosting.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.Runtime.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.TypedParts.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Reflection.Metadata.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictorML.Model.pdb
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csproj.CoreCompileInputs.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.Views.pdb
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csproj.CopyComplete
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\ref\FraudPredictor.dll
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.pdb
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.genruntimeconfig.cache
-C:\Users\Iulian\Documents\GitHub\NoFraud\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Fraud\Index.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\MLModel.zip
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\appsettings.Development.json
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\appsettings.json
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.exe
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.deps.json
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.runtimeconfig.json
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.runtimeconfig.dev.json
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ref\FraudPredictor.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.pdb
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.Views.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictor.Views.pdb
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Humanizer.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.Core.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.Data.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.KMeansClustering.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.PCA.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.StandardTrainers.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.Transforms.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.CpuMath.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.DataView.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.ML.FastTree.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.CodeDom.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Collections.Immutable.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.AttributedModel.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.Convention.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.Hosting.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.Runtime.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Composition.TypedParts.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\System.Reflection.Metadata.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\linux-x64\native\libLdaNative.so
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\osx-x64\native\libLdaNative.dylib
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x64\native\LdaNative.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x86\native\LdaNative.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\linux-x64\native\libFastTreeNative.so
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\osx-x64\native\libFastTreeNative.dylib
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x64\native\FastTreeNative.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-x86\native\FastTreeNative.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictorML.Model.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\bin\Debug\net5.0\FraudPredictorML.Model.pdb
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csprojAssemblyReference.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfoInputs.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.AssemblyInfo.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.MvcApplicationPartsAssemblyInfo.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorAssemblyInfo.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\staticwebassets\FraudPredictor.StaticWebAssets.Manifest.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\staticwebassets\FraudPredictor.StaticWebAssets.xml
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\scopedcss\bundle\FraudPredictor.styles.css
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.TagHelpers.input.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.TagHelpers.output.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorCoreGenerate.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Fraud\Index.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorTargetAssemblyInfo.cache
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.RazorTargetAssemblyInfo.cs
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.Views.pdb
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.csproj.CopyComplete
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\ref\FraudPredictor.dll
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.pdb
+D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\obj\Debug\net5.0\FraudPredictor.genruntimeconfig.cache

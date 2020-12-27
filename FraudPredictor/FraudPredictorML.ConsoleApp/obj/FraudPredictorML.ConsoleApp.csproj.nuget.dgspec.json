@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj": {}
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj": {
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj",
+        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj",
         "projectName": "FraudPredictorML.ConsoleApp",
-        "projectPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj",
+        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.ConsoleApp\\FraudPredictorML.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.ConsoleApp\\obj\\",
+        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.ConsoleApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
-                "projectPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj"
+              "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
+                "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
+        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
         "projectName": "FraudPredictorML.Model",
-        "projectPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
+        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
         "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Iulian\\Documents\\GitHub\\NoFraud\\FraudPredictor\\FraudPredictorML.Model\\obj\\",
+        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune11.20-27.12.2020\\FraudPredictor\\FraudPredictorML.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",

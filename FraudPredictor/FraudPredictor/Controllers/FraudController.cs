@@ -12,12 +12,13 @@ namespace FraudPredictor.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(ModelInput input)
+        public ModelOutput Index(ModelInput input)
         {
             var prediction = ConsumeModel.Predict(input);
-            ViewBag.Result = prediction;
+            //ViewBag.Result = prediction;
+            return prediction;
 
-            return View();
+            //return View();
         }
     }
 }
