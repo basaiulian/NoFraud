@@ -6,9 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using PaymentManagement.Model;
 using PaymentManagement.Entities;
 using System;
-using Newtonsoft.Json;
-using System.Reflection;
-using Newtonsoft.Json.Linq;
 
 namespace PaymentManagement.Controllers
 {

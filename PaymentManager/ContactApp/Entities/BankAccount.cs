@@ -5,7 +5,7 @@ namespace PaymentManagement.Entities
 {
     public class BankAccount
     {
-        [Column("id", TypeName = "int")]
+        [Column("id", TypeName = "string")]
         public string Id { get; set; }
 
         [Column("bank_name", TypeName = "string")]

@@ -28,6 +28,7 @@
           "MediatR": "9.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0-rc.2.20475.6",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0-rc.2.20475.6",
+          "Microsoft.EntityFrameworkCore.InMemory": "3.1.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0-rc.2.20475.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.0-rc.2.20475.6",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.0-rc.2.20475.6",
@@ -795,6 +796,20 @@
             "assemblyVersion": "5.0.0.0",
             "fileVersion": "5.0.20.47506"
           }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/3.1.10": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0-rc.2.20475.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "3.1.10.0",
+            "fileVersion": "3.100.1020.52002"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.EntityFrameworkCore.InMemory.dll": {}
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/5.0.0-rc.2.20475.6": {
@@ -3881,6 +3896,13 @@
       "sha512": "sha512-eLoR2fK5Pyq+T4bOkmpmEgXsBMp55PtXVGLbD4HIcKpD/FXcBDd/yv6MCDdXcYTWmgDbTNY4R4Vm2hRAc7Z+QQ==",
       "path": "microsoft.entityframeworkcore.design/5.0.0-rc.2.20475.6",
       "hashPath": "microsoft.entityframeworkcore.design.5.0.0-rc.2.20475.6.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/3.1.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7GXxSehLWbxuZRoQT3PKd6r/+A9HXzNPbtPU9EFUFx8I5JrXHB2gbKsP/6NXXj5wX1LWGBctv1Y29l3V0YvLTA==",
+      "path": "microsoft.entityframeworkcore.inmemory/3.1.10",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.3.1.10.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.0-rc.2.20475.6": {
       "type": "package",

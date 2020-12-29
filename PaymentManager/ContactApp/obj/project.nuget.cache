@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xMK7MLChJrNfwExumUlU7/H44YKpwTH7DMdVqQ1sb+1qPpaFeSutClIE4zgwkb3O8MjSMZDXuWsCcGJ5x3HB9A==",
+  "dgSpecHash": "jNg/PDBpVW3DtuMKu71Z61hG5xoa+uB6/gG4LRA3Sf/7gpBdbL265/mypTqP3iinP6zNDQ66hdypFydBYOXYBg==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\elasticsearch.net\\7.10.1\\elasticsearch.net.7.10.1.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -27,6 +27,7 @@
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0-rc.2.20475.6\\microsoft.entityframeworkcore.abstractions.5.0.0-rc.2.20475.6.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0-rc.2.20475.6\\microsoft.entityframeworkcore.analyzers.5.0.0-rc.2.20475.6.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0-rc.2.20475.6\\microsoft.entityframeworkcore.design.5.0.0-rc.2.20475.6.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\3.1.10\\microsoft.entityframeworkcore.inmemory.3.1.10.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0-rc.2.20475.6\\microsoft.entityframeworkcore.relational.5.0.0-rc.2.20475.6.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\5.0.0-rc.2.20475.6\\microsoft.entityframeworkcore.sqlite.5.0.0-rc.2.20475.6.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\5.0.0-rc.2.20475.6\\microsoft.entityframeworkcore.sqlite.core.5.0.0-rc.2.20475.6.nupkg.sha512",

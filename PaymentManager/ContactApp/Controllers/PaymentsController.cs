@@ -4,6 +4,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PaymentManagement.Model;
+using System;
+using PaymentManagement.Controllers;
+using PaymentManagement.Model;
+using Microsoft.AspNetCore.Mvc;
+using PaymentManagement.Entities;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks.Dataflow;
 
 namespace PaymentManagement.Controllers
 {
@@ -22,6 +31,7 @@ namespace PaymentManagement.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
         {
+
             return await _context.Payment.ToListAsync();
         }
 
