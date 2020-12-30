@@ -25,7 +25,6 @@ namespace PaymentManagement.Controllers
         {
             foreach (var user in _context.User)
             {
-                // INCLUDE pt cards
                 List<BankAccount> bankAccounts = _context.BankAccount.ToList();
                 foreach (var bankAccount in bankAccounts)
                 {

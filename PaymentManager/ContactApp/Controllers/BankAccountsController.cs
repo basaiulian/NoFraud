@@ -43,7 +43,7 @@ namespace PaymentManagement.Controllers
         }
 
         [HttpGet("{id}", Name = "GetBankAccountById")]
-        public async Task<ActionResult<BankAccount>> GetBankAccountById(int id)
+        public async Task<ActionResult<BankAccount>> GetBankAccountById(string id)
         {
             var bankAccount= await _context.BankAccount.FindAsync(id);
 
@@ -55,7 +55,7 @@ namespace PaymentManagement.Controllers
             List<Card> cards = _context.Card.ToList();
             foreach (var card in cards)
             {
-                if (id == Int32.Parse(card.BankAccountId))
+                if (id == card.BankAccountId)
                 {
                     if (!bankAccount.CardList.Contains(card))
                         bankAccount.CardList.Add(card);
@@ -104,7 +104,7 @@ namespace PaymentManagement.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteBankAccount(int id)
+        public async Task<IActionResult> DeleteBankAccount(string id)
         {
             var bankAccount = await _context.BankAccount.FindAsync(id);
             if (bankAccount == null)
@@ -114,7 +114,7 @@ namespace PaymentManagement.Controllers
 
             foreach (Card card in _context.Card)
             {
-                if( Int32.Parse(card.BankAccountId) == id)
+                if(card.BankAccountId == id)
                 {
                     _context.Card.Remove(card);
 

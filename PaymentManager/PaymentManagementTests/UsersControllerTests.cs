@@ -1,4 +1,3 @@
-using System;
 using Xunit;
 using PaymentManagement.Controllers;
 using PaymentManagement.Model;
@@ -7,9 +6,6 @@ using PaymentManagement.Entities;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using System.Threading.Tasks.Dataflow;
-using System.Threading.Tasks;
-using System.Diagnostics;
 
 namespace PaymentManagementTests
 {
@@ -51,16 +47,30 @@ namespace PaymentManagementTests
 
             var users = controller.GetUsers().Value.ToList();
 
-            Assert.Equal(100, users[0].Id);
-            Assert.Equal(200, users[1].Id);
-            Assert.Equal("usertest1", users[0].Username);
-            Assert.Equal("usertest2", users[1].Username);
-            Assert.Equal("parola1", users[0].Password);
-            Assert.Equal("parola2", users[1].Password);
-            Assert.Equal("user1@admin.com", users[0].Email);
-            Assert.Equal("user2@admin.com", users[1].Email);
-            Assert.Equal("0871771111", users[0].PhoneNumber);
-            Assert.Equal("0858182111", users[1].PhoneNumber);
+            Assert.Equal(user1, users[0]);
+            Assert.Equal(user2, users[1]);
+
+        }
+
+        [Fact]
+        public void FindUser()
+        {
+
+            var _options = new DbContextOptionsBuilder<DataContext>()
+                .UseInMemoryDatabase(databaseName: "UserFind")
+                .Options;
+            var context = new DataContext(_options);
+
+            var controller = new UsersController(context);
+
+            context.User.Add(user1);
+            context.SaveChanges();
+
+            List<string> userData = new List<string>{ "usertest1", "parola1" };
+
+            int userId = controller.FindUser(userData);
+
+            Assert.True(userId != -1);
 
         }
 
@@ -78,50 +88,49 @@ namespace PaymentManagementTests
 
             var user = controller.GetUserById(100).Result.Value;
 
-            Assert.Equal(100, user.Id);
-            Assert.Equal("usertest1", user.Username);
-            Assert.Equal("parola1", user.Password);
-            Assert.Equal("user1@admin.com", user.Email);
-            Assert.Equal("0871771111", user.PhoneNumber);
+            Assert.Equal(user, user1);
 
         }
 
-        //[Fact]
-        //public void UpdateUser()
-        //{
-        //    var _options = new DbContextOptionsBuilder<DataContext>()
-        //        .UseInMemoryDatabase(databaseName: "UpdateUser")
-        //        .EnableSensitiveDataLogging()
-        //        .Options;
-        //    var context = new DataContext(_options);
+        [Fact]
+        public void UpdateUser()
+        {
+            var _options = new DbContextOptionsBuilder<DataContext>()
+                .UseInMemoryDatabase(databaseName: "UpdateUser")
+                .EnableSensitiveDataLogging()
+                .Options;
+            var context = new DataContext(_options);
 
-        //    var controller = new UsersController(context);
+            var controller = new UsersController(context);
 
-        //    context.User.Add(user1);
-        //    context.SaveChanges();
+            context.User.Add(user1);
+            context.SaveChanges();
 
-        //    User user3 = new User
-        //    {
-        //        Id = 100,
-        //        Address = "Romania, Suceava",
-        //        Username = "usertest3",
-        //        Password = "parola3",
-        //        Email = "user3@admin.com",
-        //        PhoneNumber = "0858182111"
-        //    };
+            //The entity is not being tracked by the context
+            context.Entry(user1).State = EntityState.Detached;
 
-        //    var updateResult = controller.PutUser(100, user3).Result;
+            User user3 = new User
+            {
+                Id = 100,
+                Address = "Romania, Suceava",
+                Username = "usertest3",
+                Password = "parola3",
+                Email = "user3@admin.com",
+                PhoneNumber = "0858182111"
+            };
+
+            var updateResult = controller.PutUser(100, user3).Result;
 
 
-        //    Assert.IsType<OkResult>(updateResult);
+            Assert.IsType<OkResult>(updateResult);
 
-        //}
+        }
 
         [Fact]
         public void DeleteUser()
         {
             var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UserGetById")
+                .UseInMemoryDatabase(databaseName: "UserDelete")
                 .Options;
             var context = new DataContext(_options);
 
@@ -131,14 +140,28 @@ namespace PaymentManagementTests
 
             context.SaveChanges();
 
-            var usersLength1 = context.User.Count();
-
             controller.DeleteUser(100);
 
-            var usersLength2 = context.User.Count();
+            var user = controller.GetUserById(100).Result.Value;
 
-            Assert.Equal(usersLength1, usersLength2+1);
+            Assert.Null(user);
+        }
 
+        [Fact]
+        public void CreateUser()
+        {
+            var _options = new DbContextOptionsBuilder<DataContext>()
+                .UseInMemoryDatabase(databaseName: "UserCreate")
+                .Options;
+            var context = new DataContext(_options);
+
+            var controller = new UsersController(context);
+
+            controller.PostUser(user1);
+
+            var createdUser = controller.GetUserById(user1.Id).Result.Value;
+
+            Assert.Equal(createdUser, user1);
         }
     }
 }
