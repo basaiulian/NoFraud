@@ -6,8 +6,7 @@
 @inject IJSRuntime JsRuntime
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 <div class="register-photo">
     <div class="form-container">
@@ -17,7 +16,6 @@
                 <DataAnnotationsValidator />
 
                 <h2 class="text-center"><strong>Create Card </strong> </h2>
-
 
                 <div class="form-group">
                     <InputText id="number" class="form-control" placeholder="Number" @bind-Value="card.Number" />
@@ -29,16 +27,18 @@
                     <ValidationMessage For="@(() => card.ExpirationDate)" />
                 </div>
 
-                <div class="form-group">
-                    <InputText type="password" id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
-                    <ValidationMessage For="@(() => card.PinCode)" />
+                <div class="form-group" style="display:inline-flex">
+                    <InputText type=@showType id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
                 </div>
+                <i class="far fa-eye" @onclick="() => showPin()"></i>
+                <ValidationMessage For="@(() => card.PinCode)" />
 
 
-                <div class="form-group">
-                    <InputText type="password" id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
-                    <ValidationMessage For="@(() => card.CvvCode)" />
+                <div class="form-group" style="display:inline-flex">
+                    <InputText type=@showType2 id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
                 </div>
+                <i class="far fa-eye" @onclick="() => showCvv()"></i>
+                <ValidationMessage For="@(() => card.CvvCode)" />
 
 
                 <div class="form-group">
@@ -46,7 +46,7 @@
                         <option>BankName</option>
                         @foreach (var bankName in bankNames)
                         {
-    <option>@bankName</option>}
+            <option>@bankName</option>}
                     </InputSelect>
                     <ValidationMessage For="@(() => card.bankNameToSend)" />
                 </div>
@@ -56,7 +56,7 @@
                         <option>BankAccountId</option>
                         @foreach (var bankId in bankIds)
                         {
-    <option>@bankId</option>}
+            <option>@bankId</option>}
                     </InputSelect>
                     <ValidationMessage For="@(() => card.bankIdToSend)" />
                 </div>
@@ -80,6 +80,9 @@
     private string message = "";
     private string message2 = "";
 
+    private string showType = "password";
+    private string showType2 = "password";
+
     private List<string> bankNames = new List<string>();
 
     private List<string> bankIds = new List<string>();
@@ -90,6 +93,30 @@
     {
         BaseAddress = new Uri("http://localhost:5000")
     };
+
+    private void showPin()
+    {
+        if (showType == "password")
+        {
+            showType = "text";
+        }
+        else if (showType == "text")
+        {
+            showType = "password";
+        }
+    }
+
+    private void showCvv()
+    {
+        if (showType2 == "password")
+        {
+            showType2 = "text";
+        }
+        else if (showType2 == "text")
+        {
+            showType2 = "password";
+        }
+    }
 
     protected void getBankId()
     {

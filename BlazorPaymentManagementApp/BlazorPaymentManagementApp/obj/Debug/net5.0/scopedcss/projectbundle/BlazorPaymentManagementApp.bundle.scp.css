@@ -309,6 +309,20 @@ h3[b-xav4jpzvug]{
     opacity: 0.9;
     text-decoration: none
 }
+/* /Pages/Error.razor.rz.scp.css */
+body[b-03bgoy2xi6] {
+}
+
+.error-title[b-03bgoy2xi6] {
+    font-size:25px;
+    color:white;
+    font-weight:bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 /* /Pages/Index.razor.rz.scp.css */
 body[b-jvtcrqogn1] {
 }
@@ -487,9 +501,10 @@ body[b-jvtcrqogn1] {
 
     .register-photo .form-container[b-fob5x4kfew] {
         display: table;
-        max-width: 185vh;
-        height:100vh;
+        max-width: 150vh;
+        height:80vh;
         margin: 0 auto;
+        margin-top: 100px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
@@ -517,6 +532,10 @@ body[b-jvtcrqogn1] {
             color: green;
             line-height: 1.5;
         }
+
+.register-photo form .form-control[b-fob5x4kfew]{
+        padding-right: 310px;
+}
 
 @media (max-width:991px) {
     .register-photo form[b-fob5x4kfew] {
@@ -577,8 +596,9 @@ body[b-jvtcrqogn1] {
     text-decoration: none
 }
 /* /Pages/UserById.razor.rz.scp.css */
-body[b-2ydhb5wup3] {
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
 
+body[b-2ydhb5wup3] {
 }
 
 .register-photo[b-2ydhb5wup3] {
@@ -599,9 +619,9 @@ body[b-2ydhb5wup3] {
         width: auto;
         background: url(https://i.imgur.com/vHk2iJc.jpg);
         background-size: cover;
-        width: 1300px;;
+        width: 1300px;
         height:700px;
-    
+        border-top-left-radius: 6px;
     }
 
 .register-photo .form-container[b-2ydhb5wup3] {
@@ -619,10 +639,13 @@ body[b-2ydhb5wup3] {
     width: 850px;
     margin-right: 200px;
     padding: 60px 60px;
-    color: #505e6c
+    color: #505e6c;
+    border-top-right-radius: 6px;
 }
 .register-photo .banks[b-2ydhb5wup3] {
     background-color: #f0f5f5;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     width: 1280px;
     margin-right: 200px;
     padding: 60px 60px;
@@ -700,7 +723,7 @@ h3[b-2ydhb5wup3]{
 
     border-collapse : collapse;
     margin : 25px 50px 50px 200px;
-    max-width: 75%;
+    max-width: 50%;
     font-size: 0.9em;
     min-width: 400px;
     border-radius: 5px 5px 0 0;
@@ -734,6 +757,28 @@ h3[b-2ydhb5wup3]{
 .table tbody tr:last-of-type[b-2ydhb5wup3]{
     border-bottom:2px solid mediumslateblue;
 }
+
+.deleteButton[b-2ydhb5wup3] {
+    border: none;
+    background-color: #44c767;
+    box-shadow: inset 0px 1px 0px 0px #bee2f9;
+    background: linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+    border-radius: 6px;
+    border: 1px solid #3866a3;
+    display: inline-block;
+    cursor: pointer;
+    color: #14396a;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #7cacde;
+}
+.deleteButton:hover[b-2ydhb5wup3] {
+        background-color: #5cbf2a;
+        color: white;
+}
 /* /Shared/CardLayout.razor.rz.scp.css */
 body[b-ku3jajem7m] {
 
@@ -764,15 +809,16 @@ h3[b-ku3jajem7m] {
     margin-bottom: 50px;
 }
 
-.navigation a[b-ku3jajem7m]{
-
-    font-style:normal;
-    margin-right: 25px;
-    text-decoration: none;
-    padding : 5px 20px;
-    border: 1px solid #0094ff;
-    color : black;
-}
+    .navigation a[b-ku3jajem7m] {
+        font-style: normal;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 6px;
+        border: 1px solid #0094ff;
+        color: black;
+        background-color: lightcyan;
+    }
 
     .navigation a:hover[b-ku3jajem7m] {
         background: linear-gradient(to top right, #3399ff 0%, #0033cc 100%);
@@ -809,9 +855,6 @@ h3[b-ku3jajem7m] {
     background-size: cover;
     background-position: center;
 }
-
-
-
 
 .sidebar[b-39h3o3gs01] {
     background: linear-gradient(to top right, #3399ff 0%, #0033cc 100%);

@@ -2,11 +2,14 @@
 @layout CardLayout
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @using BlazorPaymentManagementApp.Model
+@using System.Timers
 @inject NavigationManager NavManager
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 @if (Id != localId && localId != null)
 {
-    <p>HOTOMANULE</p>
+    NavManager.NavigateTo("/error");
 }
 else
 {
@@ -43,6 +46,7 @@ else
                                     <th>Name</th>
                                     <th>Account Type</th>
                                     <th>Balance</th>
+                                    <th><button class="deleteButton" @onclick="() => deleteBankAccount(bankAccount.Id)"><i class="fa fa-trash"> Delete</i></button></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -50,6 +54,7 @@ else
                                     <td>@bankAccount.BankName</td>
                                     <td>@bankAccount.AccountType</td>
                                     <td>@bankAccount.Balance</td>
+                                    <td></td>
                                 </tr>
                                 <table class="table">
                                     <thead>
@@ -58,6 +63,7 @@ else
                                             <th>CvvCode</th>
                                             <th>PinCode</th>
                                             <th>ExpirationDate</th>
+                                            <th>Manage card</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -69,8 +75,9 @@ else
                                                 <td>@card.CvvCode</td>
                                                 <td>@card.PinCode</td>
                                                 <td>@card.ExpirationDate</td>
+                                                <th><button class="deleteButton" @onclick="() => deleteCard(card.Id)"><i class="fa fa-trash"> Delete</i></button></th>
                                             </tr>
-}
+                                        }
 
 
                                     </tbody>
@@ -92,6 +99,8 @@ else
 
     public string localId { get; set; }
 
+    public string loggedIn { get; set; }
+
     private User user = new User();
 
     private BankAccount bankAccount = new BankAccount();
@@ -103,17 +112,54 @@ else
         BaseAddress = new Uri("http://localhost:5000")
     };
 
-    protected async void logout()
+    protected async void deleteCard(int cardId)
     {
-        await localStorage.RemoveItemAsync("autentificat");
-        await localStorage.RemoveItemAsync("id");
+        Console.WriteLine(cardId);
+        Console.WriteLine(localId);
+        await httpClient.DeleteAsync("/api/v1/cards/" + cardId.ToString());
 
-        NavManager.NavigateTo("/");
+        Timer aTimer = new Timer();
+        aTimer.Interval = 200;
+
+        // Hook up the Elapsed event for the timer. 
+        aTimer.Elapsed += (sender, args) =>
+        {
+            NavManager.NavigateTo("/users/" + localId, true);
+        };
+
+        // Have the timer fire repeated events (true is the default)
+        aTimer.AutoReset = true;
+
+        // Start the timer
+        aTimer.Enabled = true;
+    }
+
+    protected async void deleteBankAccount(string bankId)
+    {
+        Console.WriteLine(bankId);
+        Console.WriteLine(localId);
+        await httpClient.DeleteAsync("/api/v1/bankaccounts/" + bankId);
+
+        Timer aTimer = new Timer();
+        aTimer.Interval = 200;
+
+        // Hook up the Elapsed event for the timer. 
+        aTimer.Elapsed += (sender, args) =>
+        {
+            NavManager.NavigateTo("/users/" + localId, true);
+        };
+
+        // Have the timer fire repeated events (true is the default)
+        aTimer.AutoReset = true;
+
+        // Start the timer
+        aTimer.Enabled = true;
     }
 
     protected override async Task OnInitializedAsync()
     {
         localId = await localStorage.GetItemAsStringAsync("id");
+        loggedIn = await localStorage.GetItemAsStringAsync("autentificat");
         user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + Id);
     }
 }

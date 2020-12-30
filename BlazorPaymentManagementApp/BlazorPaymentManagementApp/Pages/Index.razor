@@ -3,28 +3,26 @@
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager NavManager
 
-
     <div class="title">Welcome to NoFraud</div>
-<div class="buttons">
-    <button id="login" type="button" @onclick="GoToLogin">Login</button>
-    <button id="register" type="button" @onclick="GoToRegister">Register</button>
-</div>
+                    <div class="buttons">
+                        <button id="login" type="button" @onclick="GoToLogin">Login</button>
+                        <button id="register" type="button" @onclick="GoToRegister">Register</button>
+                    </div>
 
-@code{ protected bool IsLoggedIn { get; set; }
+
+@code{ protected string IsLoggedIn { get; set; }
     protected string Id { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        this.IsLoggedIn = await localStorage.ContainKeyAsync("autentificat");
+        this.IsLoggedIn = await localStorage.GetItemAsStringAsync("autentificat");
         this.Id = await localStorage.GetItemAsStringAsync("id");
 
-        if (this.IsLoggedIn == true)
+        if (this.IsLoggedIn == "True")
         {
             NavManager.NavigateTo("/users/" + Id, true);
         }
-
-
-
+        
     }
     protected async void GoToLogin()
     {
@@ -34,6 +32,4 @@
     protected async void GoToRegister()
     {
         NavManager.NavigateTo("/register");
-    }
-
-    }
+    } }

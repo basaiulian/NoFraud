@@ -10,6 +10,8 @@
 @inject NavigationManager NavManager
 @inject IJSRuntime JsRuntime
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
 <div class="register-photo">
     <div class="form-container">
         <div class="image-holder"></div>
@@ -22,10 +24,11 @@
                     <InputText id="username" class="form-control" placeholder="Username" @bind-Value="username" />
                     @*<ValidationMessage For="@(() => username)" />*@
                 </div>
-                <div class="form-group">
-                    <InputText type="password" id="password" class="form-control" placeholder="Password" @bind-Value="password" />
+                <div class="form-group" style="display:inline-flex">
+                    <InputText type="@showType" id="password" class="form-control" placeholder="Password" @bind-Value="password" />
                     @*<ValidationMessage For="@(() => password)" />*@
                 </div>
+                <i class="far fa-eye" @onclick="() => showPassword()"></i>
                 <div class="form-group">
                     <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a> <h5>@message2</h5><h4>@message</h4>
                 </div>
@@ -46,6 +49,8 @@
 @code{
     private List<User> users;
 
+    private string showType = "password";
+
     private static Timer aTimer;
 
     private string message = "";
@@ -59,6 +64,17 @@
     {
         BaseAddress = new Uri("http://localhost:5000")
     };
+
+    private void showPassword()
+    {
+        if(showType == "password")
+        {
+            showType = "text";
+        } else if (showType == "text")
+        {
+            showType = "password";
+        }
+    }
 
     protected async Task LoginUser()
     {
@@ -78,10 +94,10 @@
             message = "";
             message2 += "Logged in successfully !";
 
-            await localStorage.SetItemAsync("autentificat", "1");
+            await localStorage.SetItemAsync("autentificat", "True");
             await localStorage.SetItemAsync("id", returnValue);
 
-            aTimer = new System.Timers.Timer();
+            aTimer = new Timer();
             aTimer.Interval = 1000;
 
             // Hook up the Elapsed event for the timer. 

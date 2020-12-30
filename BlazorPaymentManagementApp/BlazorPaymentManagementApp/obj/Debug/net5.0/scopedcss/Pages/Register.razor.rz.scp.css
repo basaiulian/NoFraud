@@ -13,9 +13,10 @@
 
     .register-photo .form-container[b-fob5x4kfew] {
         display: table;
-        max-width: 185vh;
-        height:100vh;
+        max-width: 150vh;
+        height:80vh;
         margin: 0 auto;
+        margin-top: 100px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
@@ -43,6 +44,10 @@
             color: green;
             line-height: 1.5;
         }
+
+.register-photo form .form-control[b-fob5x4kfew]{
+        padding-right: 310px;
+}
 
 @media (max-width:991px) {
     .register-photo form[b-fob5x4kfew] {

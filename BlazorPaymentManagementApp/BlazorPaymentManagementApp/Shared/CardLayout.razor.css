@@ -27,15 +27,16 @@ h3 {
     margin-bottom: 50px;
 }
 
-.navigation a{
-
-    font-style:normal;
-    margin-right: 25px;
-    text-decoration: none;
-    padding : 5px 20px;
-    border: 1px solid #0094ff;
-    color : black;
-}
+    .navigation a {
+        font-style: normal;
+        margin-right: 25px;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 6px;
+        border: 1px solid #0094ff;
+        color: black;
+        background-color: lightcyan;
+    }
 
     .navigation a:hover {
         background: linear-gradient(to top right, #3399ff 0%, #0033cc 100%);
