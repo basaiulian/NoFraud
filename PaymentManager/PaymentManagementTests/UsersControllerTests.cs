@@ -34,7 +34,7 @@ namespace PaymentManagementTests
         [Fact]
         public void GetUsers_ShouldReturnUsers()
         {
- 
+
             var _options = new DbContextOptionsBuilder<DataContext>()
                 .UseInMemoryDatabase(databaseName: "UsersGet")
                 .Options;
@@ -66,7 +66,7 @@ namespace PaymentManagementTests
             context.User.Add(user1);
             context.SaveChanges();
 
-            List<string> userData = new List<string>{ "usertest1", "parola1" };
+            List<string> userData = new List<string> { "usertest1", "parola1" };
 
             int userId = controller.FindUser(userData);
 
@@ -76,7 +76,7 @@ namespace PaymentManagementTests
 
         [Fact]
         public void GetByIdUser_ShouldReturnUserById()
-        { 
+        {
             var _options = new DbContextOptionsBuilder<DataContext>()
                 .UseInMemoryDatabase(databaseName: "UserGetById")
                 .Options;

@@ -15,7 +15,6 @@ namespace PaymentManagement
         [Column("currency", TypeName = "string")]
         public string Currency { get; set; }
 
-
         [Column("source_", TypeName = "string")]
         public string Source { get; set; }
 
@@ -33,5 +32,8 @@ namespace PaymentManagement
 
         [Column("longitude", TypeName = "float")]
         public float longitude { get; set; }
+
+        [Column("is_fraud", TypeName = "string")]
+        public string IsFraud { get; set; }
     }
 }

@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\bin\Debug\net5.0\wwwroot\" />
-  <ContentRoot BasePath="/" Path="D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/" Path="D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune6.23-1.9.2021\Versiune1.20-1.9.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\bin\Debug\net5.0\wwwroot\" />
+  <ContentRoot BasePath="/" Path="D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune6.23-1.9.2021\Versiune1.20-1.9.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\obj\Debug\net5.0\scopedcss\bundle\" />
 </StaticWebAssets>

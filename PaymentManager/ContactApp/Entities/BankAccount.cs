@@ -24,26 +24,5 @@ namespace PaymentManagement.Entities
         public int UserId { get; set; }
 
         public ICollection<Card> CardList { get; set; } = new List<Card>();
-/*
-        public bool Withdraw(double amount)
-        {
-            if (Balance >= amount)
-            {
-                Balance -= amount;
-                return true;
-            }
-            return false;
-        }
-
-        public void Deposit(double amount)
-        {
-            Balance += amount;
-        }
-
-        public void Payment()
-        {
-            // TO DO: To be continued...
-        }
-
-*/    }
+    }
 }

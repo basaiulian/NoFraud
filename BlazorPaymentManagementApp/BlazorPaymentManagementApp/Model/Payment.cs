@@ -9,7 +9,8 @@ namespace BlazorPaymentManagementApp.Model
         public string Currency { get; set; }
         public string Source { get; set; }
         public DateTime Date { get; set; }
-        public string Status { get; set; }
+        public string Status { get; set; } = "completed";
         public string Destination { get; set; }
+        public string IsFraud { get; set; }
     }
 }

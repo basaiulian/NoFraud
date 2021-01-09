@@ -162,6 +162,10 @@ namespace PaymentManagement.Data.Migrations
                         .HasColumnType("float")
                         .HasColumnName("longitude");
 
+                    b.Property<string>("IsFraud")
+                        .HasColumnType("string")
+                        .HasColumnName("is_fraud");
+
                     b.HasKey("Id");
 
                     b.ToTable("Payment");

@@ -4,6 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <AssemblyName>PaymentManagement</AssemblyName>
     <RootNamespace>PaymentManagement</RootNamespace>
+    <UserSecretsId>9951da89-7993-4f81-90f4-1696de4883cd</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp5.0' ">

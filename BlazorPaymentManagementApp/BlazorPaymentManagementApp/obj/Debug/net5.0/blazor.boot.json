@@ -8,6 +8,7 @@
   "resources": {
     "assembly": {
       "Blazored.LocalStorage.dll": "sha256-7+FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=",
+      "MailKit.dll": "sha256-qQdFJPdwm0XOElAsfz4AZ6It1S3ye\/WWLRdv3Vj8j2o=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-4HnqqqA5jERhLOcYF9uKojQG4IFNFmX50jV2gF0zcWw=",
       "Microsoft.AspNetCore.Components.dll": "sha256-jgVQaSh46OJyvg+MdncxLfIF696T+7yMqTGt6AJ2ovc=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-sRBtQN9wWsuBTnXpxgJTF5PwfXcqZkm1AVZVhB+SHpU=",
@@ -30,8 +31,11 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-aEDN6ufOzt4yskcT2LjZWqlrj2XcPYGNXIdKoeSh5VE=",
       "Microsoft.JSInterop.dll": "sha256-CKxgaYDrA0uorA41Tg8vOHJOolCc57YwpIUUPtS615Y=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-co54RLjVAHK2HntQfZykJrT9xAeVJSUp0TDu4aKONNQ=",
+      "MimeKit.dll": "sha256-jHa4WRFRpGEg6z2g477xh4WtpzzYFFlIno\/VKr3Wv\/o=",
       "Newtonsoft.Json.dll": "sha256-mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=",
+      "BouncyCastle.Crypto.dll": "sha256-2B6XxSWChpM7f3NhYbbiC\/kCy53QuBq7sC3S4Ai3qDo=",
       "System.IO.Pipelines.dll": "sha256-PgYFI7F+NQs9abrlcOtWBO+dScC0UITrX0CFB5tqUtI=",
+      "System.Security.Cryptography.Pkcs.dll": "sha256-lJix2AglTa7c7oE7voJlMQFwdW36KAHtL80Phcp5vvM=",
       "Microsoft.CSharp.dll": "sha256-LB5scvWkR2ez6hRpuSDoTlOpbgC13Vmt9p8VqlL9lKg=",
       "Microsoft.VisualBasic.Core.dll": "sha256-YH1eC2UARMYVsSpzrfel1Ri1ZkeLV73tSq4m377tRy4=",
       "Microsoft.VisualBasic.dll": "sha256-pOt6TXuSM69RfFaXqSpmgZViOm7BnGG8CbZyw+vFdxs=",
@@ -197,11 +201,11 @@
       "mscorlib.dll": "sha256-Mupm4ZEM1fGLZO5OHEpHCT57SJ6BiVRlf7vdgr2tNbc=",
       "netstandard.dll": "sha256-4lWDgs\/rQbnaGbm+BeyBI\/kV6R2pN+f8CKK+0H1fQGg=",
       "System.Private.CoreLib.dll": "sha256-Adef1YZ6wqoJsPua67RzEoHgixp5VaxcT598E6BHUwU=",
-      "BlazorPaymentManagementApp.dll": "sha256-CEO0z9WkHLhmtawuFVTemU7c873iATrzwY4RPb98w2A="
+      "BlazorPaymentManagementApp.dll": "sha256-1lkcm2AbOsAftcs1cuWK0FxPIx0NYDnxLpaVztA3gTI="
     },
     "lazyAssembly": null,
     "pdb": {
-      "BlazorPaymentManagementApp.pdb": "sha256-IGBBK9KVsYU3tq16bMy7m1mj9W7rjhm4pTldpfijUr0="
+      "BlazorPaymentManagementApp.pdb": "sha256-NHM3sa+MK5XHjt0FddLMSKCo8PzDA7M1DzqPrCf6dSQ="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-eD1xx9KVSZ9Xc134LY9VKnKHGzf6M2yPGh+GxiRBQw0=",

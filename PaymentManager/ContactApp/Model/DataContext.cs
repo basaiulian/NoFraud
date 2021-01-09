@@ -14,6 +14,5 @@ namespace PaymentManagement.Model
         public DbSet<Payment> Payment { get; set; }
         public DbSet<User> User { get; set; }
 
-
     }
 }

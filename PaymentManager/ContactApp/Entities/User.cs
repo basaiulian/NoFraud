@@ -35,7 +35,5 @@ namespace PaymentManagement.Entities
             BankAccounts.Remove(bankAccount);
         }
 
-
-
     }
 }

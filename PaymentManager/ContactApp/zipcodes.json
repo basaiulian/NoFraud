@@ -1,0 +1,495 @@
+﻿[
+  {
+    "Country": "Pennsylvania",
+    "City": "Philadelphia",
+    "Latitude": "39.96352845396514",
+    "Longitude": "-75.16618161073019"
+  },
+  {
+    "Country": "Pennsylvania",
+    "City": "New York",
+    "Latitude": "40.71604330811745",
+    "Longitude": "-74.00450150090418"
+  },
+  {
+    "Country": "California",
+    "City": "San Francisco",
+    "Latitude": "37.7796776395892",
+    "Longitude": "-122.43021903889695"
+  },
+  {
+    "Country": "California",
+    "City": "Los Angeles",
+    "Latitude": "34.192328675877036",
+    "Longitude": "-118.24073781064031"
+  },
+  {
+    "Country": "California",
+    "City": "Las Vegas",
+    "Latitude": "36.20144053000423",
+    "Longitude": "-115.11984562439312"
+  },
+  {
+    "Country": "California",
+    "City": "San Diego",
+    "Latitude": "32.728149803897395",
+    "Longitude": "-117.12807432742373"
+  },
+  {
+    "Country": "Colorado",
+    "City": "Denver",
+    "Latitude": "39.96171967486825",
+    "Longitude": "-105.09105085973248"
+  },
+  {
+    "Country": "Colorado",
+    "City": "Pueblo",
+    "Latitude": "38.25386723987485",
+    "Longitude": "-104.6085651370072"
+  },
+  {
+    "Country": "Washington",
+    "City": "Seattle",
+    "Latitude": "47.6152571856868",
+    "Longitude": "-122.32215838555669"
+  },
+  {
+    "Country": "Washington",
+    "City": "Spokane",
+    "Latitude": "47.67254685910438",
+    "Longitude": "-117.44315424213771"
+  },
+  {
+    "Country": "Germany",
+    "City": "Berlin",
+    "Latitude": "52.52322615497512",
+    "Longitude": "13.407530404955835"
+  },
+  {
+    "Country": "Germany",
+    "City": "Berlin",
+    "Latitude": "51.06725776781814",
+    "Longitude": "13.699792083103674"
+  },
+  {
+    "Country": "Germany",
+    "City": "München",
+    "Latitude": "48.0686348694246",
+    "Longitude": "11.633836518882706"
+  },
+
+  {
+    "Country": "Germany",
+    "City": "Frankfurt",
+    "Latitude": "50.14709529284983",
+    "Longitude": "8.442233758561438"
+  },
+  {
+    "Country": "Germany",
+    "City": "Stuttgart",
+    "Latitude": "48.822994593326975",
+    "Longitude": "9.1833853952894"
+  },
+  {
+    "Country": "Germany",
+    "City": "Nuremberg",
+    "Latitude": "49.454758947994584",
+    "Longitude": "11.10212875744014"
+  },
+  {
+    "Country": "Germany",
+    "City": "Leipzig",
+    "Latitude": "51.362282581335755",
+    "Longitude": "12.197245146682512"
+  },
+  {
+    "Country": "Germany",
+    "City": "Hamburg",
+    "Latitude": "53.568846394491416",
+    "Longitude": "10.047263434815768"
+  },
+  {
+    "Country": "Romania",
+    "City": "Bucuresti",
+    "Latitude": "44.42662250198495",
+    "Longitude": "26.09554843091552"
+  },
+  {
+    "Country": "Romania",
+    "City": "Brasov",
+    "Latitude": "45.648593308948314",
+    "Longitude": "25.595151500000036"
+  },
+  {
+    "Country": "Romania",
+    "City": "Suceava",
+    "Latitude": "47.585789000000005",
+    "Longitude": "26.27951969797028"
+  },
+  {
+    "Country": "Romania",
+    "City": "Constanta",
+    "Latitude": "44.18112301912575",
+    "Longitude": "28.63000629999999"
+  },
+  {
+    "Country": "Romania",
+    "City": "Iasi",
+    "Latitude": "47.156185135103904",
+    "Longitude": "27.58697040000002"
+  },
+  {
+    "Country": "Romania",
+    "City": "Cluj",
+    "Latitude": "46.78344202432403",
+    "Longitude": "23.61651244999999"
+  },
+  {
+    "Country": "Romania",
+    "City": "Timisoara",
+    "Latitude": "45.69311749230914",
+    "Longitude": "21.403943599999984"
+  },
+  {
+    "Country": "Romania",
+    "City": "Arad",
+    "Latitude": "46.17522071866995",
+    "Longitude": "21.306357950000013"
+  },
+  {
+    "Country": "Romania",
+    "City": "Mehedinti",
+    "Latitude": "44.634203091687986",
+    "Longitude": "22.658428502796877"
+  },
+  {
+    "Country": "Romania",
+    "City": "Hunedoara",
+    "Latitude": "45.766273029803145",
+    "Longitude": "22.907716561600413"
+  },
+  {
+    "Country": "Romania",
+    "City": "Galati",
+    "Latitude": "45.451543682911236",
+    "Longitude": "28.05315206188454"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Györ",
+    "Latitude": "47.6694097",
+    "Longitude": "17.5886453"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Keszthely",
+    "Latitude": "46.7498531",
+    "Longitude": "17.1719147"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Seghedin",
+    "Latitude": "46.2327035",
+    "Longitude": "20.0003852"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Budapesta",
+    "Latitude": "47.4811281",
+    "Longitude": "18.9902198"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Solnoca",
+    "Latitude": "47.1803166",
+    "Longitude": "20.0435888"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Miskolc",
+    "Latitude": "48.0890698",
+    "Longitude": "20.5356663"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Pécs",
+    "Latitude": "46.0777116",
+    "Longitude": "18.1805417"
+  },
+  {
+    "Country": "Hungary",
+    "City": "Debrețin",
+    "Latitude": "47.5308291",
+    "Longitude": "21.5200988"
+  },
+  {
+    "Country": "France",
+    "City": "Paris",
+    "Latitude": "48.85887766623374",
+    "Longitude": "2.347059899999988"
+  },
+  {
+    "Country": "France",
+    "City": "Lyon",
+    "Latitude": "45.75797832429401",
+    "Longitude": "4.835120949999996"
+  },
+  {
+    "Country": "France",
+    "City": "Toulouse",
+    "Latitude": "43.600738368579066",
+    "Longitude": "1.4328409999999892"
+  },
+  {
+    "Country": "France",
+    "City": "Cannes",
+    "Latitude": "43.53701937522531",
+    "Longitude": "7.009699449999993"
+  },
+  {
+    "Country": "France",
+    "City": "Avignon",
+    "Latitude": "43.941582518058304",
+    "Longitude": "4.833252499999996"
+  },
+  {
+    "Country": "France",
+    "City": "Nimes",
+    "Latitude": "43.83222800316221",
+    "Longitude": "4.342853549999988"
+  },
+  {
+    "Country": "France",
+    "City": "Avignon",
+    "Latitude": "43.941582518058304",
+    "Longitude": "4.833252499999996"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Copenhaga",
+    "Latitude": "55.6712474",
+    "Longitude": "12.5237845"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Esbjerg",
+    "Latitude": "55.5224398",
+    "Longitude": "8.3233968"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Aalborg",
+    "Latitude": "57.0268172",
+    "Longitude": "9.8377346"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Hjørring",
+    "Latitude": "57.4591223",
+    "Longitude": "9.9649845"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Aarhus",
+    "Latitude": "56.1780842",
+    "Longitude": "10.1119351"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Holstebro",
+    "Latitude": "56.3209225",
+    "Longitude": "8.5233271"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Randers",
+    "Latitude": "56.4647173",
+    "Longitude": "9.8535093"
+  },
+  {
+    "Country": "Denmark",
+    "City": "Vejle",
+    "Latitude": "55.7147061",
+    "Longitude": "9.3738289"
+  },
+  {
+    "Country": "Russia",
+    "City": "Moscow",
+    "Latitude": "55.769689096837034",
+    "Longitude": "37.62984297885505"
+  },
+  {
+    "Country": "Russia",
+    "City": "Kazan",
+    "Latitude": "56.07394131989844",
+    "Longitude": "49.04268207516762"
+  },
+  {
+    "Country": "Russia",
+    "City": "Bratsk",
+    "Latitude": "56.23756414282026",
+    "Longitude": "101.60987825996199"
+  },
+  {
+    "Country": "Russia",
+    "City": "St Petersburg",
+    "Latitude": "59.94472288674394",
+    "Longitude": "30.3554860557572"
+  },
+  {
+    "Country": "Russia",
+    "City": "Yaroslavl",
+    "Latitude": "57.63597836390141",
+    "Longitude": "39.88096549962598"
+  },
+  {
+    "Country": "Spain",
+    "City": "Madrid",
+    "Latitude": "40.52854454808427",
+    "Longitude": "-3.573925097640832"
+  },
+  {
+    "Country": "Spain",
+    "City": "Valencia",
+    "Latitude": "39.75590039265766",
+    "Longitude": "-0.10224557556144137"
+  },
+  {
+    "Country": "Spain",
+    "City": "Barcelona",
+    "Latitude": "41.39136246443367",
+    "Longitude": "2.2268558759601795"
+  },
+  {
+    "Country": "Spain",
+    "City": "Bilbao",
+    "Latitude": "43.15625584727441",
+    "Longitude": "-3.104937091970646"
+  },
+  {
+    "Country": "Spain",
+    "City": "Zaragoza",
+    "Latitude": "41.68050053286586",
+    "Longitude": "-0.8789426002972984"
+  },
+  {
+    "Country": "Spain",
+    "City": "Seville",
+    "Latitude": "37.38489845514137",
+    "Longitude": "-5.982526933258805"
+  },
+  {
+    "Country": "Italy",
+    "City": "Rome",
+    "Latitude": "41.944603464493134",
+    "Longitude": "12.542301239955062"
+  },
+  {
+    "Country": "Italy",
+    "City": "San Marino",
+    "Latitude": "43.95933337827647",
+    "Longitude": "12.098859792102965"
+  },
+  {
+    "Country": "Italy",
+    "City": "Milan",
+    "Latitude": "45.482112060516975",
+    "Longitude": "9.161060200082837"
+  },
+  {
+    "Country": "Italy",
+    "City": "Verona",
+    "Latitude": "45.6121054909138",
+    "Longitude": "10.898025327065255"
+  },
+  {
+    "Country": "Italy",
+    "City": "Venice",
+    "Latitude": "45.47360358849161",
+    "Longitude": "12.326247915262478"
+  },
+  {
+    "Country": "Italy",
+    "City": "Palermo",
+    "Latitude": "38.08519378044418",
+    "Longitude": "13.364906052522018"
+  },
+  {
+    "Country": "Italy",
+    "City": "Lecce",
+    "Latitude": "40.432645342146394",
+    "Longitude": "18.13297223158043"
+  },
+  {
+    "Country": "Turkey",
+    "City": "Ankara",
+    "Latitude": "40.066931743528954",
+    "Longitude": "32.834953911550535"
+  },
+  {
+    "Country": "Turkey",
+    "City": "İstanbul",
+    "Latitude": "41.06092021970899",
+    "Longitude": "29.02037573533951"
+  },
+  {
+    "Country": "Turkey",
+    "City": "Bursa",
+    "Latitude": "40.2650640740078",
+    "Longitude": "29.047841554343304"
+  },
+  {
+    "Country": "Turkey",
+    "City": "Antalia",
+    "Latitude": "37.031279275233835",
+    "Longitude": "30.72874985221872"
+  },
+  {
+    "Country": "Norway",
+    "City": "Oslo",
+    "Latitude": "60.00624909779499",
+    "Longitude": "10.757487016765175"
+  },
+  {
+    "Country": "Norway",
+    "City": "Oslo",
+    "Latitude": "59.3751858565439",
+    "Longitude": "18.238258383358144"
+  },
+  {
+    "Country": "Norway",
+    "City": "Bergen",
+    "Latitude": "60.47992143994918",
+    "Longitude": "5.437886615680672"
+  },
+  {
+    "Country": "Norway",
+    "City": "Trondhein",
+    "Latitude": "63.455534471070706",
+    "Longitude": "10.364879108077778"
+  },
+  {
+    "Country": "Sweden",
+    "City": "Stockholm",
+    "Latitude": "59.40406464717078",
+    "Longitude": "18.153326255955534"
+  },
+  {
+    "Country": "United Kingdom",
+    "City": "London",
+    "Latitude": "51.49749073293275",
+    "Longitude": "-0.14530917114245934"
+  },
+  {
+    "Country": "United Kingdom",
+    "City": "Manchester",
+    "Latitude": "53.48828400245759",
+    "Longitude": "-2.2266516842916473"
+  },
+  {
+    "Country": "United Kingdom",
+    "City": "Liverpool",
+    "Latitude": "53.41076407003571",
+    "Longitude": "-2.985369268583491"
+  }
+]

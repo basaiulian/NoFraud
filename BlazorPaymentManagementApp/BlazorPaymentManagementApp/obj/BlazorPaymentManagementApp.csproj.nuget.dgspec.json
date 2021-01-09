@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {}
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {
+    "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+        "projectUniqueName": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
         "projectName": "BlazorPaymentManagementApp",
-        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+        "projectPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
         "packagesPath": "C:\\Users\\Iulian\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\obj\\",
+        "outputPath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Iulian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.10.1, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[5.0.0-rc.2.20475.17, )"
@@ -52,6 +56,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.0-rc.2.20475.17, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.10.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

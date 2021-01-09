@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using PaymentManagement.Model;
 using PaymentManagement.Entities;
 using System;
+using System.Net.Mail;
 
 namespace PaymentManagement.Controllers
 {
@@ -69,8 +70,47 @@ namespace PaymentManagement.Controllers
             
         }
 
+        [HttpPost("sendemail")]
+        public int EmailUser([FromBody] string emailTo)
+        {
+
+            List<User> users = _context.User.ToList();
+
+            foreach (User user in users)
+            {
+                if (user.Email == emailTo)
+                {
+                    try
+                    {
+                        using (MailMessage mail = new MailMessage())
+                        {
+                            mail.From = new MailAddress("nofraudadmn@gmail.com");
+                            mail.To.Add(emailTo);
+                            mail.Subject = "[NoFraud] Recover your username and password!";
+                            mail.Body = "<h1>Here are your credentials!</h1>";
+                            mail.Body += "<h3>username:" + user.Username + "</h3>";
+                            mail.Body += "<h3>password:" + user.Password + "</h3>";
+                            mail.IsBodyHtml = true;
+
+                            using SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                            smtp.Credentials = new System.Net.NetworkCredential("nofraudadmn@gmail.com", "Bigadmin123");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                            return 1;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                        return -1;
+                    }
+                }
+            }
+            return -1;
+
+        }
+
         [HttpGet("{id}", Name = "GetUserById")]
-        //[HttpGet("getid",Name = "GetUserById")]
         public async Task<ActionResult<User>> GetUserById(int id)
         {
             var user = await _context.User.FindAsync(id);
@@ -105,7 +145,7 @@ namespace PaymentManagement.Controllers
         {
             if (id != user.Id)
             {
-                return BadRequest();
+                return BadRequest("id diferit");
             }
 
             _context.Entry(user).State = EntityState.Modified;
@@ -113,21 +153,21 @@ namespace PaymentManagement.Controllers
             {
                 if (id == bankAccount.UserId)
                 {
-                    if (!_context.BankAccount.Contains(bankAccount)) // Verificam daca bankAccountul exista deja in DB
+                    if (!_context.BankAccount.Contains(bankAccount))
                     {
                         foreach (var card in bankAccount.CardList)
                         {
                             if (id == Int32.Parse(card.BankAccountId))
                             {
-                                if (!_context.Card.Contains(card)) // Verificam daca cardul exista deja in DB
+                                if (!_context.Card.Contains(card))
                                     _context.Card.Add(card);
-                                else return BadRequest();
+                                else return BadRequest("cardul exista deja");
                             }
                         }
                     _context.BankAccount.Add(bankAccount);
 
                     }
-                    else return BadRequest();
+                    else return BadRequest("banca exista deja");
                 }
                  
             }
@@ -196,17 +236,6 @@ namespace PaymentManagement.Controllers
 
             return CreatedAtAction("GetUserById", new { id = user.Id }, user);
         }
-
-        //[HttpPost]
-        //public async Task<ActionResult<User>> Login([FromBody] string username, string password)
-        //{
-        //    _context.User.Add(user);
-
-        //    await _context.SaveChangesAsync();
-
-        //    return CreatedAtAction("GetUserById", new { id = user.Id }, user);
-        //}
-
 
         private bool UserExists(int id)
         {

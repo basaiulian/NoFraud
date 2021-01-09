@@ -1,0 +1,86 @@
+{
+  "Romania": [
+    {
+      "City": "Bucuresti",
+      "Zipcode": "020122"
+    },
+    {
+      "City": "Galati",
+      "Zipcode": "800001"
+    },
+    {
+      "City": "Iasi",
+      "Zipcode": "700001"
+    },
+    {
+      "City": "Cluj",
+      "Zipcode": "400001"
+    },
+    {
+      "City": "Suceava",
+      "Zipcode": "720001"
+    },
+    {
+      "City": "Bacau",
+      "Zipcode": "600001"
+    },
+    {
+      "City": "Bistrita-Nasaud",
+      "Zipcode": "420008"
+    },
+    {
+      "City": "Arad",
+      "Zipcode": "310001"
+    },
+    {
+      "City": "Brasov",
+      "Zipcode": "500002"
+    },
+    {
+      "City": "Constanta",
+      "Zipcode": "900003"
+    }
+  ],
+  "Germany": [
+    {
+      "City": "Leipzig",
+      "Zipcode": "04275"
+    },
+    {
+      "City": "Hannover",
+      "Zipcode": "30453"
+    },
+    {
+      "City": "Strasbourg",
+      "Zipcode": "67200"
+    },
+    {
+      "City": "Frankfurt am Main",
+      "Zipcode": "60313"
+    },
+    {
+      "City": "Munchen",
+      "Zipcode": "81539"
+    },
+    {
+      "City": "Ingolstadt",
+      "Zipcode": "85053"
+    },
+    {
+      "City": "Nurnberg",
+      "Zipcode": "90439"
+    },
+    {
+      "City": "Bremen",
+      "Zipcode": "28195"
+    },
+    {
+      "City": "Hamburg",
+      "Zipcode": "20038"
+    },
+    {
+      "City": "Berlin",
+      "Zipcode": "10115"
+    }
+  ]
+}

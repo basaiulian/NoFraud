@@ -19,7 +19,6 @@ namespace PaymentManagement.Controllers
             _context = context;
         }
 
-        // GET: api/cards
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Card>>> GetCards()
         {
@@ -82,7 +81,6 @@ namespace PaymentManagement.Controllers
             return Ok();
         }
 
-
         [HttpPost]
         public async Task<ActionResult<Card>> PostCard([FromBody] Card card)
         {
@@ -91,7 +89,6 @@ namespace PaymentManagement.Controllers
 
             return CreatedAtAction("GetCardById", new { id = card.Id }, card);
         }
-
 
         private bool CardExists(int id)
         {

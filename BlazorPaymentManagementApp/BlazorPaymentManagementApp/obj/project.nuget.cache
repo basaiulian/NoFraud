@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "y4UovmdIQHv63KgAKewUoCT2sCiUsyUYsFxPTBb5lywyzIc6KXWRTVgaqaoV8Xa0dNZL8uq+opJd+99mGJCJkg==",
+  "dgSpecHash": "W1/RT3W/LUGsP501SD9afDeVcjtDQ6hubxTHSL7I1dye7BYqOh+tVwr22MISdg9xlqH4I7YN6uP84a2j3ZQBcg==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune1.30-29.12.2020-cubaietii\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\mailkit\\2.10.1\\mailkit.2.10.1.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.0-rc.2.20475.17\\microsoft.aspnetcore.authorization.5.0.0-rc.2.20475.17.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.0-rc.2.20475.17\\microsoft.aspnetcore.components.5.0.0-rc.2.20475.17.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\5.0.0-rc.2.20475.17\\microsoft.aspnetcore.components.analyzers.5.0.0-rc.2.20475.17.nupkg.sha512",
@@ -29,9 +30,17 @@
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0-rc.2.20475.5\\microsoft.extensions.primitives.5.0.0-rc.2.20475.5.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.jsinterop\\5.0.0-rc.2.20475.17\\microsoft.jsinterop.5.0.0-rc.2.20475.17.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.0-rc.2.20475.17\\microsoft.jsinterop.webassembly.5.0.0-rc.2.20475.17.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\mimekit\\2.10.1\\mimekit.2.10.1.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\portable.bouncycastle\\1.8.8\\portable.bouncycastle.1.8.8.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\system.io.pipelines\\5.0.0-rc.2.20475.5\\system.io.pipelines.5.0.0-rc.2.20475.5.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\system.net.http.json\\5.0.0-rc.2.20475.5\\system.net.http.json.5.0.0-rc.2.20475.5.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.0-rc.2.20475.5\\microsoft.netcore.app.runtime.browser-wasm.5.0.0-rc.2.20475.5.nupkg.sha512"
   ],
   "logs": []

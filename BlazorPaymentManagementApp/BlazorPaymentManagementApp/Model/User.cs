@@ -20,16 +20,13 @@ namespace BlazorPaymentManagementApp.Model
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
         [Required]
         [Phone]
         [MinLength(10, ErrorMessage = "Phone number must have at least 10 digits.")]
         [MaxLength(15, ErrorMessage = "Phone number must have at most 15 digits.")]
         public string PhoneNumber { get; set; }
-
-        [Required]
-        [RegularExpression(@"^[a-zA-Z]+,[a-zA-Z]+|^[a-zA-Z]+,[ ]*[a-zA-Z]+", ErrorMessage = "Address must respect this model: \"State, City\".")]
         public string Address { get; set; }
-
         public ICollection<BankAccount> BankAccounts { get; set; } = new List<BankAccount>();
     }
 }

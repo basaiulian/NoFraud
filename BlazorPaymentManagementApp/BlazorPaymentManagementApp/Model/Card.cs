@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BlazorPaymentManagementApp.Model
 {
@@ -27,10 +24,6 @@ namespace BlazorPaymentManagementApp.Model
         [RegularExpression(@"^[0-9]{3,3}$", ErrorMessage = "Cvv code must contain exactly 3 digits.")]
         public string CvvCode { get; set; }
 
-        //[Required]
-        //[MinLength(2)]
-        //[MaxLength(20)]
-        //[RegularExpression(@"^[A-Za-z]+$", ErrorMessage = "You can only use letters.")]
         public string BankName { get; set; }
 
         public string OwnerId { get; set; }

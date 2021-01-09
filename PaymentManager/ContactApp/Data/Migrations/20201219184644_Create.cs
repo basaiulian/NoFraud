@@ -20,7 +20,8 @@ namespace PaymentManagement.Data.Migrations
                     destination = table.Column<string>(type: "string", nullable: true),
                     status = table.Column<string>(type: "string", nullable: true),
                     latitude = table.Column<float>(type: "float", nullable: false),
-                    longitude = table.Column<float>(type: "float", nullable: false)
+                    longitude = table.Column<float>(type: "float", nullable: false),
+                    is_fraud = table.Column<string>(type: "string", nullable: true)
                 },
                 constraints: table =>
                 {

@@ -78,7 +78,7 @@ namespace PaymentManagement.Controllers
             {
                 if (id == Int32.Parse(card.BankAccountId))
                 {
-                    if (!_context.Card.Contains(card)) // Verificam daca cardul exista deja in DB
+                    if (!_context.Card.Contains(card))
                         _context.Card.Add(card);
                     else return BadRequest();
                 }
