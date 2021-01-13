@@ -1,6 +1,6 @@
-﻿
-@page "/createbankaccount"
+﻿@page "/createbankaccount"
 @layout CardLayout
+@using System.Timers
 @using System.ComponentModel.DataAnnotations
 @using BlazorPaymentManagementApp.Model
 @inject NavigationManager NavManager
@@ -14,10 +14,7 @@
         <form method="post">
             <EditForm Model="@bankAccount" OnValidSubmit="Create">
                 <DataAnnotationsValidator />
-
                 <h2 class="text-center"><strong>Bank Account </strong> </h2>
-
-
                 <div class="form-group">
                     <InputText id="balance" class="form-control" placeholder="Balance" @bind-Value="BalanceToSend" />
                     <ValidationMessage For="@(() => BalanceToSend)" />
@@ -33,23 +30,21 @@
                         {
                             @if (accountType != "Student")
                             {
-                            <option>@accountType</option>
+                                <option>@accountType</option>
                             }
                         }
                     </InputSelect>
                     <ValidationMessage For="@(() => bankAccount.AccountType)" />
                 </div>
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit" /> <h5>@message2</h5><h4>@message</h4>
-
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
                 </div>
-
-
             </EditForm>
         </form>
     </div>
+    <h3>@goodMessage</h3>
+    <h4>@badNessage</h4>
 </div>
-
 
 @code{ private BankAccount bankAccount = new BankAccount();
 
@@ -57,8 +52,9 @@
 
     private List<string> accountTypes = new List<string>();
 
-    private string message = "";
-    private string message2 = "";
+    private static Timer aTimer;
+    private string goodMessage = "";
+    private string badNessage = "";
 
     [Required(AllowEmptyStrings = false, ErrorMessage = "The Balance field is required.")]
     [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
@@ -108,20 +104,26 @@
 
         if (response.StatusCode.ToString() == "Created")
         {
-            message = "";
-            message2 = "";
-            message2 += "Bank account added successfully!";
+            goodMessage = "";
+            badNessage = "";
+            badNessage += "Bank account added successfully, you will be redirected to your profile in 3 seconds...";
+
+            aTimer = new Timer();
+            aTimer.Interval = 3000;
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("users/" + bankAccount.UserId,true);
+            };
+
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
 
         }
         else
         {
-            message = "";
-            message += "Something is wrong,try again ! ";
+            goodMessage = "";
+            goodMessage += "Something is wrong, try again! ";
         }
-
-        // TIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        NavManager.NavigateTo("users/" + bankAccount.UserId);
     }
 
     protected override async Task OnInitializedAsync()

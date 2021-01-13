@@ -13,85 +13,92 @@ namespace BlazorPaymentManagementApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
 using BlazorPaymentManagementApp.Model;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
+using System.Timers;
 
 #line default
 #line hidden
@@ -106,22 +113,22 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 77 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
+#line 77 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateCard.razor"
        private Card card = new Card();
 
     private User user = new User();
 
-    private string message = "";
-    private string message2 = "";
+    private string goodMessage = "";
+    private string badMessage = "";
 
     private string showType = "password";
     private string showType2 = "password";
 
+    private static Timer aTimer;
+
     private List<string> bankNames = new List<string>();
 
     private List<string> bankIds = new List<string>();
-
-    private bool showInput { get; set; } = true;
 
     HttpClient httpClient = new HttpClient()
     {
@@ -154,8 +161,6 @@ using BlazorPaymentManagementApp.Model;
 
     protected void getBankId()
     {
-        // ??? Nu iti gasesti banca in lista? ADAUGA O NOUA BANCA!
-
         bankIds.Clear();
         foreach (BankAccount bankAccount in user.BankAccounts)
         {
@@ -168,68 +173,39 @@ using BlazorPaymentManagementApp.Model;
 
     protected async Task Create()
     {
-        Console.WriteLine("bankname: " + card.bankNameToSend);
-        Console.WriteLine("bankid: " + card.bankIdToSend);
-
-        //if (card.bankNameToSend == "BankName(Default: first account)")
-        //{
-        //    if (bankNames.Count != 0)
-        //    {
-        //        card.bankNameToSend = bankNames[0];
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("No bank accounts!");
-        //    }
-
-        //}
-
-        //if (card.bankIdToSend == "BankAccountId(Default: first account)")
-        //{
-        //    if (bankIds.Count != 0)
-        //    {
-        //        card.bankIdToSend = bankIds[0];
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("No bank ids!");
-        //    }
-        //}
-
-
-
-
-        //if (bankNameToSend != "Bank Name" && bankIdToSend != "Bank Account Id")
-        //{
         card.BankName = card.bankNameToSend;
         card.BankAccountId = card.bankIdToSend;
         HttpResponseMessage response = await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
 
         if (response.StatusCode.ToString() == "Created")
         {
-            message = "";
-            message2 = "";
-            message2 += " Credit card added successfully ! ";
+            badMessage = "";
+            goodMessage = "";
+            goodMessage += " Credit card added successfully, you will be redirected to your profile in 3 seconds... ";
+
+            aTimer = new Timer();
+            aTimer.Interval = 3000;
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("users/" + card.OwnerId, true);
+            };
+
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
 
         }
         else
         {
-            message = "";
-            message += "Something is wrong,try again ! ";
+            badMessage = "";
+            badMessage += "Something is wrong, try again! ";
         }
 
-        //TIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        NavManager.NavigateTo("users/" + card.OwnerId);
-        //}
     }
 
     protected override async Task OnInitializedAsync()
     {
         var id = await localStorage.GetItemAsync<string>("id");
         user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + id);
-
-
 
         foreach (BankAccount bankAccount in user.BankAccounts)
         {
@@ -238,8 +214,6 @@ using BlazorPaymentManagementApp.Model;
                 bankNames.Add(bankAccount.BankName);
             }
         }
-
-
 
         card.OwnerId = id;
 

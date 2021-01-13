@@ -7,105 +7,125 @@
 namespace BlazorPaymentManagementApp.Pages
 {
     #line hidden
-    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using BlazorPaymentManagementApp.Model;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
 using Newtonsoft.Json.Linq;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+using System.Timers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+using System;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+using Newtonsoft.Json;
 
 #line default
 #line hidden
@@ -120,37 +140,67 @@ using Newtonsoft.Json.Linq;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 75 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
+#line 91 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreatePayment.razor"
        [Required]
     [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Amount must be like \"40\" or \"40.5\".")]
     public string AmountToSend { get; set; }
 
+    private string countryToSend { get; set; }
 
+    private string cityToSend { get; set; }
+
+    private string latitudeToSend { get; set; }
+
+    private string longitudeToSend { get; set; }
 
     [Required]
     public string cc_num { get; set; }
 
     private string message2 = "";
 
+    private string message = "";
+
+    private string safeStatus = "Not Safe";
+
     private List<string> currencyList = new List<string>()
-            {
-            "RON",
-            "EUR",
-            "GBP",
-            "USD"
-        };
+{
+       "RON",
+       "EUR",
+       "GBP",
+       "USD"
+    };
 
     private User user = new User();
 
-    private string userState;
+    private List<User> users = new List<User>();
 
-    private string userCity;
+    private string destinationUserState;
+
+    private string destinationUserCity;
+
+    private string destinationUserId;
+
+    private double distance;
+
+    private Timer aTimer;
 
     public string localId { get; set; }
 
+    public string prediction { get; set; }
+
+    private List<Address> countries = new List<Address>();
+
     private List<string> creditCardNumbers = new List<string>();
 
+    private List<string> countryList = new List<string>();
+
+    private List<string> cityList = new List<string>();
+
     private Payment payment = new Payment();
+
+    private Payment lastPayment = new Payment();
+
+    private List<Payment> payments;
 
     HttpClient httpClient = new HttpClient()
     {
@@ -162,7 +212,43 @@ using Newtonsoft.Json.Linq;
         BaseAddress = new Uri("http://localhost:5020")
     };
 
-    protected async Task<string> GenerateId(int length)
+    protected void getCities()
+    {
+        cityList.Clear();
+
+        foreach (Address address in countries)
+        {
+            if (address.Country == countryToSend)
+            {
+                if (!cityList.Contains(address.City))
+                {
+                    cityList.Add(address.City);
+                }
+            }
+        }
+    }
+
+    protected List<string> getCoordinates(string country, string city)
+    {
+        foreach (Address address in countries)
+        {
+            if (address.Country == country && address.City == city && city != "City")
+            {
+                latitudeToSend = address.Latitude;
+                longitudeToSend = address.Longitude;
+            }
+            if (city == "City")
+            {
+                latitudeToSend = "-1";
+                longitudeToSend = "-1";
+                break;
+            }
+        }
+        return new List<string> { latitudeToSend, longitudeToSend };
+    }
+
+    protected async Task<string>
+    GenerateId(int length)
     {
         string cypher = "123456789";
 
@@ -180,57 +266,163 @@ using Newtonsoft.Json.Linq;
 
     protected async Task Create()
     {
-        if(cc_num != "Credit Card Number")
+        List<string> destinationCoordinates = new List<string>();
+        List<string> sourceCoordinates = new List<string>();
+
+        payment.Source = user.Username;
+        payment.Date = DateTime.Now;
+        payment.Amount = Convert.ToSingle(AmountToSend);
+
+
+        users = await httpClient.GetFromJsonAsync<List<User>>("/api/v1/users");
+
+        if (countryToSend == null || cityToSend == null || countryToSend == "Country" || cityToSend == "City")
         {
-
-            userState = user.Address.Substring(0, user.Address.IndexOf(',')).Trim();
-            userCity = user.Address.Substring(user.Address.LastIndexOf(',') + 1).Trim();
-
-            //Console.WriteLine(userState);
-            //Console.WriteLine(userCity);
-
-            ModelInput modelToSend = new ModelInput
+            message = "Please insert the payment source (Country and City)!";
+        }
+        else
+        {
+            message = "";
+            HttpResponseMessage distanceResult = new HttpResponseMessage();
+            if (cc_num != "Credit Card Number")
             {
-                Col0 = 5,
-                Trans_date_trans_time = DateTime.Now.ToShortDateString(),
-                Cc_num = float.Parse(cc_num),
-                Amt = float.Parse(AmountToSend),
-                City = userCity,
-                State = userState,
-                Lat = 43.5f,
-                Long = 88.2f,
-                Merch_lat = 90.04f,
-                Merch_long = 33.9f
-            };
 
-            //Console.WriteLine(float.Parse(AmountToSend));
-            //Console.WriteLine(float.Parse(cc_num));
+                foreach (User user in users)
+                {
+                    if (payment.Destination == user.Username)
+                    {
+                        destinationUserState = user.Address.Substring(0, user.Address.IndexOf(',')).Trim();
+                        destinationUserCity = user.Address.Substring(user.Address.LastIndexOf(',') + 1).Trim();
+                        destinationCoordinates = getCoordinates(destinationUserState, destinationUserCity);
+                        destinationUserId = user.Id.ToString();
+                    }
+                    else
+                    {
+                        message = "Please insert the payment destination (Username)!";
+                    }
+                }
 
-            var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
-            string returnValue = await predict_response.Content.ReadAsStringAsync();
+                sourceCoordinates = getCoordinates(countryToSend, cityToSend);
 
-            JObject jObject = JObject.Parse(returnValue);
-            string prediction = jObject["prediction"].ToString();
-
-            if(prediction == "0")
-            {
-                message2 = "The payment is safe.";
-            } else if(prediction == "1")
-            {
-                message2 = "The payment is not safe.";
+                if ((sourceCoordinates[0] == "-1" && sourceCoordinates[1] == "-1") || (destinationCoordinates[0] == "-1" && destinationCoordinates[1] == "-1"))
+                {
+                    Console.WriteLine("EROARE -1");
+                }
+                else
+                {
+                    message = "";
+                    distanceResult = await httpClient.PostAsJsonAsync<List<List<string>>>("/api/v1/payments/distance", new List<List<string>> { sourceCoordinates, destinationCoordinates });
+                }
             }
 
+            var Trans_date_trans_time = DateTime.Now;
+            var First = user.Username;
+            var Trans_distance = distanceResult.Content.ReadAsStringAsync().Result;
+
+            if (payment.Currency == "EUR")
+            {
+                payment.Amount = float.Parse(AmountToSend) * 4.87F;
+            }
+            else if (payment.Currency == "USD")
+            {
+                payment.Amount = float.Parse(AmountToSend) * 4.00F;
+            }
+            else if (payment.Currency == "GBP")
+            {
+                payment.Amount = float.Parse(AmountToSend) * 5.48F;
+            }
+
+            List<String> listToPredict = new List<String> { Trans_date_trans_time.ToShortDateString(), cc_num, AmountToSend, First, Trans_distance.ToString() };
+
+            if ((Trans_date_trans_time - lastPayment.Date).Hours > 8 && float.Parse(Trans_distance) > 3100F)
+            {
+                prediction = "1";
+                message2 = "The payment is not safe.";
+                safeStatus = "Not Safe";
+            }
+            else
+            {
+                var predict_response = await predictorHttpClient.PostAsJsonAsync<List<string>>("/fraud/index", listToPredict);
+                string returnValue = await predict_response.Content.ReadAsStringAsync();
+
+                JObject jObject = JObject.Parse(returnValue);
+                prediction = jObject["prediction"].ToString();
+
+                if (prediction == "0")
+                {
+
+                    List<string> transferData = new List<string> { payment.Amount.ToString(), localId, destinationUserId };
+                    var transferResult = await httpClient.PostAsJsonAsync<List<string>>("/api/v1/bankaccounts/transfer", transferData);
+
+                    if (transferResult.Content.ReadAsStringAsync().Result == "-1")
+                    {
+                        message = "Insufficient balance";
+                        return;
+                    }
+                    else
+                    {
+                        message = "";
+                        message2 = "The payment is safe.";
+                        safeStatus = "Safe";
+                    }
+                }
+                else if (prediction == "1")
+                {
+                    message = "The payment is not safe. Payment blocked.";
+                    safeStatus = "Not Safe";
+                }
+            }
+
+            payment.IsFraud = safeStatus;
+            payment.Id = Int32.Parse(await GenerateId(4));
+            payment.Amount = Convert.ToSingle(AmountToSend);
+
+            await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+
+            payment.Id = Int32.Parse(await GenerateId(4));
+            payment.IsFraud = "Received";
+            var destination = payment.Destination;
+            var source = payment.Source;
+            payment.Source = destination;
+            payment.Destination = source;
+
+            await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+
+            aTimer = new Timer();
+            aTimer.Interval = 2000;
+
+            // Hook up the Elapsed event for the timer.
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("/users/" + localId, true);
+            };
+
+            // Have the timer fire repeated events (true is the default)
+            aTimer.AutoReset = true;
+
+            // Start the timer
+            aTimer.Enabled = true;
         }
-        payment.Amount = float.Parse(AmountToSend);
-        payment.Id = Int32.Parse(await GenerateId(4));
 
-
-        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
-        //NavManager.NavigateTo("payments");
     }
 
     protected override async Task OnInitializedAsync()
     {
+
+        countries = await httpClient.GetFromJsonAsync<List<Address>>("/api/v1/payments/countries");
+
+        foreach (Address address in countries)
+        {
+            if (!countryList.Contains(address.Country))
+            {
+                countryList.Add(address.Country);
+            }
+        }
+
+        foreach (string country in countryList)
+        {
+            Console.WriteLine(country);
+        }
 
         localId = await localStorage.GetItemAsStringAsync("id");
         user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + localId);
@@ -244,35 +436,16 @@ using Newtonsoft.Json.Linq;
                 }
             }
         }
-    }
 
-    public class ModelInput
-    {
-        public float Col0 { get; set; }
+        payments = await httpClient.GetFromJsonAsync<List<Payment>>("/api/v1/payments");
 
-        public string Trans_date_trans_time { get; set; }
-
-        public float Cc_num { get; set; }
-
-        public float Amt { get; set; }
-
-        public string First { get; set; }
-
-        public string Last { get; set; }
-
-        public string City { get; set; }
-
-        public string State { get; set; }
-
-        public float Lat { get; set; }
-
-        public float Long { get; set; }
-
-        public float Merch_lat { get; set; }
-
-        public float Merch_long { get; set; }
-
-        public string Is_fraud { get; set; }
+        foreach (Payment payment in payments)
+        {
+            if (payment.Source == user.Username)
+            {
+                lastPayment = payment;
+            }
+        }
     } 
 
 #line default

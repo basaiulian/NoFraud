@@ -9,42 +9,35 @@
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager NavManager
 @inject IJSRuntime JsRuntime
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <div class="register-photo">
+        <div class="form-container">
+            <div class="image-holder"></div>
+            <form method="post">
+                <EditForm Model="@user" OnValidSubmit="LoginUser">
+                    <h2 class="text-center"><strong>Welcome back</strong></h2>
 
-<div class="register-photo">
-    <div class="form-container">
-        <div class="image-holder"></div>
-        <form method="post">
-            <EditForm Model="@user" OnValidSubmit="LoginUser">
-                @*<DataAnnotationsValidator />*@
+                    <div class="form-group">
+                        <InputText id="username" class="form-control" placeholder="Username" @bind-Value="username" />
+                    </div>
 
-                <h2 class="text-center"><strong>Welcome back</strong></h2>
-                <div class="form-group">
-                    <InputText id="username" class="form-control" placeholder="Username" @bind-Value="username" />
-                    @*<ValidationMessage For="@(() => username)" />*@
-                </div>
-                <div class="form-group" style="display:inline-flex">
-                    <InputText type="@showType" id="password" class="form-control" placeholder="Password" @bind-Value="password" />
-                    @*<ValidationMessage For="@(() => password)" />*@
-                </div>
-                <i class="far fa-eye" @onclick="() => showPassword()"></i>
-                <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a> <h5>@message2</h5><h4>@message</h4>
-                </div>
+                    <div class="form-group" style="display:inline-flex">
+                        <InputText type="@showType" id="password" class="form-control" placeholder="Password" @bind-Value="password" />
+                    </div>
 
+                    <i class="far fa-eye" @onclick="() => showPassword()"></i>
 
-            </EditForm>
-        </form>
+                    <div class="form-group">
+                        <input class="btn btn-success btn-block" type="submit" value="Submit"> <a class="already" href="/register"> Don't have an account? Register here.</a> <a class="already" href="/forgotpassword"> Forgot your password? Click here.</a>
+                    </div>
+
+                </EditForm>
+            </form>
+        </div>
+        <h3>@goodMessage</h3>
+        <h4>@badMessage</h4>
     </div>
-</div>
-
-
-
-
-
-
-
 
 @code{
     private List<User> users;
@@ -53,8 +46,8 @@
 
     private static Timer aTimer;
 
-    private string message = "";
-    private string message2 = "";
+    private string goodMessage = "";
+    private string badMessage = "";
 
     private User user = new User();
     private string username { get; set; }
@@ -78,50 +71,38 @@
 
     protected async Task LoginUser()
     {
-        //LoginClass loginObject = new LoginClass(username, password);
-
-        //username = user.Username;
-        //password = user.Password;
-
-        List<string> my_request = new List<string> { username, password };
+        List<string> my_request = new List<string> { username.ToLower(), password };
 
         var raspuns = await httpClient.PostAsJsonAsync<List<string>>("/api/v1/users/find", my_request);
         string returnValue = await raspuns.Content.ReadAsStringAsync();
         Console.WriteLine(returnValue);
         if (returnValue != "-1")
         {
-            message2 = "";
-            message = "";
-            message2 += "Logged in successfully !";
+            badMessage = "";
+            goodMessage = "";
+            goodMessage += "Logged in successfully, you will be redirected to your profile in one second... !";
 
             await localStorage.SetItemAsync("autentificat", "True");
             await localStorage.SetItemAsync("id", returnValue);
 
             aTimer = new Timer();
             aTimer.Interval = 1000;
-
-            // Hook up the Elapsed event for the timer. 
             aTimer.Elapsed += (sender, args) =>
             {
                 NavManager.NavigateTo("/users/" + returnValue, true);
             };
 
-            // Have the timer fire repeated events (true is the default)
             aTimer.AutoReset = true;
-
-            // Start the timer
             aTimer.Enabled = true;
 
         } else
         {
-            message = "";
-            message += "Invalid credentials, try again!";
+            badMessage = "";
+            badMessage += "Invalid credentials, try again!";
         }
 
 
     }
-
-
 
     protected override async Task OnInitializedAsync()
     {

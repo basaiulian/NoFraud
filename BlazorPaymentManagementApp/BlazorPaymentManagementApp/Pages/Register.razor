@@ -1,6 +1,7 @@
 ﻿@page "/register"
 @layout LoginLayout 
 @using BlazorPaymentManagementApp.Model
+@using System.ComponentModel.DataAnnotations; 
 @using System.Timers
 @inject NavigationManager NavManager
 
@@ -15,51 +16,82 @@
 
                 <h2 class="text-center"><strong>Create an account </strong> </h2>
 
-
                 <div class="form-group">
                     <InputText id="username" class="form-control" placeholder="Username" @bind-Value="user.Username" />
                     <ValidationMessage For="@(() => user.Username)" />
                 </div>
-                <div class="form-group" style="display: inline-flex">
+
+                <div class="form-group" style="display: inline-flex;">
                     <InputText type=@showType class="form-control" id="register-password" placeholder="Password" @bind-Value="user.Password" />
-                    <i class="far fa-eye" @onclick="() => showPassword()"></i>
-                    <ValidationMessage For="@(() => user.Password)" />
                 </div>
+
+                <i class="far fa-eye" @onclick="() => showPassword()"></i>
+                <ValidationMessage For="@(() => user.Password)" />
+
                 <div class="form-group">
                     <InputText id="email" class="form-control" placeholder="Email" @bind-Value="user.Email" />
                     <ValidationMessage For="@(() => user.Email)" />
                 </div>
+
                 <div class="form-group">
                     <InputText id="phoneNumber" class="form-control" placeholder="PhoneNumber" @bind-Value="user.PhoneNumber" />
                     <ValidationMessage For="@(() => user.PhoneNumber)" />
                 </div>
+
                 <div class="form-group">
-                    <InputText id="address" class="form-control" placeholder="Address" @bind-Value="user.Address" />
-                    <ValidationMessage For="@(() => user.Address)" />
+                    <InputSelect @onclick="getCities" id="country" class="form-control" DisplayName="Country" @bind-Value="country">
+                        <option>Country</option>
+                        @foreach (string country in countryList)
+                        {
+                            <option>@country</option>
+                        }
+                    </InputSelect>
+                    <ValidationMessage For="@(() => country)" />
                 </div>
 
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit" /><a class="already" href="/login">You already have an account? Login here.</a><h5>@message2</h5><h4>@message</h4>
-
+                    <InputSelect id="city" class="form-control" DisplayName="City" @bind-Value="city">
+                        <option>City</option>
+                        @foreach (string city in cityList)
+                        {
+                            <option>@city</option>
+                        }
+                    </InputSelect>
                 </div>
+                <ValidationMessage For="@(() => city)" />
 
-
+                <div class="form-group">
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" /><a class="already" href="/login">You already have an account? Login here.</a><a class="already" href="/"> Go to first page !</a>
+                </div>
             </EditForm>
         </form>
     </div>
+    <h3>@goodMessage</h3>
+    <h4>@badMessage</h4>
 </div>
 
-
-
-<p>@message</p>
 
 @code{
 
     private User user = new User();
-    private string message = "";
-    private string message2 = "";
+    private string goodMessage = "";
+    private string badMessage = "";
 
     private string showType = "password";
+
+    private List<Address> countries = new List<Address>();
+
+    private List<string> countryList = new List<string>();
+
+    private List<string> cityList = new List<string>();
+
+    private List<User> users = new List<User>();
+
+    [Required]
+    private string country { get; set; }
+
+    [Required]
+    private string city { get; set; }
 
     private static Timer aTimer;
 
@@ -80,44 +112,102 @@
         }
     }
 
+    protected void getCities()
+    {
+        cityList.Clear();
+
+        foreach (Address address in countries)
+        {
+            if (address.Country == country)
+            {
+                if (!cityList.Contains(address.City))
+                {
+                    cityList.Add(address.City);
+                }
+            }
+        }
+
+        foreach (string city in cityList)
+        {
+            Console.WriteLine("City:");
+            Console.WriteLine(city);
+        }
+    }
+
     protected async Task RegisterUser()
     {
+        if(country != null && city != null) {
+            user.Address = country + ", " + city;
+            user.Username = user.Username.ToLower();
 
-        HttpResponseMessage response = await httpClient.PostAsJsonAsync<User>("/api/v1/users", user);
+            foreach (User _user in users)
+            {
+                if(user.Email == _user.Email && user.Username == _user.Username)
+                {
+                    badMessage = " This account already exists! ";
+                    return;
+                }
+                if (user.Email == _user.Email)
+                {
+                    badMessage = " This Email already exists! ";
+                    return;
+                }
+                else if (user.Username == _user.Username)
+                {
+                    badMessage = " This Username already exists! ";
+                    return;
+                }
+            }
 
-        if (response.StatusCode.ToString() == "Created")
-        {
-            message = "";
-            message2 = "";
-            message2 += " Contul a fost creat cu succes ! ";
+            HttpResponseMessage response = await httpClient.PostAsJsonAsync<User>("/api/v1/users", user);
+
+            if (response.StatusCode.ToString() == "Created")
+            {
+                badMessage = "";
+                goodMessage = "";
+                goodMessage += " Account created succesfully,you will be redirected to Login page in 3 seconds... ! ";
+            }
+            else
+            {
+                badMessage = "";
+                badMessage += " Nofraud account already exists ! ";
+            }
+
+            aTimer = new System.Timers.Timer();
+            aTimer.Interval = 3000;
+
+            // Hook up the Elapsed event for the timer.
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("/Login");
+            };
+
+            // Have the timer fire repeated events (true is the default)
+            aTimer.AutoReset = true;
+
+            // Start the timer
+            aTimer.Enabled = true;
+        } else {
+            badMessage = "";
+            badMessage += "Please insert your address (Country and City)!";
         }
-        else
-        {
-            message = "";
-            message += " Contul exista deja ! ";
-        }
-
-        aTimer = new System.Timers.Timer();
-        aTimer.Interval = 3000;
-
-        // Hook up the Elapsed event for the timer.
-        aTimer.Elapsed += (sender, args) =>
-        {
-            NavManager.NavigateTo("/Login");
-        };
-
-        // Have the timer fire repeated events (true is the default)
-        aTimer.AutoReset = true;
-
-        // Start the timer
-        aTimer.Enabled = true;
 
     }
 
-    //protected override async Task OnInitializedAsync()
-    //{
-    //   // users = await httpClient.GetFromJsonAsync<List<User>>("/api/users");
-    //}
+    protected override async Task OnInitializedAsync()
+    {
+        countries = await httpClient.GetFromJsonAsync<List<Address>>("/api/v1/payments/countries");
+
+        users = await httpClient.GetFromJsonAsync<List<User>>("/api/v1/users");
+
+        foreach (Address address in countries)
+        {
+            if (!countryList.Contains(address.Country))
+            {
+                countryList.Add(address.Country);
+            }
+        }
+    }
 
 
 }

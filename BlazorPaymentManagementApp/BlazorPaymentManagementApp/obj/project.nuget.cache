@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W1/RT3W/LUGsP501SD9afDeVcjtDQ6hubxTHSL7I1dye7BYqOh+tVwr22MISdg9xlqH4I7YN6uP84a2j3ZQBcg==",
+  "dgSpecHash": "/uXcGkxAosUcBYdrSyGP5iljHXvmGyTLRRkLz+10zYI7aFE+sE0pfC/clp1aDvd93GPYxnc6viqIi8j4bg/RWQ==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune13.48-12.1.2021\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp\\BlazorPaymentManagementApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\blazored.localstorage\\3.0.0\\blazored.localstorage.3.0.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\mailkit\\2.10.1\\mailkit.2.10.1.nupkg.sha512",
@@ -41,7 +41,7 @@
     "C:\\Users\\Iulian\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512",
-    "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.0-rc.2.20475.5\\microsoft.netcore.app.runtime.browser-wasm.5.0.0-rc.2.20475.5.nupkg.sha512"
+    "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.0\\microsoft.netcore.app.runtime.browser-wasm.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

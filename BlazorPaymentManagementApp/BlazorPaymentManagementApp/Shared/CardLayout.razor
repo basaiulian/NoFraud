@@ -3,7 +3,7 @@
 @inherits LayoutComponentBase
 
 <div class="page">
-
+    <title>Bacon’s MySpace page</title>
     <h3>NoFraud</h3>
     <div class="navigation">
         <a @onclick="logout" target="_blank" class="ml-md-auto">Logout</a>
@@ -66,12 +66,9 @@
         NavManager.NavigateTo("/createpayment");
     }
 
-
     protected override async Task OnInitializedAsync()
     {
         this.IdValue = await localStorage.GetItemAsStringAsync("id");
         this.IsLoggedIn = await localStorage.ContainKeyAsync("autentificat");
         this.Id = await localStorage.ContainKeyAsync("id");
-        Console.WriteLine("autentificat:" + this.IsLoggedIn);
-
     } }

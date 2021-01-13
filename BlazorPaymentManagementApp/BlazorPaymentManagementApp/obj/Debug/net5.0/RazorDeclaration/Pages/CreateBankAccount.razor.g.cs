@@ -13,91 +13,98 @@ namespace BlazorPaymentManagementApp.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 1 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 2 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using System.Net.Http.Json;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 6 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 7 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.AspNetCore.Components.WebAssembly.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 8 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 9 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 10 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using BlazorPaymentManagementApp.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
+#line 11 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\_Imports.razor"
 using Blazored.LocalStorage;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 3 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+using System.Timers;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
 using System.ComponentModel.DataAnnotations;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 5 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
 using BlazorPaymentManagementApp.Model;
 
 #line default
@@ -113,15 +120,16 @@ using BlazorPaymentManagementApp.Model;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 54 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune1.30-29.12.2020-cubaietii\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
+#line 49 "D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune13.48-12.1.2021\BlazorPaymentManagementApp\BlazorPaymentManagementApp\Pages\CreateBankAccount.razor"
        private BankAccount bankAccount = new BankAccount();
 
     private List<BankAccount> bankAccounts = new List<BankAccount>();
 
     private List<string> accountTypes = new List<string>();
 
-    private string message = "";
-    private string message2 = "";
+    private static Timer aTimer;
+    private string goodMessage = "";
+    private string badNessage = "";
 
     [Required(AllowEmptyStrings = false, ErrorMessage = "The Balance field is required.")]
     [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Balance must be like \"40\" or \"40.5\".")]
@@ -171,20 +179,26 @@ using BlazorPaymentManagementApp.Model;
 
         if (response.StatusCode.ToString() == "Created")
         {
-            message = "";
-            message2 = "";
-            message2 += "Bank account added successfully!";
+            goodMessage = "";
+            badNessage = "";
+            badNessage += "Bank account added successfully, you will be redirected to your profile in 3 seconds...";
+
+            aTimer = new Timer();
+            aTimer.Interval = 3000;
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("users/" + bankAccount.UserId,true);
+            };
+
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
 
         }
         else
         {
-            message = "";
-            message += "Something is wrong,try again ! ";
+            goodMessage = "";
+            goodMessage += "Something is wrong, try again! ";
         }
-
-        // TIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        NavManager.NavigateTo("users/" + bankAccount.UserId);
     }
 
     protected override async Task OnInitializedAsync()

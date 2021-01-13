@@ -1,8 +1,8 @@
 .register-photo[b-1qhdc9h047] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 7%;
-    margin-left:7%;
+    margin-top: 5%;
+    text-align:center;
 }
 
     .register-photo .image-holder[b-1qhdc9h047] {
@@ -15,15 +15,15 @@
 
     .register-photo .form-container[b-1qhdc9h047] {
         display: table;
-        max-width: 900px;
-        height: 100%;
+        width: 1000px;
+        height: 650px;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
     .register-photo form[b-1qhdc9h047] {
         display: table-cell;
-        width: 700px;
+        width: 600px;
         background-color: #ffffff;
         margin-right: 200px;
         padding: 60px 60px;
@@ -40,6 +40,19 @@
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 30px
+}
+
+.register-photo h3[b-1qhdc9h047] {
+    text-align: center;
+    margin-top: 5%;
+    color: red;
+    padding-bottom: 5%;
+}
+
+.register-photo h4[b-1qhdc9h047] {
+    margin-top: -5%;
+    text-align: center;
+    color: green;
 }
 
 .register-photo form .form-control[b-1qhdc9h047] {

@@ -3,11 +3,11 @@
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager NavManager
 
-    <div class="title">Welcome to NoFraud</div>
-                    <div class="buttons">
-                        <button id="login" type="button" @onclick="GoToLogin">Login</button>
-                        <button id="register" type="button" @onclick="GoToRegister">Register</button>
-                    </div>
+<div class="title">Welcome to NoFraud</div>
+<div class="buttons">
+    <button id="login" type="button" @onclick="GoToLogin">Login</button>
+    <button id="register" type="button" @onclick="GoToRegister">Register</button>
+</div>
 
 
 @code{ protected string IsLoggedIn { get; set; }
@@ -22,7 +22,7 @@
         {
             NavManager.NavigateTo("/users/" + Id, true);
         }
-        
+
     }
     protected async void GoToLogin()
     {

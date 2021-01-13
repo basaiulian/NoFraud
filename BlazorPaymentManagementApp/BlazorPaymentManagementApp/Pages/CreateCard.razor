@@ -1,9 +1,9 @@
-﻿
-@page "/createcard"
+﻿@page "/createcard"
 @layout CardLayout
 @using BlazorPaymentManagementApp.Model
 @inject NavigationManager NavManager
 @inject IJSRuntime JsRuntime
+@using System.Timers
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -30,6 +30,7 @@
                 <div class="form-group" style="display:inline-flex">
                     <InputText type=@showType id="pinCode" class="form-control" placeholder="PIN Code" @bind-Value="card.PinCode" />
                 </div>
+
                 <i class="far fa-eye" @onclick="() => showPin()"></i>
                 <ValidationMessage For="@(() => card.PinCode)" />
 
@@ -37,16 +38,16 @@
                 <div class="form-group" style="display:inline-flex">
                     <InputText type=@showType2 id="cvvCode" class="form-control" placeholder="CVV Code" @bind-Value="card.CvvCode" />
                 </div>
+
                 <i class="far fa-eye" @onclick="() => showCvv()"></i>
                 <ValidationMessage For="@(() => card.CvvCode)" />
-
 
                 <div class="form-group">
                     <InputSelect @onclick="getBankId" id="bankName" class="form-control" DisplayName="Bank Name" @bind-Value="card.bankNameToSend">
                         <option>BankName</option>
                         @foreach (var bankName in bankNames)
                         {
-            <option>@bankName</option>}
+                            <option>@bankName</option>}
                     </InputSelect>
                     <ValidationMessage For="@(() => card.bankNameToSend)" />
                 </div>
@@ -56,38 +57,38 @@
                         <option>BankAccountId</option>
                         @foreach (var bankId in bankIds)
                         {
-            <option>@bankId</option>}
+                            <option>@bankId</option>}
                     </InputSelect>
                     <ValidationMessage For="@(() => card.bankIdToSend)" />
                 </div>
 
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit" /><h5>@message2</h5><h4>@message</h4>
-
+                    <input class="btn btn-success btn-block" type="submit" value="Submit" />
                 </div>
-
-
             </EditForm>
         </form>
     </div>
+    <h3>@goodMessage</h3>
+    <h4>@badMessage</h4>
 </div>
+
 
 
 @code{ private Card card = new Card();
 
     private User user = new User();
 
-    private string message = "";
-    private string message2 = "";
+    private string goodMessage = "";
+    private string badMessage = "";
 
     private string showType = "password";
     private string showType2 = "password";
 
+    private static Timer aTimer;
+
     private List<string> bankNames = new List<string>();
 
     private List<string> bankIds = new List<string>();
-
-    private bool showInput { get; set; } = true;
 
     HttpClient httpClient = new HttpClient()
     {
@@ -120,8 +121,6 @@
 
     protected void getBankId()
     {
-        // ??? Nu iti gasesti banca in lista? ADAUGA O NOUA BANCA!
-
         bankIds.Clear();
         foreach (BankAccount bankAccount in user.BankAccounts)
         {
@@ -134,68 +133,39 @@
 
     protected async Task Create()
     {
-        Console.WriteLine("bankname: " + card.bankNameToSend);
-        Console.WriteLine("bankid: " + card.bankIdToSend);
-
-        //if (card.bankNameToSend == "BankName(Default: first account)")
-        //{
-        //    if (bankNames.Count != 0)
-        //    {
-        //        card.bankNameToSend = bankNames[0];
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("No bank accounts!");
-        //    }
-
-        //}
-
-        //if (card.bankIdToSend == "BankAccountId(Default: first account)")
-        //{
-        //    if (bankIds.Count != 0)
-        //    {
-        //        card.bankIdToSend = bankIds[0];
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("No bank ids!");
-        //    }
-        //}
-
-
-
-
-        //if (bankNameToSend != "Bank Name" && bankIdToSend != "Bank Account Id")
-        //{
         card.BankName = card.bankNameToSend;
         card.BankAccountId = card.bankIdToSend;
         HttpResponseMessage response = await httpClient.PostAsJsonAsync<Card>("/api/v1/cards", card);
 
         if (response.StatusCode.ToString() == "Created")
         {
-            message = "";
-            message2 = "";
-            message2 += " Credit card added successfully ! ";
+            badMessage = "";
+            goodMessage = "";
+            goodMessage += " Credit card added successfully, you will be redirected to your profile in 3 seconds... ";
+
+            aTimer = new Timer();
+            aTimer.Interval = 3000;
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("users/" + card.OwnerId, true);
+            };
+
+            aTimer.AutoReset = true;
+            aTimer.Enabled = true;
 
         }
         else
         {
-            message = "";
-            message += "Something is wrong,try again ! ";
+            badMessage = "";
+            badMessage += "Something is wrong, try again! ";
         }
 
-        //TIMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-        NavManager.NavigateTo("users/" + card.OwnerId);
-        //}
     }
 
     protected override async Task OnInitializedAsync()
     {
         var id = await localStorage.GetItemAsync<string>("id");
         user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + id);
-
-
 
         foreach (BankAccount bankAccount in user.BankAccounts)
         {
@@ -204,8 +174,6 @@
                 bankNames.Add(bankAccount.BankName);
             }
         }
-
-
 
         card.OwnerId = id;
 

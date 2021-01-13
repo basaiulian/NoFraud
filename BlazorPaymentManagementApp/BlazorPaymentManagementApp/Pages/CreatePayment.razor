@@ -4,13 +4,14 @@
 @using System.ComponentModel.DataAnnotations
 @using BlazorPaymentManagementApp.Model
 @using Newtonsoft.Json.Linq
+@using System.Timers
+@using System;
+@using Newtonsoft.Json;
 
 @inject Blazored.LocalStorage.ILocalStorageService localStorage
 @inject NavigationManager NavManager
 
 @inject IJSRuntime JsRuntime
-
-
 
 
 <div class="register-photo">
@@ -22,11 +23,11 @@
 
                 <h2 class="text-center"><strong>Payment </strong> </h2>
 
-
                 <div class="form-group">
                     <InputText id="amount" class="form-control" placeholder="Amount" @bind-Value="AmountToSend" />
                     <ValidationMessage For="@(() => AmountToSend)" />
                 </div>
+
                 <div class="form-group">
                     <InputSelect id="currency" class="form-control" @bind-Value="payment.Currency">
                         <option>RON(Default)</option>
@@ -36,38 +37,53 @@
                     </InputSelect>
                     <ValidationMessage For="@(() => payment.Currency)" />
                 </div>
+
+                <label>Payment Source</label>
+
                 <div class="form-group">
-                    <InputText id="source" class="form-control" placeholder="Source" @bind-Value="payment.Source" />
-                    <ValidationMessage For="@(() => payment.Source)" />
+                    <InputSelect @onclick="getCities" id="country" class="form-control" DisplayName="Country" @bind-Value="countryToSend">
+                        <option>Country</option>
+                        @foreach (string country in countryList)
+                        {
+    <option>@country</option>}
+                    </InputSelect>
+                    <ValidationMessage For="@(() => countryToSend)" />
                 </div>
+
+                <div class="form-group">
+                    <InputSelect id="city" class="form-control" DisplayName="City" @bind-Value="cityToSend">
+                        <option>City</option>
+                        @foreach (string city in cityList)
+                        {
+    <option>@city</option>}
+                    </InputSelect>
+                </div>
+                <ValidationMessage For="@(() => cityToSend)" />
+
                 <div class="form-group">
                     <InputSelect id="cc_num" class="form-control" placeholder="Credit Card Number" @bind-Value="cc_num">
                         <option>Credit Card Number</option>
                         @foreach (string creditCardNumber in creditCardNumbers)
                         {
-                            <option>@creditCardNumber</option>}
+    <option>@creditCardNumber</option>}
                     </InputSelect>
                     <ValidationMessage For="@(() => cc_num)" />
                 </div>
+
                 <div class="form-group">
-                    <InputText id="destination" class="form-control" placeholder="Destination" @bind-Value="payment.Destination" />
+                    <InputText id="destination" class="form-control" placeholder="Destination(Username)" @bind-Value="payment.Destination" />
                     <ValidationMessage For="@(() => payment.Destination)" />
                 </div>
-                <div class="form-group">
-                    <InputText id="status" class="form-control" placeholder="Status" @bind-Value="payment.Status" />
-                    <ValidationMessage For="@(() => payment.Status)" />
-                </div>
 
                 <div class="form-group">
-                    <input class="btn btn-success btn-block" type="submit" value="Submit"><h5>@message2</h5>
+                    <input class="btn btn-success btn-block" type="submit" value="Submit">
                 </div>
-
-
-
 
             </EditForm>
         </form>
     </div>
+    <h3>@message</h3>
+    <h4>@message2</h4>
 </div>
 
 
@@ -76,32 +92,62 @@
     [RegularExpression(@"^[0-9]+[.][0-9]+|[0-9]+$", ErrorMessage = "Amount must be like \"40\" or \"40.5\".")]
     public string AmountToSend { get; set; }
 
+    private string countryToSend { get; set; }
 
+    private string cityToSend { get; set; }
+
+    private string latitudeToSend { get; set; }
+
+    private string longitudeToSend { get; set; }
 
     [Required]
     public string cc_num { get; set; }
 
     private string message2 = "";
 
+    private string message = "";
+
+    private string safeStatus = "Not Safe";
+
     private List<string> currencyList = new List<string>()
-            {
-            "RON",
-            "EUR",
-            "GBP",
-            "USD"
-        };
+{
+       "RON",
+       "EUR",
+       "GBP",
+       "USD"
+    };
 
     private User user = new User();
 
-    private string userState;
+    private List<User> users = new List<User>();
 
-    private string userCity;
+    private string destinationUserState;
+
+    private string destinationUserCity;
+
+    private string destinationUserId;
+
+    private double distance;
+
+    private Timer aTimer;
 
     public string localId { get; set; }
 
+    public string prediction { get; set; }
+
+    private List<Address> countries = new List<Address>();
+
     private List<string> creditCardNumbers = new List<string>();
 
+    private List<string> countryList = new List<string>();
+
+    private List<string> cityList = new List<string>();
+
     private Payment payment = new Payment();
+
+    private Payment lastPayment = new Payment();
+
+    private List<Payment> payments;
 
     HttpClient httpClient = new HttpClient()
     {
@@ -113,7 +159,43 @@
         BaseAddress = new Uri("http://localhost:5020")
     };
 
-    protected async Task<string> GenerateId(int length)
+    protected void getCities()
+    {
+        cityList.Clear();
+
+        foreach (Address address in countries)
+        {
+            if (address.Country == countryToSend)
+            {
+                if (!cityList.Contains(address.City))
+                {
+                    cityList.Add(address.City);
+                }
+            }
+        }
+    }
+
+    protected List<string> getCoordinates(string country, string city)
+    {
+        foreach (Address address in countries)
+        {
+            if (address.Country == country && address.City == city && city != "City")
+            {
+                latitudeToSend = address.Latitude;
+                longitudeToSend = address.Longitude;
+            }
+            if (city == "City")
+            {
+                latitudeToSend = "-1";
+                longitudeToSend = "-1";
+                break;
+            }
+        }
+        return new List<string> { latitudeToSend, longitudeToSend };
+    }
+
+    protected async Task<string>
+    GenerateId(int length)
     {
         string cypher = "123456789";
 
@@ -131,57 +213,163 @@
 
     protected async Task Create()
     {
-        if(cc_num != "Credit Card Number")
+        List<string> destinationCoordinates = new List<string>();
+        List<string> sourceCoordinates = new List<string>();
+
+        payment.Source = user.Username;
+        payment.Date = DateTime.Now;
+        payment.Amount = Convert.ToSingle(AmountToSend);
+
+
+        users = await httpClient.GetFromJsonAsync<List<User>>("/api/v1/users");
+
+        if (countryToSend == null || cityToSend == null || countryToSend == "Country" || cityToSend == "City")
         {
-
-            userState = user.Address.Substring(0, user.Address.IndexOf(',')).Trim();
-            userCity = user.Address.Substring(user.Address.LastIndexOf(',') + 1).Trim();
-
-            //Console.WriteLine(userState);
-            //Console.WriteLine(userCity);
-
-            ModelInput modelToSend = new ModelInput
+            message = "Please insert the payment source (Country and City)!";
+        }
+        else
+        {
+            message = "";
+            HttpResponseMessage distanceResult = new HttpResponseMessage();
+            if (cc_num != "Credit Card Number")
             {
-                Col0 = 5,
-                Trans_date_trans_time = DateTime.Now.ToShortDateString(),
-                Cc_num = float.Parse(cc_num),
-                Amt = float.Parse(AmountToSend),
-                City = userCity,
-                State = userState,
-                Lat = 43.5f,
-                Long = 88.2f,
-                Merch_lat = 90.04f,
-                Merch_long = 33.9f
-            };
 
-            //Console.WriteLine(float.Parse(AmountToSend));
-            //Console.WriteLine(float.Parse(cc_num));
+                foreach (User user in users)
+                {
+                    if (payment.Destination == user.Username)
+                    {
+                        destinationUserState = user.Address.Substring(0, user.Address.IndexOf(',')).Trim();
+                        destinationUserCity = user.Address.Substring(user.Address.LastIndexOf(',') + 1).Trim();
+                        destinationCoordinates = getCoordinates(destinationUserState, destinationUserCity);
+                        destinationUserId = user.Id.ToString();
+                    }
+                    else
+                    {
+                        message = "Please insert the payment destination (Username)!";
+                    }
+                }
 
-            var predict_response = await predictorHttpClient.PostAsJsonAsync<ModelInput>("/fraud/index", modelToSend);
-            string returnValue = await predict_response.Content.ReadAsStringAsync();
+                sourceCoordinates = getCoordinates(countryToSend, cityToSend);
 
-            JObject jObject = JObject.Parse(returnValue);
-            string prediction = jObject["prediction"].ToString();
-
-            if(prediction == "0")
-            {
-                message2 = "The payment is safe.";
-            } else if(prediction == "1")
-            {
-                message2 = "The payment is not safe.";
+                if ((sourceCoordinates[0] == "-1" && sourceCoordinates[1] == "-1") || (destinationCoordinates[0] == "-1" && destinationCoordinates[1] == "-1"))
+                {
+                    Console.WriteLine("EROARE -1");
+                }
+                else
+                {
+                    message = "";
+                    distanceResult = await httpClient.PostAsJsonAsync<List<List<string>>>("/api/v1/payments/distance", new List<List<string>> { sourceCoordinates, destinationCoordinates });
+                }
             }
 
+            var Trans_date_trans_time = DateTime.Now;
+            var First = user.Username;
+            var Trans_distance = distanceResult.Content.ReadAsStringAsync().Result;
+
+            if (payment.Currency == "EUR")
+            {
+                payment.Amount = float.Parse(AmountToSend) * 4.87F;
+            }
+            else if (payment.Currency == "USD")
+            {
+                payment.Amount = float.Parse(AmountToSend) * 4.00F;
+            }
+            else if (payment.Currency == "GBP")
+            {
+                payment.Amount = float.Parse(AmountToSend) * 5.48F;
+            }
+
+            List<String> listToPredict = new List<String> { Trans_date_trans_time.ToShortDateString(), cc_num, AmountToSend, First, Trans_distance.ToString() };
+
+            if ((Trans_date_trans_time - lastPayment.Date).Hours > 8 && float.Parse(Trans_distance) > 3100F)
+            {
+                prediction = "1";
+                message2 = "The payment is not safe.";
+                safeStatus = "Not Safe";
+            }
+            else
+            {
+                var predict_response = await predictorHttpClient.PostAsJsonAsync<List<string>>("/fraud/index", listToPredict);
+                string returnValue = await predict_response.Content.ReadAsStringAsync();
+
+                JObject jObject = JObject.Parse(returnValue);
+                prediction = jObject["prediction"].ToString();
+
+                if (prediction == "0")
+                {
+
+                    List<string> transferData = new List<string> { payment.Amount.ToString(), localId, destinationUserId };
+                    var transferResult = await httpClient.PostAsJsonAsync<List<string>>("/api/v1/bankaccounts/transfer", transferData);
+
+                    if (transferResult.Content.ReadAsStringAsync().Result == "-1")
+                    {
+                        message = "Insufficient balance";
+                        return;
+                    }
+                    else
+                    {
+                        message = "";
+                        message2 = "The payment is safe.";
+                        safeStatus = "Safe";
+                    }
+                }
+                else if (prediction == "1")
+                {
+                    message = "The payment is not safe. Payment blocked.";
+                    safeStatus = "Not Safe";
+                }
+            }
+
+            payment.IsFraud = safeStatus;
+            payment.Id = Int32.Parse(await GenerateId(4));
+            payment.Amount = Convert.ToSingle(AmountToSend);
+
+            await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+
+            payment.Id = Int32.Parse(await GenerateId(4));
+            payment.IsFraud = "Received";
+            var destination = payment.Destination;
+            var source = payment.Source;
+            payment.Source = destination;
+            payment.Destination = source;
+
+            await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
+
+            aTimer = new Timer();
+            aTimer.Interval = 2000;
+
+            // Hook up the Elapsed event for the timer.
+            aTimer.Elapsed += (sender, args) =>
+            {
+                NavManager.NavigateTo("/users/" + localId, true);
+            };
+
+            // Have the timer fire repeated events (true is the default)
+            aTimer.AutoReset = true;
+
+            // Start the timer
+            aTimer.Enabled = true;
         }
-        payment.Amount = float.Parse(AmountToSend);
-        payment.Id = Int32.Parse(await GenerateId(4));
 
-
-        await httpClient.PostAsJsonAsync<Payment>("/api/v1/payments", payment);
-        //NavManager.NavigateTo("payments");
     }
 
     protected override async Task OnInitializedAsync()
     {
+
+        countries = await httpClient.GetFromJsonAsync<List<Address>>("/api/v1/payments/countries");
+
+        foreach (Address address in countries)
+        {
+            if (!countryList.Contains(address.Country))
+            {
+                countryList.Add(address.Country);
+            }
+        }
+
+        foreach (string country in countryList)
+        {
+            Console.WriteLine(country);
+        }
 
         localId = await localStorage.GetItemAsStringAsync("id");
         user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + localId);
@@ -195,33 +383,14 @@
                 }
             }
         }
-    }
 
-    public class ModelInput
-    {
-        public float Col0 { get; set; }
+        payments = await httpClient.GetFromJsonAsync<List<Payment>>("/api/v1/payments");
 
-        public string Trans_date_trans_time { get; set; }
-
-        public float Cc_num { get; set; }
-
-        public float Amt { get; set; }
-
-        public string First { get; set; }
-
-        public string Last { get; set; }
-
-        public string City { get; set; }
-
-        public string State { get; set; }
-
-        public float Lat { get; set; }
-
-        public float Long { get; set; }
-
-        public float Merch_lat { get; set; }
-
-        public float Merch_long { get; set; }
-
-        public string Is_fraud { get; set; }
+        foreach (Payment payment in payments)
+        {
+            if (payment.Source == user.Username)
+            {
+                lastPayment = payment;
+            }
+        }
     } }

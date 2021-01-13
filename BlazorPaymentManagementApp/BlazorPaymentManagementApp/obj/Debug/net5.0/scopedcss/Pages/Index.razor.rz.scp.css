@@ -3,12 +3,11 @@ body[b-jvtcrqogn1] {
 
 
 .title[b-jvtcrqogn1] {
-    position:absolute;
-    top:30%;
-    left:36%;
-    font-size:13vh;
-    transform: translate(-35%,-50%);
-    color:white;
+    font-size: 13vh;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .buttons[b-jvtcrqogn1] {

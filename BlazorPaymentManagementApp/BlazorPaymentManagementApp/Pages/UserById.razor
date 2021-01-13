@@ -5,7 +5,7 @@
 @using System.Timers
 @inject NavigationManager NavManager
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 @if (Id != localId && localId != null)
 {
@@ -13,8 +13,6 @@
 }
 else
 {
-
-
     <div>
         @if (user == null)
         {
@@ -29,13 +27,15 @@ else
                         <h2 class="text-center"><strong>My Profile </strong> </h2>
                         <h3>Username: @user.Username</h3>
                         <h3>Email: @user.Email</h3>
-                        <h3>PhoneNumber: @user.PhoneNumber</h3>
+                        <h3>Phone Number: @user.PhoneNumber</h3>
                         <h3>Address: @user.Address</h3>
+                        <h3><a href="/changepassword">Change your password</a></h3>
 
                     </form>
 
                 </div>
                 <div class="banks">
+
                     <h2 class="title"><strong>Bank accounts and credit cards</strong> </h2>
 
                     @foreach (BankAccount bankAccount in user.BankAccounts)
@@ -56,7 +56,7 @@ else
                                     <td>@bankAccount.Balance</td>
                                     <td></td>
                                 </tr>
-                                <table class="table">
+                                <table class="table" style="margin-left:35%">
                                     <thead>
                                         <tr>
                                             <th>Bank Name</th>
@@ -79,12 +79,64 @@ else
                                             </tr>
                                         }
 
-
                                     </tbody>
                                 </table>
                             </tbody>
                         </table>}
 
+                </div>
+                <div class="banks">
+                    <h2 class="title"><strong>Payments</strong> </h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Amount</th>
+                                <th>Currency</th>
+                                <th>Source</th>
+                                <th>Destination</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var payment in userPayments)
+                            {
+                                @if (payment.IsFraud == "Safe")
+                                {
+                                    <tr>
+                                        <td>@payment.Amount.ToString("F")</td>
+                                        <td>@payment.Currency</td>
+                                        <td>@payment.Source</td>
+                                        <td>@payment.Destination</td>
+                                        <td>@payment.Date</td>
+                                        <td>@payment.IsFraud</td>
+                                    </tr>
+                                }
+                                else if (payment.IsFraud == "Not Safe")
+                                {
+                                    <tr style="color:red;">
+                                        <td>@payment.Amount.ToString("F")</td>
+                                        <td>@payment.Currency</td>
+                                        <td>@payment.Source</td>
+                                        <td>@payment.Destination</td>
+                                        <td>@payment.Date</td>
+                                        <td>@payment.IsFraud</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                        <tr>
+                            <td>@payment.Amount.ToString("F")</td>
+                            <td>@payment.Currency</td>
+                            <td>@payment.Destination</td>
+                            <td>@payment.Source</td>
+                            <td>@payment.Date</td>
+                            <td>@payment.IsFraud</td>
+                        </tr>
+                                }
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
@@ -101,11 +153,15 @@ else
 
     public string loggedIn { get; set; }
 
+    private List<Payment> payments;
+
+    private List<Payment> userPayments = new List<Payment>();
+
+    private Payment payment = new Payment();
+
     private User user = new User();
 
     private BankAccount bankAccount = new BankAccount();
-
-    private bool IsHidden { get; set; }
 
     HttpClient httpClient = new HttpClient()
     {
@@ -121,7 +177,7 @@ else
         Timer aTimer = new Timer();
         aTimer.Interval = 200;
 
-        // Hook up the Elapsed event for the timer. 
+        // Hook up the Elapsed event for the timer.
         aTimer.Elapsed += (sender, args) =>
         {
             NavManager.NavigateTo("/users/" + localId, true);
@@ -143,7 +199,7 @@ else
         Timer aTimer = new Timer();
         aTimer.Interval = 200;
 
-        // Hook up the Elapsed event for the timer. 
+        // Hook up the Elapsed event for the timer.
         aTimer.Elapsed += (sender, args) =>
         {
             NavManager.NavigateTo("/users/" + localId, true);
@@ -161,6 +217,19 @@ else
         localId = await localStorage.GetItemAsStringAsync("id");
         loggedIn = await localStorage.GetItemAsStringAsync("autentificat");
         user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + Id);
+
+        payments = await httpClient.GetFromJsonAsync<List<Payment>>("/api/v1/payments");
+
+        user = await httpClient.GetFromJsonAsync<User>("/api/v1/users/" + localId);
+
+        foreach (Payment payment in payments)
+        {
+            if (payment.Source == user.Username)
+            {
+                userPayments.Add(payment);
+            }
+        }
+
     }
 }
 

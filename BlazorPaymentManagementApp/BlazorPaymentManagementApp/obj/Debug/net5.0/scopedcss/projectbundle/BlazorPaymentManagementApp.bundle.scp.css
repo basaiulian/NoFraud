@@ -4,25 +4,148 @@
 h3[b-xav4jpzvug]{
     color:red;
 }
+/* /Pages/ChangePassword.razor.rz.scp.css */
+.register-photo[b-brghy863pk] {
+    width: 100%;
+    padding-bottom:300px;
+}
+
+    .register-photo .image-holder[b-brghy863pk] {
+        display: table-cell;
+        width: 500px;
+        background: url(https://i.imgur.com/zzupuWq.jpg);
+        background-size: cover
+          
+    }
+
+.register-photo .form-container[b-brghy863pk] {
+    display: table;
+    max-width: 900px;
+    width: 1000px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo h3[b-brghy863pk] {
+
+    text-align:center;
+    margin-top:5%;
+    color:green;
+    padding-bottom:5%;
+
+}
+    .register-photo h4[b-brghy863pk] {
+        margin-top:-5%;
+        text-align: center;
+        color: red;
+    }
+
+.register-photo form[b-brghy863pk] {
+    display: table-cell;
+    width: 500px;
+    background-color: #ffffff;
+    padding: 60px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .register-photo form[b-brghy863pk] {
+        padding: 60px;
+    }
+}
+
+.register-photo form h4[b-brghy863pk] {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+    line-height: 1.5;
+}
+
+.register-photo form h5[b-brghy863pk] {
+    font-size: 24px;
+    margin-top: 5px;
+    text-align: center;
+    color: green;
+    line-height: 1.5;
+}
+
+.register-photo form h2[b-brghy863pk] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control[b-brghy863pk] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check[b-brghy863pk] {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary[b-brghy863pk] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+    .register-photo form .btn-primary:hover[b-brghy863pk],
+    .register-photo form .btn-primary:active[b-brghy863pk] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-brghy863pk] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-brghy863pk] {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none;
+    cursor: pointer;
+}
 /* /Pages/CreateBankAccount.razor.rz.scp.css */
 .register-photo[b-t4gj8982ag] {
     background: #99b3ff;
-    padding-bottom: 334px;
     margin-top: 9%;
-    margin-left: 5%;
+    text-align: center;
+    height:90vh;
+    background:no-repeat;
 }
 
     .register-photo .image-holder[b-t4gj8982ag] {
         display: table-cell;
-        width: 900px;
+        width: 800px;
         background: url(https://i.imgur.com/uUYpE5I.jpg);
-        background-size: cover
+        background-size: cover;
+        background-position:center;
     }
 
     .register-photo .form-container[b-t4gj8982ag] {
         display: table;
-        max-width: 1100px;
-        height: 550px;
+        max-width: 1000px;
+        height: 470px;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
@@ -34,6 +157,20 @@ h3[b-xav4jpzvug]{
         margin-right: 200px;
         padding: 60px 60px;
         color: #505e6c
+    }
+
+
+    .register-photo h3[b-t4gj8982ag] {
+        text-align: center;
+        margin-top: 3%;
+        color: red;
+      
+    }
+
+    .register-photo h4[b-t4gj8982ag] {
+        margin-top: 1%;
+        text-align: center;
+        color: green;
     }
 
 @media (max-width:991px) {
@@ -58,21 +195,6 @@ h3[b-xav4jpzvug]{
     color: inherit;
     text-indent: 0px;
     height: 40px;
-}
-.register-photo form h4[b-t4gj8982ag] {
-    font-size: 18px;
-    text-align: center;
-    margin-top: 75px;
-    color: red;
-    line-height: 1.5;
-}
-
-.register-photo form h5[b-t4gj8982ag] {
-    font-size: 2vh;
-    margin-top: 60px;
-    text-align: center;
-    color: green;
-    line-height: 1.5;
 }
 
 
@@ -111,54 +233,55 @@ h3[b-xav4jpzvug]{
     text-decoration: none
 }
 /* /Pages/CreateCard.razor.rz.scp.css */
+body[b-mrxb3qfwvc]{
+
+    background-color: #99b3ff;
+}
 .register-photo[b-mrxb3qfwvc] {
     background: #99b3ff;
-    padding-bottom: 334px;
     margin-top: 7%;
-    background-size:cover;
-    margin-left: 2%;
+    height: 100vh;
+    background: no-repeat;
 }
 
     .register-photo .image-holder[b-mrxb3qfwvc] {
         display: table-cell;
-        width: auto;
-        background: url(https://i.imgur.com/Sdox1Ue.jpg);
+        background: url(https://i.imgur.com/ixelN0o.jpg);
         background-size: cover;
-        width: 1400px;
+        width: 800px;
+        height:600px;
     }
 
-    .register-photo .form-container[b-mrxb3qfwvc] {
-        display: table;
-        max-width: 1200px;
-        height:700px;
-        margin: 0 auto;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+.register-photo .form-container[b-mrxb3qfwvc] {
+    display: table;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form[b-mrxb3qfwvc] {
+    display: table-cell;
+    width: 500px;
+    background-color: #ffffff;
+    margin-right: 200px;
+    padding: 20px 40px;
+    color: #505e6c
+}
+
+    
+
+    .register-photo h3[b-mrxb3qfwvc] {
+        text-align: center;
+        margin-top: 3%;
+        color: green;
     }
 
-    .register-photo form[b-mrxb3qfwvc] {
-        display: table-cell;
-        width: 750px;
-        background-color: #ffffff;
-        margin-right: 200px;
-        padding: 60px 60px;
-        color: #505e6c
+    .register-photo h4[b-mrxb3qfwvc] {
+        margin-top: 1%;
+        text-align: center;
+        color: red;
     }
-
-        .register-photo form h4[b-mrxb3qfwvc] {
-            font-size: 18px;
-            text-align: center;
-            margin-top: 75px;
-            color: red;
-            line-height: 1.5;
-        }
-
-        .register-photo form h5[b-mrxb3qfwvc] {
-            font-size: 18px;
-            text-align: center;
-            margin-top: 60px;
-            color: green;
-            line-height: 1.5;
-        }
 
 @media (max-width:991px) {
     .register-photo form[b-mrxb3qfwvc] {
@@ -222,8 +345,8 @@ h3[b-xav4jpzvug]{
 .register-photo[b-1qhdc9h047] {
     background: #99b3ff;
     padding-bottom: 334px;
-    margin-top: 7%;
-    margin-left:7%;
+    margin-top: 5%;
+    text-align:center;
 }
 
     .register-photo .image-holder[b-1qhdc9h047] {
@@ -236,15 +359,15 @@ h3[b-xav4jpzvug]{
 
     .register-photo .form-container[b-1qhdc9h047] {
         display: table;
-        max-width: 900px;
-        height: 100%;
+        width: 1000px;
+        height: 650px;
         margin: 0 auto;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
     }
 
     .register-photo form[b-1qhdc9h047] {
         display: table-cell;
-        width: 700px;
+        width: 600px;
         background-color: #ffffff;
         margin-right: 200px;
         padding: 60px 60px;
@@ -261,6 +384,19 @@ h3[b-xav4jpzvug]{
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 30px
+}
+
+.register-photo h3[b-1qhdc9h047] {
+    text-align: center;
+    margin-top: 5%;
+    color: red;
+    padding-bottom: 5%;
+}
+
+.register-photo h4[b-1qhdc9h047] {
+    margin-top: -5%;
+    text-align: center;
+    color: green;
 }
 
 .register-photo form .form-control[b-1qhdc9h047] {
@@ -323,18 +459,135 @@ body[b-03bgoy2xi6] {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+/* /Pages/ForgotPassword.razor.rz.scp.css */
+.register-photo[b-t61iq1m9zl] {
+    padding-bottom: 390px;
+    width: 100%;
+}
+
+    .register-photo .image-holder[b-t61iq1m9zl] {
+        display: table-cell;
+        width: 500px;
+        background: url(https://i.imgur.com/bumuyyU.jpg);
+        background-size: cover
+    }
+
+.register-photo .form-container[b-t61iq1m9zl] {
+    display: table;
+    max-width: 900px;
+    width: 1000px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 10%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
+}
+
+.register-photo form[b-t61iq1m9zl] {
+    display: table-cell;
+    width: 500px;
+    background-color: #ffffff;
+    padding: 60px 60px;
+    color: #505e6c
+}
+
+    .register-photo h3[b-t61iq1m9zl] {
+        text-align: center;
+        margin-top: 5%;
+        color: green;
+        padding-bottom: 5%;
+    }
+
+    .register-photo h4[b-t61iq1m9zl] {
+        margin-top: -5%;
+        text-align: center;
+        color: red;
+    }
+
+@media (max-width:991px) {
+    .register-photo form[b-t61iq1m9zl] {
+        padding: 60px;
+    }
+}
+
+.register-photo form h4[b-t61iq1m9zl] {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+    line-height: 1.5;
+}
+
+.register-photo form h5[b-t61iq1m9zl] {
+    font-size: 24px;
+    margin-top: 5px;
+    text-align: center;
+    color: green;
+    line-height: 1.5;
+}
+
+.register-photo form h2[b-t61iq1m9zl] {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control[b-t61iq1m9zl] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    color: inherit;
+    text-indent: 0px;
+    height: 40px
+}
+
+.register-photo form .form-check[b-t61iq1m9zl] {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary[b-t61iq1m9zl] {
+    background: blue;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: none !important
+}
+
+    .register-photo form .btn-primary:hover[b-t61iq1m9zl],
+    .register-photo form .btn-primary:active[b-t61iq1m9zl] {
+        background: blue
+    }
+
+    .register-photo form .btn-primary:active[b-t61iq1m9zl] {
+        transform: translateY(1px)
+    }
+
+.register-photo form .already[b-t61iq1m9zl] {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: 0.9;
+    text-decoration: none
+}
 /* /Pages/Index.razor.rz.scp.css */
 body[b-jvtcrqogn1] {
 }
 
 
 .title[b-jvtcrqogn1] {
-    position:absolute;
-    top:30%;
-    left:36%;
-    font-size:13vh;
-    transform: translate(-35%,-50%);
-    color:white;
+    font-size: 13vh;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
 }
 
 .buttons[b-jvtcrqogn1] {
@@ -417,20 +670,16 @@ body[b-jvtcrqogn1] {
     }
 }
 
-.register-photo form h4[b-kkxyimxcrz] {
-    font-size: 18px;
+.register-photo h3[b-kkxyimxcrz] {
     text-align: center;
-    margin-top: 10px;
-    color: red;
-    line-height: 1.5;
+    margin-top: 5%;
+    color: green;
 }
 
-.register-photo form h5[b-kkxyimxcrz] {
-    font-size: 24px;
-    margin-top: 5px;
+.register-photo h4[b-kkxyimxcrz] {
+    margin-top: 1%;
     text-align: center;
-    color: green;
-    line-height: 1.5;
+    color: red;
 }
 
 .register-photo form h2[b-kkxyimxcrz] {
@@ -489,6 +738,7 @@ body[b-jvtcrqogn1] {
 .register-photo[b-fob5x4kfew] {
     padding-bottom: 400px;
     width: 100%;
+
 }
 
     .register-photo .image-holder[b-fob5x4kfew] {
@@ -496,13 +746,13 @@ body[b-jvtcrqogn1] {
         width: auto;
         background: url(https://i.imgur.com/sdthwLx.jpg);
         background-size: cover;
-        width: 170vh;
+        width: 700px;
     }
 
     .register-photo .form-container[b-fob5x4kfew] {
         display: table;
-        max-width: 150vh;
-        height:80vh;
+        width: 1200px;
+        height:73vh;
         margin: 0 auto;
         margin-top: 100px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
@@ -510,28 +760,24 @@ body[b-jvtcrqogn1] {
 
     .register-photo form[b-fob5x4kfew] {
         display: table-cell;
-        width: 100vh;
+        width: 500px;
         background-color: #ffffff;
         margin-right: 200px;
-        padding: 60px 60px;
+        padding: 20px 40px;
         color: #505e6c
     }
 
-        .register-photo form h4[b-fob5x4kfew] {
-            font-size: 18px;
-            text-align: center;
-            margin-top: 75px;
-            color: red;
-            line-height: 1.5;
-        }
+    .register-photo h3[b-fob5x4kfew] {
+        text-align: center;
+        margin-top: 3%;
+        color: green;
+    }
 
-        .register-photo form h5[b-fob5x4kfew] {
-            font-size: 2vh;
-            margin-top: 60px;
-            text-align: center;
-            color: green;
-            line-height: 1.5;
-        }
+    .register-photo h4[b-fob5x4kfew] {
+        margin-top: 1%;
+        text-align: center;
+        color: red;
+    }
 
 .register-photo form .form-control[b-fob5x4kfew]{
         padding-right: 310px;
@@ -604,53 +850,69 @@ body[b-2ydhb5wup3] {
 .register-photo[b-2ydhb5wup3] {
     background: #99b3ff;
     padding-bottom: 334px;
-    display:table-cell;
- 
+    display: table-cell;
 }
 
 
-.title[b-2ydhb5wup3]{
-    margin-left:10px;
-    text-align:center;
+.title[b-2ydhb5wup3] {
+    margin-left: 10px;
+    text-align: center;
 }
 
-    .register-photo .image-holder[b-2ydhb5wup3] {
-        display: table-cell;
-        width: auto;
-        background: url(https://i.imgur.com/vHk2iJc.jpg);
-        background-size: cover;
-        width: 1300px;
-        height:700px;
-        border-top-left-radius: 6px;
-    }
+.register-photo .image-holder[b-2ydhb5wup3] {
+    display: table-cell;
+    width: auto;
+    background: url(https://i.imgur.com/vHk2iJc.jpg);
+    background-size: cover;
+    width: 500px;
+    height: auto;
+    border-top-left-radius: 6px;
+}
 
 .register-photo .form-container[b-2ydhb5wup3] {
     display: table;
-    max-width: 1280px;
+    width: 1000px;
     height: 100%;
-    margin-left: 7%;
+    margin-left: 25%;
+    text-align:center;
     margin-top: 25px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1)
 }
+
 .register-photo form[b-2ydhb5wup3] {
     margin-top: 50px;
     display: table-cell;
     background-color: #ccffcc;
-    width: 850px;
+    width: 500px;
     margin-right: 200px;
     padding: 60px 60px;
     color: #505e6c;
     border-top-right-radius: 6px;
 }
+
+h3 a[b-2ydhb5wup3] {
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h3 a:hover[b-2ydhb5wup3] {
+        background-color: #4CAF50;
+        color: white;
+    }
+
 .register-photo .banks[b-2ydhb5wup3] {
     background-color: #f0f5f5;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
-    width: 1280px;
+    width: 1000px;
     margin-right: 200px;
     padding: 60px 60px;
     color: #505e6c;
-    margin-left: 7%;
+    margin-left: 25%;
 }
 
 @media (max-width:991px) {
@@ -664,6 +926,7 @@ body[b-2ydhb5wup3] {
     line-height: 1.5;
     margin-bottom: 30px
 }
+
 .register-photo form .form-control[b-2ydhb5wup3] {
     background: transparent;
     border: none;
@@ -712,24 +975,20 @@ body[b-2ydhb5wup3] {
 }
 
 
-h3[b-2ydhb5wup3]{
-    margin-top:25px;
-    text-align:center;
-   
-    color : black;
+h3[b-2ydhb5wup3] {
+    margin-top: 25px;
+    text-align: center;
+    color: black;
+    font-style: italic;
 }
 
 .table[b-2ydhb5wup3] {
-
-    border-collapse : collapse;
-    margin : 25px 50px 50px 200px;
-    max-width: 50%;
+    margin-top:30px;
+    border-collapse: collapse;
     font-size: 0.9em;
     min-width: 400px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
-   
-
 }
 
     .table thead tr[b-2ydhb5wup3] {
@@ -738,25 +997,26 @@ h3[b-2ydhb5wup3]{
         font-weight: bold;
     }
 
-.table th[b-2ydhb5wup3],
-.table tr[b-2ydhb5wup3] {
-    padding: 12px 15px;
-}
+    .table th[b-2ydhb5wup3],
+    .table tr[b-2ydhb5wup3] {
+        padding: 12px 15px;
+    }
 
     .table tbody tr[b-2ydhb5wup3] {
         border-bottom: 1px solid mediumslateblue;
     }
 
-.table tbody tr:nth-of-type(even)[b-2ydhb5wup3]{
-    background-color:lightgrey;
-}
-.table tbody tr:nth-of-type(2n+1)[b-2ydhb5wup3]
-{
-    background-color:azure;
-}
-.table tbody tr:last-of-type[b-2ydhb5wup3]{
-    border-bottom:2px solid mediumslateblue;
-}
+        .table tbody tr:nth-of-type(even)[b-2ydhb5wup3] {
+            background-color: lightgrey;
+        }
+
+        .table tbody tr:nth-of-type(2n+1)[b-2ydhb5wup3] {
+            background-color: azure;
+        }
+
+        .table tbody tr:last-of-type[b-2ydhb5wup3] {
+            border-bottom: 2px solid mediumslateblue;
+        }
 
 .deleteButton[b-2ydhb5wup3] {
     border: none;
@@ -775,10 +1035,11 @@ h3[b-2ydhb5wup3]{
     text-decoration: none;
     text-shadow: 0px 1px 0px #7cacde;
 }
-.deleteButton:hover[b-2ydhb5wup3] {
+
+    .deleteButton:hover[b-2ydhb5wup3] {
         background-color: #5cbf2a;
         color: white;
-}
+    }
 /* /Shared/CardLayout.razor.rz.scp.css */
 body[b-ku3jajem7m] {
 
