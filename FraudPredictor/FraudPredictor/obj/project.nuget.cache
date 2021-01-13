@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "atIu8eI2unlJ8s2p8trY3/Lv7/QoVNQBs57plte/Bik9NxjsiODvKKVl2q+1Ba9cg4olzWNm7QPpw10nsbGNUA==",
+  "dgSpecHash": "PNcnJkdDkUugCjKYCDXyEUQk9A1A2yYwlKNylRSCrONw7xnY4/guk7ub5426+CT77aWa+e05uPb65ilpn4+tTQ==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune13.48-12.1.2021\\FraudPredictor\\FraudPredictor\\FraudPredictor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\lightgbm\\2.2.3\\lightgbm.2.2.3.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
@@ -22,6 +23,7 @@
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.cpumath\\1.5.0-preview2\\microsoft.ml.cpumath.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.dataview\\1.5.0-preview2\\microsoft.ml.dataview.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.fasttree\\1.5.0-preview2\\microsoft.ml.fasttree.1.5.0-preview2.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.lightgbm\\1.5.0-preview2\\microsoft.ml.lightgbm.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\5.0.1\\microsoft.visualstudio.web.codegeneration.5.0.1.nupkg.sha512",

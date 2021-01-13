@@ -12,15 +12,10 @@ namespace FraudPredictorML.ConsoleApp
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = new ModelInput()
             {
-                Trans_date_trans_time = @"01-01-19 0:00",
-                Cc_num = 2.70319E+15F,
-                Amt = 4.97F,
-                City = @"Moravian Falls",
-                State = @"NC",
-                Lat = 36.0788F,
-                Long = -81.1781F,
-                Merch_lat = 36.01129F,
-                Merch_long = -82.04832F,
+                Trans_date_trans_time = @"2/3/2019",
+                Cc_num = 3.569685E+15F,
+                Amt = 8.571544E+07F,
+                Trans_distance = 5152.628F,
             };
 
             // Make a single prediction on the sample data and print results
@@ -30,12 +25,7 @@ namespace FraudPredictorML.ConsoleApp
             Console.WriteLine($"Trans_date_trans_time: {sampleData.Trans_date_trans_time}");
             Console.WriteLine($"Cc_num: {sampleData.Cc_num}");
             Console.WriteLine($"Amt: {sampleData.Amt}");
-            Console.WriteLine($"City: {sampleData.City}");
-            Console.WriteLine($"State: {sampleData.State}");
-            Console.WriteLine($"Lat: {sampleData.Lat}");
-            Console.WriteLine($"Long: {sampleData.Long}");
-            Console.WriteLine($"Merch_lat: {sampleData.Merch_lat}");
-            Console.WriteLine($"Merch_long: {sampleData.Merch_long}");
+            Console.WriteLine($"Trans_distance: {sampleData.Trans_distance}");
             Console.WriteLine($"\n\nPredicted Is_fraud value {predictionResult.Prediction} \nPredicted Is_fraud scores: [{String.Join(",", predictionResult.Score)}]\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();

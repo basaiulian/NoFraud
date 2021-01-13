@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "AcYyoboITM1vBWaJmIWYhf7Evoad6pUGbPydxe3kCKPnqyP5LzHRvovD6Z9n9TqEH6DOjyf9CSJ9SzQYkQ5fIA==",
+  "dgSpecHash": "z6yRxPCLeSJ//L9NRO2H+uHXOBNrO0fPx3HTnPQlkSVpQyxcwkkK7pHSKcV3XMkVSbH66Q827Zd4ooIG5SGw4A==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune8.13-27.12.2020Gabi\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune13.48-12.1.2021\\FraudPredictor\\FraudPredictorML.Model\\FraudPredictorML.Model.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Iulian\\.nuget\\packages\\lightgbm\\2.2.3\\lightgbm.2.2.3.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml\\1.5.0-preview2\\microsoft.ml.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.cpumath\\1.5.0-preview2\\microsoft.ml.cpumath.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.dataview\\1.5.0-preview2\\microsoft.ml.dataview.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.fasttree\\1.5.0-preview2\\microsoft.ml.fasttree.1.5.0-preview2.nupkg.sha512",
+    "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.ml.lightgbm\\1.5.0-preview2\\microsoft.ml.lightgbm.1.5.0-preview2.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

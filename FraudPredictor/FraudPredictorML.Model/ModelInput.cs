@@ -6,55 +6,27 @@ namespace FraudPredictorML.Model
 {
     public class ModelInput
     {
-        [ColumnName("col0"), LoadColumn(0)]
-        public float Col0 { get; set; }
-
-
-        [ColumnName("trans_date_trans_time"), LoadColumn(1)]
+        [ColumnName("trans_date_trans_time"), LoadColumn(0)]
         public string Trans_date_trans_time { get; set; }
 
 
-        [ColumnName("cc_num"), LoadColumn(2)]
+        [ColumnName("cc_num"), LoadColumn(1)]
         public float Cc_num { get; set; }
 
 
-        [ColumnName("amt"), LoadColumn(3)]
+        [ColumnName("amt"), LoadColumn(2)]
         public float Amt { get; set; }
 
 
-        [ColumnName("first"), LoadColumn(4)]
+        [ColumnName("first"), LoadColumn(3)]
         public string First { get; set; }
 
 
-        [ColumnName("last"), LoadColumn(5)]
-        public string Last { get; set; }
+        [ColumnName("trans_distance"), LoadColumn(4)]
+        public float Trans_distance { get; set; }
 
 
-        [ColumnName("city"), LoadColumn(6)]
-        public string City { get; set; }
-
-
-        [ColumnName("state"), LoadColumn(7)]
-        public string State { get; set; }
-
-
-        [ColumnName("lat"), LoadColumn(8)]
-        public float Lat { get; set; }
-
-
-        [ColumnName("long"), LoadColumn(9)]
-        public float Long { get; set; }
-
-
-        [ColumnName("merch_lat"), LoadColumn(10)]
-        public float Merch_lat { get; set; }
-
-
-        [ColumnName("merch_long"), LoadColumn(11)]
-        public float Merch_long { get; set; }
-
-
-        [ColumnName("is_fraud"), LoadColumn(12)]
+        [ColumnName("is_fraud"), LoadColumn(5)]
         public string Is_fraud { get; set; }
 
 

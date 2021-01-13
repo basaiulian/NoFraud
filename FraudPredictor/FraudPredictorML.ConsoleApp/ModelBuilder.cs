@@ -7,12 +7,13 @@ using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
 using FraudPredictorML.Model;
+using Microsoft.ML.Trainers.LightGbm;
 
 namespace FraudPredictorML.ConsoleApp
 {
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = @"D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune11.20-27.12.2020\FraudPredictor\FraudPredictor\fraudTrain.csv";
+        private static string TRAIN_DATA_FILEPATH = @"D:\Facultate\Anul III\[INET] Introducere in .NET\NOFRAUD\Versiune6.23-1.9.2021\Versiune1.20-1.9.2021\FraudPredictor\FraudPredictor\smallFraudTrain.csv";
         private static string MODEL_FILEPATH = @"C:\Users\Iulian\AppData\Local\Temp\MLVSTools\FraudPredictorML\FraudPredictorML.Model\MLModel.zip";
         // Create MLContext to be shared across the model creation workflow objects 
         // Set a random seed for repeatable/deterministic results across multiple trainings.
@@ -45,12 +46,10 @@ namespace FraudPredictorML.ConsoleApp
         {
             // Data process configuration with pipeline data transformations 
             var dataProcessPipeline = mlContext.Transforms.Conversion.MapValueToKey("is_fraud", "is_fraud")
-                                      .Append(mlContext.Transforms.Categorical.OneHotEncoding(new[] { new InputOutputColumnPair("state", "state") }))
-                                      .Append(mlContext.Transforms.Categorical.OneHotHashEncoding(new[] { new InputOutputColumnPair("trans_date_trans_time", "trans_date_trans_time"), new InputOutputColumnPair("city", "city") }))
-                                      .Append(mlContext.Transforms.Concatenate("Features", new[] { "state", "trans_date_trans_time", "city", "cc_num", "amt", "lat", "long", "merch_lat", "merch_long" }))
-                                      .AppendCacheCheckpoint(mlContext);
+                                      .Append(mlContext.Transforms.Categorical.OneHotHashEncoding(new[] { new InputOutputColumnPair("trans_date_trans_time", "trans_date_trans_time") }))
+                                      .Append(mlContext.Transforms.Concatenate("Features", new[] { "trans_date_trans_time", "cc_num", "amt", "trans_distance" }));
             // Set the training algorithm 
-            var trainer = mlContext.MulticlassClassification.Trainers.OneVersusAll(mlContext.BinaryClassification.Trainers.FastTree(labelColumnName: "is_fraud", featureColumnName: "Features"), labelColumnName: "is_fraud")
+            var trainer = mlContext.MulticlassClassification.Trainers.LightGbm(new LightGbmMulticlassTrainer.Options() { NumberOfIterations = 200, LearningRate = 0.09688918f, NumberOfLeaves = 92, MinimumExampleCountPerLeaf = 50, UseCategoricalSplit = true, HandleMissingValue = false, UseZeroAsMissingValue = false, MinimumExampleCountPerGroup = 200, MaximumCategoricalSplitPointCount = 64, CategoricalSmoothing = 1, L2CategoricalRegularization = 10, UseSoftmax = true, Booster = new GradientBooster.Options() { L2Regularization = 0, L1Regularization = 0.5 }, LabelColumnName = "is_fraud", FeatureColumnName = "Features" })
                                       .Append(mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel", "PredictedLabel"));
 
             var trainingPipeline = dataProcessPipeline.Append(trainer);
