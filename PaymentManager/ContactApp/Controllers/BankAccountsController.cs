@@ -127,6 +127,32 @@ namespace PaymentManagement.Controllers
             return Ok();
         }
 
+        [HttpPost("transfer")]
+        public async Task<ActionResult<int>> TransferBetweenUsers([FromBody] List<string> transferData)
+        {
+            List<BankAccount> bankAccounts = _context.BankAccount.ToList();
+
+            var sourceBankAccount = bankAccounts.Where(p => p.UserId == Int32.Parse(transferData[1])).First();
+            var destinationBankAccount = bankAccounts.Where(p => p.UserId == Int32.Parse(transferData[2])).First();
+
+            Console.WriteLine(sourceBankAccount.Balance);
+            Console.WriteLine(destinationBankAccount.Balance);
+
+            if (sourceBankAccount.Balance < Convert.ToDouble(transferData[0]))
+            {
+                Console.WriteLine("Balance prea mic");
+                return -1;
+            }
+            else
+            {
+                sourceBankAccount.Balance -= Convert.ToDouble(transferData[0]);
+                destinationBankAccount.Balance += Convert.ToDouble(transferData[0]);
+                _context.SaveChanges();
+                Console.WriteLine("Transfer");
+                return 1;
+            }
+        }
+
 
         [HttpPost]
         public async Task<ActionResult<BankAccount>> PostBankAccount([FromBody] BankAccount bankAccount)

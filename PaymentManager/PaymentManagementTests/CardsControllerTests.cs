@@ -6,11 +6,29 @@ using Microsoft.AspNetCore.Mvc;
 using PaymentManagement.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace PaymentManagementTests
 {
     public class CardsControllerTests
     {
+        private readonly IServiceProvider serviceProvider;
+        public CardsControllerTests()
+        {
+            var services = new ServiceCollection();
+
+            string _databaseName = "Cards";
+
+            string randomNumber = (new Random().Next()).ToString();
+
+            _databaseName += randomNumber;
+
+            services.AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<DataContext>(options => options.UseInMemoryDatabase(databaseName: _databaseName));
+
+            serviceProvider = services.BuildServiceProvider();
+        }
+
         private Card card1 = new Card
         {
             Id = 1,
@@ -38,11 +56,8 @@ namespace PaymentManagementTests
         [Fact]
         public void GetCards_ShouldReturnAllCards()
         {
- 
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "CardsGet")
-                .Options;
-            var context = new DataContext(_options);
+
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new CardsController(context);
 
@@ -59,10 +74,7 @@ namespace PaymentManagementTests
         [Fact]
         public void GetByIdCard_ShouldReturnCardById()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "CardGetById")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new CardsController(context);
 
@@ -77,11 +89,7 @@ namespace PaymentManagementTests
         [Fact]
         public void UpdateCard()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "CardUpdate")
-                .EnableSensitiveDataLogging()
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new CardsController(context);
 
@@ -112,10 +120,7 @@ namespace PaymentManagementTests
         [Fact]
         public void DeleteCard()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "CardDelete")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new CardsController(context);
 
@@ -133,10 +138,7 @@ namespace PaymentManagementTests
         [Fact]
         public void CreateCard()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "CardCreate")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new CardsController(context);
 

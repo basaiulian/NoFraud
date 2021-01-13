@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lhOp76G0ArT0f48/VAysGVMfrYXZC/iuaZmQYGFh07nxzZJB0tpY1xCA0si91gL2HoCnz/QtIq9Xu1g6iVsLRQ==",
+  "dgSpecHash": "CgJg+nZJbiaUg3aGWpE3lEmYrirkJmKyyobtihbCZnWrbEyylQLHiq1nnY4qDlNyp3M+10ibHb1ncMInId2Gzw==",
   "success": true,
-  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune6.23-1.9.2021\\Versiune1.20-1.9.2021\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
+  "projectFilePath": "D:\\Facultate\\Anul III\\[INET] Introducere in .NET\\NOFRAUD\\Versiune13.48-12.1.2021\\PaymentManager\\ContactApp\\PaymentManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulian\\.nuget\\packages\\elasticsearch.net\\7.10.1\\elasticsearch.net.7.10.1.nupkg.sha512",
     "C:\\Users\\Iulian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

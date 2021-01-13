@@ -7,6 +7,8 @@ using PaymentManagement.Model;
 using PaymentManagement.Entities;
 using System;
 using System.Net.Mail;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace PaymentManagement.Controllers
 {
@@ -19,6 +21,23 @@ namespace PaymentManagement.Controllers
         public UsersController(DataContext context)
         {
             _context = context;
+        }
+
+        private string hashPassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                // ComputeHash - returns byte array  
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                // Convert byte array to a string   
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
         }
 
         [HttpGet]
@@ -59,9 +78,13 @@ namespace PaymentManagement.Controllers
 
             List<User> users = _context.User.ToList();
 
-            foreach(User user in users)
+            string hashedPassword = "";
+            
+            hashedPassword = hashPassword(loginObject[1]);
+
+            foreach (User user in users)
             {
-                if(user.Username == loginObject[0] && user.Password == loginObject[1])
+                if(user.Username == loginObject[0] && user.Password == hashedPassword)
                 {
                     return user.Id;
                 }
@@ -148,6 +171,8 @@ namespace PaymentManagement.Controllers
                 return BadRequest("id diferit");
             }
 
+            user.Password = hashPassword(user.Password);
+
             _context.Entry(user).State = EntityState.Modified;
             foreach (var bankAccount in user.BankAccounts)
             {
@@ -230,6 +255,8 @@ namespace PaymentManagement.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser([FromBody] User user)
         {
+            user.Password = hashPassword(user.Password);
+
             _context.User.Add(user);
 
             await _context.SaveChangesAsync();

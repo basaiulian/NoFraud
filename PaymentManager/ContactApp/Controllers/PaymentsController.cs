@@ -32,7 +32,8 @@ namespace PaymentManagement.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Payment>>> GetPayments()
         {
-            return await _context.Payment.OrderBy(p => p.Date).ToListAsync();
+            return await _context.Payment.OrderByDescending(p => p.Date).ToListAsync();
+
         }
 
         [HttpGet("countries")]

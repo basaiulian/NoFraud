@@ -6,11 +6,32 @@ using PaymentManagement.Entities;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
+using System;
 
 namespace PaymentManagementTests
 {
     public class UsersControllerTests
     {
+        private readonly IServiceProvider serviceProvider;
+
+        public UsersControllerTests()
+        {
+            var services = new ServiceCollection();
+
+            string _databaseName = "Users";
+
+            string randomNumber = (new Random().Next()).ToString();
+
+            _databaseName += randomNumber;
+
+            services.AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<DataContext>(options => options.UseInMemoryDatabase(databaseName: _databaseName));
+
+            serviceProvider = services.BuildServiceProvider();
+        }
+
         private User user1 = new User
         {
             Id = 100,
@@ -34,11 +55,7 @@ namespace PaymentManagementTests
         [Fact]
         public void GetUsers_ShouldReturnUsers()
         {
-
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UsersGet")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new UsersController(context);
 
@@ -53,18 +70,29 @@ namespace PaymentManagementTests
         }
 
         [Fact]
-        public void FindUser()
+        public void EmailUser()
         {
-
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UserFind")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new UsersController(context);
 
             context.User.Add(user1);
             context.SaveChanges();
+
+            var result = controller.EmailUser(user1.Email);
+
+            Assert.True(result == 1);
+
+        }
+
+        [Fact]
+        public void FindUser()
+        {
+            var context = serviceProvider.GetRequiredService<DataContext>();
+
+            var controller = new UsersController(context);
+
+            controller.PostUser(user1);
 
             List<string> userData = new List<string> { "usertest1", "parola1" };
 
@@ -77,10 +105,7 @@ namespace PaymentManagementTests
         [Fact]
         public void GetByIdUser_ShouldReturnUserById()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UserGetById")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new UsersController(context);
 
@@ -95,11 +120,7 @@ namespace PaymentManagementTests
         [Fact]
         public void UpdateUser()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UpdateUser")
-                .EnableSensitiveDataLogging()
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new UsersController(context);
 
@@ -128,11 +149,8 @@ namespace PaymentManagementTests
 
         [Fact]
         public void DeleteUser()
-        {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UserDelete")
-                .Options;
-            var context = new DataContext(_options);
+        { 
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new UsersController(context);
 
@@ -150,10 +168,7 @@ namespace PaymentManagementTests
         [Fact]
         public void CreateUser()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UserCreate")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new UsersController(context);
 

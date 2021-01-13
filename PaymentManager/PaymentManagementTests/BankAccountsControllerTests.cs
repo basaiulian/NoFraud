@@ -6,16 +6,35 @@ using Microsoft.AspNetCore.Mvc;
 using PaymentManagement.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using Microsoft.Extensions.DependencyInjection;
+using System.Collections.Generic;
 
 namespace PaymentManagementTests
 {
     public class BankAccountsControllerTests
     {
+        private readonly IServiceProvider serviceProvider;
+        public BankAccountsControllerTests()
+        {
+            var services = new ServiceCollection();
+
+            string _databaseName = "BankAccounts";
+
+            string randomNumber = (new Random().Next()).ToString();
+
+            _databaseName += randomNumber;
+
+            services.AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<DataContext>(options => options.UseInMemoryDatabase(databaseName: _databaseName));
+
+            serviceProvider = services.BuildServiceProvider();
+        }
+
         private BankAccount bankAccount1 = new BankAccount
         {
             Id = "18379133",
             BankName = "Raiffeisen Bank",
-            Balance = 65.98,
+            Balance = 65,
             AccountType = "STUDENT",
             UserId = 1
         };
@@ -24,7 +43,7 @@ namespace PaymentManagementTests
         {
             Id = "15532133",
             BankName = "BCR",
-            Balance = 11.28,
+            Balance = 12,
             AccountType = "BUSINESS",
             UserId = 1
         };
@@ -32,11 +51,8 @@ namespace PaymentManagementTests
         [Fact]
         public void GetBankAccounts_ShouldReturnBankAccounts()
         {
- 
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "BankAccountsGet")
-                .Options;
-            var context = new DataContext(_options);
+
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new BankAccountsController(context);
 
@@ -50,13 +66,34 @@ namespace PaymentManagementTests
         }
 
         [Fact]
-        public void GetByIdBankAccount_ShouldReturnBankAccountById()
-        { 
+        public void TransferAmountBetweenUsers()
+        {
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "BankAccountGetById")
-                .Options;
-            var context = new DataContext(_options);
+            var controller = new BankAccountsController(context);
+
+            context.BankAccount.Add(bankAccount1);
+            context.BankAccount.Add(bankAccount2);
+            context.SaveChanges();
+
+            double initialBalanceBankAccount1 = bankAccount1.Balance;
+            double initialBalanceBankAccount2 = bankAccount2.Balance;
+
+            string amount = "10";
+
+            List<string> transferData = new List<string> { "10", bankAccount1.UserId.ToString(), bankAccount2.UserId.ToString() };
+
+            var transferResult = controller.TransferBetweenUsers(transferData);
+
+            Assert.Equal(initialBalanceBankAccount1 - Single.Parse(amount), bankAccount1.Balance - Single.Parse(amount));
+            Assert.Equal(initialBalanceBankAccount2 + Single.Parse(amount), bankAccount2.Balance + Single.Parse(amount));
+        }
+
+        [Fact]
+        public void GetByIdBankAccount_ShouldReturnBankAccountById()
+        {
+
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new BankAccountsController(context);
 
@@ -71,11 +108,7 @@ namespace PaymentManagementTests
         [Fact]
         public void UpdateBankAccount()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UpdateBankAccount")
-                .EnableSensitiveDataLogging()
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new BankAccountsController(context);
 
@@ -104,10 +137,7 @@ namespace PaymentManagementTests
         [Fact]
         public void DeleteBankAccount()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "BankAccountDelete")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new BankAccountsController(context);
 
@@ -126,10 +156,7 @@ namespace PaymentManagementTests
         [Fact]
         public void CreateBankAccount()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "BankAccountCreate")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new BankAccountsController(context);
 

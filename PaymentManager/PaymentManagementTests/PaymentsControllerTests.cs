@@ -7,11 +7,29 @@ using PaymentManagement.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using PaymentManagement;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace PaymentManagementTests
 {
     public class PaymentsControllerTests
     {
+        private readonly IServiceProvider serviceProvider;
+        public PaymentsControllerTests()
+        {
+            var services = new ServiceCollection();
+
+            string _databaseName = "Payments";
+
+            string randomNumber = (new Random().Next()).ToString();
+
+            _databaseName += randomNumber;
+
+            services.AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<DataContext>(options => options.UseInMemoryDatabase(databaseName: _databaseName));
+
+            serviceProvider = services.BuildServiceProvider();
+        }
+
         private Payment payment1 = new Payment
         {
             Id =  1,
@@ -41,11 +59,8 @@ namespace PaymentManagementTests
         [Fact]
         public void GetPayments_ShouldReturnAllPayments()
         {
- 
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "PaymentsGet")
-                .Options;
-            var context = new DataContext(_options);
+
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new PaymentsController(context);
 
@@ -62,10 +77,7 @@ namespace PaymentManagementTests
         [Fact]
         public void GetByIdPayment_ShouldReturnPaymentById()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "PaymentGetById")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new PaymentsController(context);
 
@@ -80,11 +92,7 @@ namespace PaymentManagementTests
         [Fact]
         public void UpdatePayment()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "UpdatePayment")
-                .EnableSensitiveDataLogging()
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new PaymentsController(context);
 
@@ -116,10 +124,7 @@ namespace PaymentManagementTests
         [Fact]
         public void DeletePayment()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "PaymentDelete")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new PaymentsController(context);
 
@@ -137,10 +142,7 @@ namespace PaymentManagementTests
         [Fact]
         public void CreatePayment()
         {
-            var _options = new DbContextOptionsBuilder<DataContext>()
-                .UseInMemoryDatabase(databaseName: "PaymentCreate")
-                .Options;
-            var context = new DataContext(_options);
+            var context = serviceProvider.GetRequiredService<DataContext>();
 
             var controller = new PaymentsController(context);
 
